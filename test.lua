@@ -7414,17 +7414,7 @@ local script = G2L["1ce"];
 	
 	script.Parent.Parent.Image.FocusLost:Connect(function()
 		if tonumber(script.Parent.Parent.Image.Text) then
-			local try = "rbxassetid://"..tonumber(script.Parent.Parent.Image.Text)
-			local insert = insertService:LoadAsset(image)
-			local decal = insert:FindFirstChildOfClass("Decal")
-			if not decal then
-				script.Parent.Parent.Image.Text = "Invalid ID"
-				task.wait(0.5)
-				script.Parent.Parent.Image.Text = ""
-			else
-				local id = string.gsub(decal.Texture, "rbxassetid://", "")
-				image = tonumber(id)
-			end
+			image = tonumber(script.Parent.Parent.Image.Text)
 		else
 			script.Parent.Parent.Image.Text = "Invalid ID"
 			task.wait(0.5)

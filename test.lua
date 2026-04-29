@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 559 | Scripts: 32 | Modules: 0 | Tags: 0
+-- Instances: 568 | Scripts: 34 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.DTIGUI
@@ -73,14 +73,16 @@ G2L["9"] = Instance.new("ScrollingFrame", G2L["8"]);
 G2L["9"]["Active"] = true;
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
+G2L["9"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
 G2L["9"]["Name"] = [[CategoriesScroll]];
+G2L["9"]["ScrollBarImageTransparency"] = 0.5;
 G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9"]["AnchorPoint"] = Vector2.new(0, 0.5);
 G2L["9"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
 G2L["9"]["Size"] = UDim2.new(0.25, 0, 0.9, 0);
 G2L["9"]["Position"] = UDim2.new(0.05, 0, 0.5, 0);
 G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["ScrollBarThickness"] = 0;
+G2L["9"]["ScrollBarThickness"] = 3;
 G2L["9"]["BackgroundTransparency"] = 1;
 
 
@@ -141,7 +143,7 @@ G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["10"]["BackgroundTransparency"] = 0.5;
 G2L["10"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["10"]["LayoutOrder"] = 1;
+G2L["10"]["LayoutOrder"] = 4;
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["10"]["Text"] = [[DLC Faces]];
 G2L["10"]["Name"] = [[Faces]];
@@ -277,7 +279,7 @@ G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["20"]["BackgroundTransparency"] = 0.5;
 G2L["20"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["20"]["LayoutOrder"] = 4;
+G2L["20"]["LayoutOrder"] = 2;
 G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["20"]["Text"] = [[Free Stuff]];
 G2L["20"]["Name"] = [[FreeStuff]];
@@ -452,17 +454,18 @@ G2L["35"] = Instance.new("ScrollingFrame", G2L["34"]);
 G2L["35"]["Visible"] = false;
 G2L["35"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["35"]["BorderSizePixel"] = 0;
-G2L["35"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
+G2L["35"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["35"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
 G2L["35"]["Name"] = [[Main]];
+G2L["35"]["ScrollBarImageTransparency"] = 0.5;
 G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["35"]["Selectable"] = false;
 G2L["35"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["35"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
 G2L["35"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["35"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["35"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["ScrollBarThickness"] = 0;
+G2L["35"]["ScrollBarThickness"] = 3;
 G2L["35"]["BackgroundTransparency"] = 1;
 
 
@@ -572,106 +575,102 @@ G2L["40"]["Thickness"] = 1.5;
 G2L["40"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Main.ADJUSTMENT
-G2L["41"] = Instance.new("TextLabel", G2L["35"]);
-G2L["41"]["TextWrapped"] = true;
-G2L["41"]["BorderSizePixel"] = 0;
-G2L["41"]["TextSize"] = 14;
-G2L["41"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["41"]["TextScaled"] = true;
-G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["BackgroundTransparency"] = 1;
-G2L["41"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["41"]["Size"] = UDim2.new(1, 0, 1.2, 0);
-G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Text"] = [[NOTE: To steal outfits with adjustments, you need the Item Adjustment feature, this is impossible to bypass as checks happen on the server. As well as this, some outfit presets may include adjustments, so to use them you will need to start playing rounds, or, pay for the feature.]];
-G2L["41"]["LayoutOrder"] = 2;
-G2L["41"]["Name"] = [[ADJUSTMENT]];
-G2L["41"]["Position"] = UDim2.new(1, 0, 0, 0);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Main.ADJUSTMENT.UIPadding
-G2L["42"] = Instance.new("UIPadding", G2L["41"]);
-G2L["42"]["PaddingTop"] = UDim.new(0, 3);
-G2L["42"]["PaddingRight"] = UDim.new(0, 5);
-G2L["42"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Main.ADJUSTMENT.UIStroke
-G2L["43"] = Instance.new("UIStroke", G2L["41"]);
-G2L["43"]["Thickness"] = 1.5;
-G2L["43"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces
-G2L["44"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["44"]["Visible"] = false;
-G2L["44"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["44"]["BorderSizePixel"] = 0;
-G2L["44"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["44"]["Name"] = [[Faces]];
-G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["44"]["Selectable"] = false;
-G2L["44"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["44"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["44"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["44"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["ScrollBarThickness"] = 0;
-G2L["44"]["BackgroundTransparency"] = 1;
+G2L["41"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["41"]["Visible"] = false;
+G2L["41"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["41"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["41"]["Name"] = [[Faces]];
+G2L["41"]["ScrollBarImageTransparency"] = 0.5;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["Selectable"] = false;
+G2L["41"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["41"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["41"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["41"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["ScrollBarThickness"] = 3;
+G2L["41"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.FacesHandler
-G2L["45"] = Instance.new("LocalScript", G2L["44"]);
-G2L["45"]["Name"] = [[FacesHandler]];
+G2L["42"] = Instance.new("LocalScript", G2L["41"]);
+G2L["42"]["Name"] = [[FacesHandler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.UIListLayout
-G2L["46"] = Instance.new("UIListLayout", G2L["44"]);
-G2L["46"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["46"]["Padding"] = UDim.new(0, 3);
-G2L["46"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["46"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["43"] = Instance.new("UIListLayout", G2L["41"]);
+G2L["43"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["43"]["Padding"] = UDim.new(0, 3);
+G2L["43"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["43"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS1
-G2L["47"] = Instance.new("TextLabel", G2L["44"]);
-G2L["47"]["TextWrapped"] = true;
-G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["TextSize"] = 14;
-G2L["47"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["47"]["TextScaled"] = true;
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["BackgroundTransparency"] = 1;
-G2L["47"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["47"]["Size"] = UDim2.new(1, 0, 0.35, 0);
-G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Text"] = [[Mystery Models Series 1:]];
-G2L["47"]["LayoutOrder"] = 1;
-G2L["47"]["Name"] = [[DLCS1]];
-G2L["47"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["44"] = Instance.new("TextLabel", G2L["41"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["TextSize"] = 14;
+G2L["44"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["44"]["TextScaled"] = true;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["BackgroundTransparency"] = 1;
+G2L["44"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["44"]["Size"] = UDim2.new(1, 0, 0.35, 0);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Text"] = [[Mystery Models Series 1:]];
+G2L["44"]["LayoutOrder"] = 1;
+G2L["44"]["Name"] = [[DLCS1]];
+G2L["44"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS1.UIPadding
-G2L["48"] = Instance.new("UIPadding", G2L["47"]);
-G2L["48"]["PaddingTop"] = UDim.new(0, 3);
-G2L["48"]["PaddingRight"] = UDim.new(0, 5);
-G2L["48"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["45"] = Instance.new("UIPadding", G2L["44"]);
+G2L["45"]["PaddingTop"] = UDim.new(0, 3);
+G2L["45"]["PaddingRight"] = UDim.new(0, 5);
+G2L["45"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS1.UIStroke
+G2L["46"] = Instance.new("UIStroke", G2L["44"]);
+G2L["46"]["Thickness"] = 1.5;
+G2L["46"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Y2KPopstar
+G2L["47"] = Instance.new("TextButton", G2L["41"]);
+G2L["47"]["TextWrapped"] = true;
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["TextSize"] = 14;
+G2L["47"]["TextScaled"] = true;
+G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["47"]["BackgroundTransparency"] = 0.5;
+G2L["47"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["47"]["LayoutOrder"] = 2;
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["Text"] = [[Y2K Popstar]];
+G2L["47"]["Name"] = [[Y2KPopstar]];
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Y2KPopstar.UICorner
+G2L["48"] = Instance.new("UICorner", G2L["47"]);
+G2L["48"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Y2KPopstar.UIStroke
 G2L["49"] = Instance.new("UIStroke", G2L["47"]);
 G2L["49"]["Thickness"] = 1.5;
 G2L["49"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Y2KPopstar
-G2L["4a"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicAcademia
+G2L["4a"] = Instance.new("TextButton", G2L["41"]);
 G2L["4a"]["TextWrapped"] = true;
 G2L["4a"]["BorderSizePixel"] = 0;
 G2L["4a"]["TextSize"] = 14;
@@ -683,23 +682,23 @@ G2L["4a"]["BackgroundTransparency"] = 0.5;
 G2L["4a"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["4a"]["LayoutOrder"] = 2;
 G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4a"]["Text"] = [[Y2K Popstar]];
-G2L["4a"]["Name"] = [[Y2KPopstar]];
+G2L["4a"]["Text"] = [[Chic Academia]];
+G2L["4a"]["Name"] = [[ChicAcademia]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Y2KPopstar.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicAcademia.UICorner
 G2L["4b"] = Instance.new("UICorner", G2L["4a"]);
 G2L["4b"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Y2KPopstar.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicAcademia.UIStroke
 G2L["4c"] = Instance.new("UIStroke", G2L["4a"]);
 G2L["4c"]["Thickness"] = 1.5;
 G2L["4c"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicAcademia
-G2L["4d"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DreamySparkle
+G2L["4d"] = Instance.new("TextButton", G2L["41"]);
 G2L["4d"]["TextWrapped"] = true;
 G2L["4d"]["BorderSizePixel"] = 0;
 G2L["4d"]["TextSize"] = 14;
@@ -711,23 +710,23 @@ G2L["4d"]["BackgroundTransparency"] = 0.5;
 G2L["4d"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["4d"]["LayoutOrder"] = 2;
 G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4d"]["Text"] = [[Chic Academia]];
-G2L["4d"]["Name"] = [[ChicAcademia]];
+G2L["4d"]["Text"] = [[Dreamy Sparkle]];
+G2L["4d"]["Name"] = [[DreamySparkle]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicAcademia.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DreamySparkle.UICorner
 G2L["4e"] = Instance.new("UICorner", G2L["4d"]);
 G2L["4e"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicAcademia.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DreamySparkle.UIStroke
 G2L["4f"] = Instance.new("UIStroke", G2L["4d"]);
 G2L["4f"]["Thickness"] = 1.5;
 G2L["4f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DreamySparkle
-G2L["50"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.GalaGirl
+G2L["50"] = Instance.new("TextButton", G2L["41"]);
 G2L["50"]["TextWrapped"] = true;
 G2L["50"]["BorderSizePixel"] = 0;
 G2L["50"]["TextSize"] = 14;
@@ -739,23 +738,23 @@ G2L["50"]["BackgroundTransparency"] = 0.5;
 G2L["50"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["50"]["LayoutOrder"] = 2;
 G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["50"]["Text"] = [[Dreamy Sparkle]];
-G2L["50"]["Name"] = [[DreamySparkle]];
+G2L["50"]["Text"] = [[Gala Girl]];
+G2L["50"]["Name"] = [[GalaGirl]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DreamySparkle.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.GalaGirl.UICorner
 G2L["51"] = Instance.new("UICorner", G2L["50"]);
 G2L["51"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DreamySparkle.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.GalaGirl.UIStroke
 G2L["52"] = Instance.new("UIStroke", G2L["50"]);
 G2L["52"]["Thickness"] = 1.5;
 G2L["52"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.GalaGirl
-G2L["53"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana
+G2L["53"] = Instance.new("TextButton", G2L["41"]);
 G2L["53"]["TextWrapped"] = true;
 G2L["53"]["BorderSizePixel"] = 0;
 G2L["53"]["TextSize"] = 14;
@@ -767,23 +766,23 @@ G2L["53"]["BackgroundTransparency"] = 0.5;
 G2L["53"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["53"]["LayoutOrder"] = 2;
 G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Text"] = [[Gala Girl]];
-G2L["53"]["Name"] = [[GalaGirl]];
+G2L["53"]["Text"] = [[Lana]];
+G2L["53"]["Name"] = [[Lana]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.GalaGirl.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana.UICorner
 G2L["54"] = Instance.new("UICorner", G2L["53"]);
 G2L["54"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.GalaGirl.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana.UIStroke
 G2L["55"] = Instance.new("UIStroke", G2L["53"]);
 G2L["55"]["Thickness"] = 1.5;
 G2L["55"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana
-G2L["56"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana2
+G2L["56"] = Instance.new("TextButton", G2L["41"]);
 G2L["56"]["TextWrapped"] = true;
 G2L["56"]["BorderSizePixel"] = 0;
 G2L["56"]["TextSize"] = 14;
@@ -795,23 +794,23 @@ G2L["56"]["BackgroundTransparency"] = 0.5;
 G2L["56"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["56"]["LayoutOrder"] = 2;
 G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["56"]["Text"] = [[Lana]];
-G2L["56"]["Name"] = [[Lana]];
+G2L["56"]["Text"] = [[Lana V2]];
+G2L["56"]["Name"] = [[Lana2]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana2.UICorner
 G2L["57"] = Instance.new("UICorner", G2L["56"]);
 G2L["57"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana2.UIStroke
 G2L["58"] = Instance.new("UIStroke", G2L["56"]);
 G2L["58"]["Thickness"] = 1.5;
 G2L["58"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana2
-G2L["59"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina
+G2L["59"] = Instance.new("TextButton", G2L["41"]);
 G2L["59"]["TextWrapped"] = true;
 G2L["59"]["BorderSizePixel"] = 0;
 G2L["59"]["TextSize"] = 14;
@@ -823,23 +822,23 @@ G2L["59"]["BackgroundTransparency"] = 0.5;
 G2L["59"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["59"]["LayoutOrder"] = 2;
 G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["59"]["Text"] = [[Lana V2]];
-G2L["59"]["Name"] = [[Lana2]];
+G2L["59"]["Text"] = [[Lina]];
+G2L["59"]["Name"] = [[Lina]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana2.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina.UICorner
 G2L["5a"] = Instance.new("UICorner", G2L["59"]);
 G2L["5a"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lana2.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina.UIStroke
 G2L["5b"] = Instance.new("UIStroke", G2L["59"]);
 G2L["5b"]["Thickness"] = 1.5;
 G2L["5b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina
-G2L["5c"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina2
+G2L["5c"] = Instance.new("TextButton", G2L["41"]);
 G2L["5c"]["TextWrapped"] = true;
 G2L["5c"]["BorderSizePixel"] = 0;
 G2L["5c"]["TextSize"] = 14;
@@ -851,23 +850,23 @@ G2L["5c"]["BackgroundTransparency"] = 0.5;
 G2L["5c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["5c"]["LayoutOrder"] = 2;
 G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5c"]["Text"] = [[Lina]];
-G2L["5c"]["Name"] = [[Lina]];
+G2L["5c"]["Text"] = [[Lina V2]];
+G2L["5c"]["Name"] = [[Lina2]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina2.UICorner
 G2L["5d"] = Instance.new("UICorner", G2L["5c"]);
 G2L["5d"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina2.UIStroke
 G2L["5e"] = Instance.new("UIStroke", G2L["5c"]);
 G2L["5e"]["Thickness"] = 1.5;
 G2L["5e"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina2
-G2L["5f"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LovelyValentine
+G2L["5f"] = Instance.new("TextButton", G2L["41"]);
 G2L["5f"]["TextWrapped"] = true;
 G2L["5f"]["BorderSizePixel"] = 0;
 G2L["5f"]["TextSize"] = 14;
@@ -879,23 +878,23 @@ G2L["5f"]["BackgroundTransparency"] = 0.5;
 G2L["5f"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["5f"]["LayoutOrder"] = 2;
 G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["Text"] = [[Lina V2]];
-G2L["5f"]["Name"] = [[Lina2]];
+G2L["5f"]["Text"] = [[Lovely Valentine]];
+G2L["5f"]["Name"] = [[LovelyValentine]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina2.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LovelyValentine.UICorner
 G2L["60"] = Instance.new("UICorner", G2L["5f"]);
 G2L["60"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Lina2.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LovelyValentine.UIStroke
 G2L["61"] = Instance.new("UIStroke", G2L["5f"]);
 G2L["61"]["Thickness"] = 1.5;
 G2L["61"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LovelyValentine
-G2L["62"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.StardustSoftie
+G2L["62"] = Instance.new("TextButton", G2L["41"]);
 G2L["62"]["TextWrapped"] = true;
 G2L["62"]["BorderSizePixel"] = 0;
 G2L["62"]["TextSize"] = 14;
@@ -907,23 +906,23 @@ G2L["62"]["BackgroundTransparency"] = 0.5;
 G2L["62"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["62"]["LayoutOrder"] = 2;
 G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["62"]["Text"] = [[Lovely Valentine]];
-G2L["62"]["Name"] = [[LovelyValentine]];
+G2L["62"]["Text"] = [[Stardust Softie]];
+G2L["62"]["Name"] = [[StardustSoftie]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LovelyValentine.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.StardustSoftie.UICorner
 G2L["63"] = Instance.new("UICorner", G2L["62"]);
 G2L["63"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LovelyValentine.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.StardustSoftie.UIStroke
 G2L["64"] = Instance.new("UIStroke", G2L["62"]);
 G2L["64"]["Thickness"] = 1.5;
 G2L["64"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.StardustSoftie
-G2L["65"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.SweetRomance
+G2L["65"] = Instance.new("TextButton", G2L["41"]);
 G2L["65"]["TextWrapped"] = true;
 G2L["65"]["BorderSizePixel"] = 0;
 G2L["65"]["TextSize"] = 14;
@@ -935,23 +934,23 @@ G2L["65"]["BackgroundTransparency"] = 0.5;
 G2L["65"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["65"]["LayoutOrder"] = 2;
 G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["65"]["Text"] = [[Stardust Softie]];
-G2L["65"]["Name"] = [[StardustSoftie]];
+G2L["65"]["Text"] = [[Sweet Romance]];
+G2L["65"]["Name"] = [[SweetRomance]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.StardustSoftie.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.SweetRomance.UICorner
 G2L["66"] = Instance.new("UICorner", G2L["65"]);
 G2L["66"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.StardustSoftie.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.SweetRomance.UIStroke
 G2L["67"] = Instance.new("UIStroke", G2L["65"]);
 G2L["67"]["Thickness"] = 1.5;
 G2L["67"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.SweetRomance
-G2L["68"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.TropicalSummer
+G2L["68"] = Instance.new("TextButton", G2L["41"]);
 G2L["68"]["TextWrapped"] = true;
 G2L["68"]["BorderSizePixel"] = 0;
 G2L["68"]["TextSize"] = 14;
@@ -963,84 +962,84 @@ G2L["68"]["BackgroundTransparency"] = 0.5;
 G2L["68"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["68"]["LayoutOrder"] = 2;
 G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["68"]["Text"] = [[Sweet Romance]];
-G2L["68"]["Name"] = [[SweetRomance]];
+G2L["68"]["Text"] = [[Tropical Summer]];
+G2L["68"]["Name"] = [[TropicalSummer]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.SweetRomance.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.TropicalSummer.UICorner
 G2L["69"] = Instance.new("UICorner", G2L["68"]);
 G2L["69"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.SweetRomance.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.TropicalSummer.UIStroke
 G2L["6a"] = Instance.new("UIStroke", G2L["68"]);
 G2L["6a"]["Thickness"] = 1.5;
 G2L["6a"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.TropicalSummer
-G2L["6b"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS2
+G2L["6b"] = Instance.new("TextLabel", G2L["41"]);
 G2L["6b"]["TextWrapped"] = true;
 G2L["6b"]["BorderSizePixel"] = 0;
 G2L["6b"]["TextSize"] = 14;
+G2L["6b"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["6b"]["TextScaled"] = true;
-G2L["6b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6b"]["BackgroundTransparency"] = 0.5;
-G2L["6b"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["6b"]["LayoutOrder"] = 2;
+G2L["6b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6b"]["BackgroundTransparency"] = 1;
+G2L["6b"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["6b"]["Size"] = UDim2.new(1, 0, 0.35, 0);
 G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6b"]["Text"] = [[Tropical Summer]];
-G2L["6b"]["Name"] = [[TropicalSummer]];
+G2L["6b"]["Text"] = [[Mysery Models Series 2:]];
+G2L["6b"]["LayoutOrder"] = 3;
+G2L["6b"]["Name"] = [[DLCS2]];
+G2L["6b"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.TropicalSummer.UICorner
-G2L["6c"] = Instance.new("UICorner", G2L["6b"]);
-G2L["6c"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS2.UIPadding
+G2L["6c"] = Instance.new("UIPadding", G2L["6b"]);
+G2L["6c"]["PaddingTop"] = UDim.new(0, 3);
+G2L["6c"]["PaddingRight"] = UDim.new(0, 5);
+G2L["6c"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.TropicalSummer.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS2.UIStroke
 G2L["6d"] = Instance.new("UIStroke", G2L["6b"]);
 G2L["6d"]["Thickness"] = 1.5;
 G2L["6d"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS2
-G2L["6e"] = Instance.new("TextLabel", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena
+G2L["6e"] = Instance.new("TextButton", G2L["41"]);
 G2L["6e"]["TextWrapped"] = true;
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["TextSize"] = 14;
-G2L["6e"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["6e"]["TextScaled"] = true;
+G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6e"]["BackgroundTransparency"] = 1;
-G2L["6e"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["6e"]["Size"] = UDim2.new(1, 0, 0.35, 0);
+G2L["6e"]["BackgroundTransparency"] = 0.5;
+G2L["6e"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["6e"]["LayoutOrder"] = 4;
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["Text"] = [[Mysery Models Series 2:]];
-G2L["6e"]["LayoutOrder"] = 3;
-G2L["6e"]["Name"] = [[DLCS2]];
-G2L["6e"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["6e"]["Text"] = [[Serena]];
+G2L["6e"]["Name"] = [[Serena]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS2.UIPadding
-G2L["6f"] = Instance.new("UIPadding", G2L["6e"]);
-G2L["6f"]["PaddingTop"] = UDim.new(0, 3);
-G2L["6f"]["PaddingRight"] = UDim.new(0, 5);
-G2L["6f"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena.UICorner
+G2L["6f"] = Instance.new("UICorner", G2L["6e"]);
+G2L["6f"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCS2.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena.UIStroke
 G2L["70"] = Instance.new("UIStroke", G2L["6e"]);
 G2L["70"]["Thickness"] = 1.5;
 G2L["70"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena
-G2L["71"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena2
+G2L["71"] = Instance.new("TextButton", G2L["41"]);
 G2L["71"]["TextWrapped"] = true;
 G2L["71"]["BorderSizePixel"] = 0;
 G2L["71"]["TextSize"] = 14;
@@ -1052,23 +1051,23 @@ G2L["71"]["BackgroundTransparency"] = 0.5;
 G2L["71"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["71"]["LayoutOrder"] = 4;
 G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["71"]["Text"] = [[Serena]];
-G2L["71"]["Name"] = [[Serena]];
+G2L["71"]["Text"] = [[Serena V2]];
+G2L["71"]["Name"] = [[Serena2]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena2.UICorner
 G2L["72"] = Instance.new("UICorner", G2L["71"]);
 G2L["72"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena2.UIStroke
 G2L["73"] = Instance.new("UIStroke", G2L["71"]);
 G2L["73"]["Thickness"] = 1.5;
 G2L["73"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena2
-G2L["74"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS
+G2L["74"] = Instance.new("TextButton", G2L["41"]);
 G2L["74"]["TextWrapped"] = true;
 G2L["74"]["BorderSizePixel"] = 0;
 G2L["74"]["TextSize"] = 14;
@@ -1080,23 +1079,23 @@ G2L["74"]["BackgroundTransparency"] = 0.5;
 G2L["74"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["74"]["LayoutOrder"] = 4;
 G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["74"]["Text"] = [[Serena V2]];
-G2L["74"]["Name"] = [[Serena2]];
+G2L["74"]["Text"] = [[Lana (Style Showdown)]];
+G2L["74"]["Name"] = [[LanaSS]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena2.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS.UICorner
 G2L["75"] = Instance.new("UICorner", G2L["74"]);
 G2L["75"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.Serena2.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS.UIStroke
 G2L["76"] = Instance.new("UIStroke", G2L["74"]);
 G2L["76"]["Thickness"] = 1.5;
 G2L["76"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS
-G2L["77"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS2
+G2L["77"] = Instance.new("TextButton", G2L["41"]);
 G2L["77"]["TextWrapped"] = true;
 G2L["77"]["BorderSizePixel"] = 0;
 G2L["77"]["TextSize"] = 14;
@@ -1108,23 +1107,23 @@ G2L["77"]["BackgroundTransparency"] = 0.5;
 G2L["77"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["77"]["LayoutOrder"] = 4;
 G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["77"]["Text"] = [[Lana (Style Showdown)]];
-G2L["77"]["Name"] = [[LanaSS]];
+G2L["77"]["Text"] = [[Lana (Style Showdown) V2]];
+G2L["77"]["Name"] = [[LanaSS2]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS2.UICorner
 G2L["78"] = Instance.new("UICorner", G2L["77"]);
 G2L["78"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS2.UIStroke
 G2L["79"] = Instance.new("UIStroke", G2L["77"]);
 G2L["79"]["Thickness"] = 1.5;
 G2L["79"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS2
-G2L["7a"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.StylishStreetware
+G2L["7a"] = Instance.new("TextButton", G2L["41"]);
 G2L["7a"]["TextWrapped"] = true;
 G2L["7a"]["BorderSizePixel"] = 0;
 G2L["7a"]["TextSize"] = 14;
@@ -1136,23 +1135,23 @@ G2L["7a"]["BackgroundTransparency"] = 0.5;
 G2L["7a"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["7a"]["LayoutOrder"] = 4;
 G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7a"]["Text"] = [[Lana (Style Showdown) V2]];
-G2L["7a"]["Name"] = [[LanaSS2]];
+G2L["7a"]["Text"] = [[Stylish Streetwear]];
+G2L["7a"]["Name"] = [[StylishStreetware]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS2.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.StylishStreetware.UICorner
 G2L["7b"] = Instance.new("UICorner", G2L["7a"]);
 G2L["7b"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaSS2.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.StylishStreetware.UIStroke
 G2L["7c"] = Instance.new("UIStroke", G2L["7a"]);
 G2L["7c"]["Thickness"] = 1.5;
 G2L["7c"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.StylishStreetware
-G2L["7d"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGal
+G2L["7d"] = Instance.new("TextButton", G2L["41"]);
 G2L["7d"]["TextWrapped"] = true;
 G2L["7d"]["BorderSizePixel"] = 0;
 G2L["7d"]["TextSize"] = 14;
@@ -1164,23 +1163,23 @@ G2L["7d"]["BackgroundTransparency"] = 0.5;
 G2L["7d"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["7d"]["LayoutOrder"] = 4;
 G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7d"]["Text"] = [[Stylish Streetwear]];
-G2L["7d"]["Name"] = [[StylishStreetware]];
+G2L["7d"]["Text"] = [[Bubblegum Gal]];
+G2L["7d"]["Name"] = [[BubblegumGal]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.StylishStreetware.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGal.UICorner
 G2L["7e"] = Instance.new("UICorner", G2L["7d"]);
 G2L["7e"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.StylishStreetware.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGal.UIStroke
 G2L["7f"] = Instance.new("UIStroke", G2L["7d"]);
 G2L["7f"]["Thickness"] = 1.5;
 G2L["7f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGal
-G2L["80"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.CasualSoftie
+G2L["80"] = Instance.new("TextButton", G2L["41"]);
 G2L["80"]["TextWrapped"] = true;
 G2L["80"]["BorderSizePixel"] = 0;
 G2L["80"]["TextSize"] = 14;
@@ -1192,23 +1191,23 @@ G2L["80"]["BackgroundTransparency"] = 0.5;
 G2L["80"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["80"]["LayoutOrder"] = 4;
 G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["80"]["Text"] = [[Bubblegum Gal]];
-G2L["80"]["Name"] = [[BubblegumGal]];
+G2L["80"]["Text"] = [[Casual Softie]];
+G2L["80"]["Name"] = [[CasualSoftie]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGal.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.CasualSoftie.UICorner
 G2L["81"] = Instance.new("UICorner", G2L["80"]);
 G2L["81"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGal.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.CasualSoftie.UIStroke
 G2L["82"] = Instance.new("UIStroke", G2L["80"]);
 G2L["82"]["Thickness"] = 1.5;
 G2L["82"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.CasualSoftie
-G2L["83"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicCowgirl
+G2L["83"] = Instance.new("TextButton", G2L["41"]);
 G2L["83"]["TextWrapped"] = true;
 G2L["83"]["BorderSizePixel"] = 0;
 G2L["83"]["TextSize"] = 14;
@@ -1220,23 +1219,23 @@ G2L["83"]["BackgroundTransparency"] = 0.5;
 G2L["83"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["83"]["LayoutOrder"] = 4;
 G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["83"]["Text"] = [[Casual Softie]];
-G2L["83"]["Name"] = [[CasualSoftie]];
+G2L["83"]["Text"] = [[Chic Cowgirl]];
+G2L["83"]["Name"] = [[ChicCowgirl]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.CasualSoftie.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicCowgirl.UICorner
 G2L["84"] = Instance.new("UICorner", G2L["83"]);
 G2L["84"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.CasualSoftie.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicCowgirl.UIStroke
 G2L["85"] = Instance.new("UIStroke", G2L["83"]);
 G2L["85"]["Thickness"] = 1.5;
 G2L["85"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicCowgirl
-G2L["86"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DenimY2K
+G2L["86"] = Instance.new("TextButton", G2L["41"]);
 G2L["86"]["TextWrapped"] = true;
 G2L["86"]["BorderSizePixel"] = 0;
 G2L["86"]["TextSize"] = 14;
@@ -1248,23 +1247,23 @@ G2L["86"]["BackgroundTransparency"] = 0.5;
 G2L["86"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["86"]["LayoutOrder"] = 4;
 G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["86"]["Text"] = [[Chic Cowgirl]];
-G2L["86"]["Name"] = [[ChicCowgirl]];
+G2L["86"]["Text"] = [[Denim Y2K]];
+G2L["86"]["Name"] = [[DenimY2K]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicCowgirl.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DenimY2K.UICorner
 G2L["87"] = Instance.new("UICorner", G2L["86"]);
 G2L["87"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ChicCowgirl.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DenimY2K.UIStroke
 G2L["88"] = Instance.new("UIStroke", G2L["86"]);
 G2L["88"]["Thickness"] = 1.5;
 G2L["88"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DenimY2K
-G2L["89"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.GothicRomance
+G2L["89"] = Instance.new("TextButton", G2L["41"]);
 G2L["89"]["TextWrapped"] = true;
 G2L["89"]["BorderSizePixel"] = 0;
 G2L["89"]["TextSize"] = 14;
@@ -1276,23 +1275,23 @@ G2L["89"]["BackgroundTransparency"] = 0.5;
 G2L["89"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["89"]["LayoutOrder"] = 4;
 G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["89"]["Text"] = [[Denim Y2K]];
-G2L["89"]["Name"] = [[DenimY2K]];
+G2L["89"]["Text"] = [[Gothic Romance]];
+G2L["89"]["Name"] = [[GothicRomance]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DenimY2K.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.GothicRomance.UICorner
 G2L["8a"] = Instance.new("UICorner", G2L["89"]);
 G2L["8a"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DenimY2K.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.GothicRomance.UIStroke
 G2L["8b"] = Instance.new("UIStroke", G2L["89"]);
 G2L["8b"]["Thickness"] = 1.5;
 G2L["8b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.GothicRomance
-G2L["8c"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.MagicalGirl
+G2L["8c"] = Instance.new("TextButton", G2L["41"]);
 G2L["8c"]["TextWrapped"] = true;
 G2L["8c"]["BorderSizePixel"] = 0;
 G2L["8c"]["TextSize"] = 14;
@@ -1304,23 +1303,23 @@ G2L["8c"]["BackgroundTransparency"] = 0.5;
 G2L["8c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["8c"]["LayoutOrder"] = 4;
 G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Text"] = [[Gothic Romance]];
-G2L["8c"]["Name"] = [[GothicRomance]];
+G2L["8c"]["Text"] = [[Magical Girl]];
+G2L["8c"]["Name"] = [[MagicalGirl]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.GothicRomance.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.MagicalGirl.UICorner
 G2L["8d"] = Instance.new("UICorner", G2L["8c"]);
 G2L["8d"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.GothicRomance.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.MagicalGirl.UIStroke
 G2L["8e"] = Instance.new("UIStroke", G2L["8c"]);
 G2L["8e"]["Thickness"] = 1.5;
 G2L["8e"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.MagicalGirl
-G2L["8f"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.MysticMermaid
+G2L["8f"] = Instance.new("TextButton", G2L["41"]);
 G2L["8f"]["TextWrapped"] = true;
 G2L["8f"]["BorderSizePixel"] = 0;
 G2L["8f"]["TextSize"] = 14;
@@ -1332,282 +1331,282 @@ G2L["8f"]["BackgroundTransparency"] = 0.5;
 G2L["8f"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["8f"]["LayoutOrder"] = 4;
 G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8f"]["Text"] = [[Magical Girl]];
-G2L["8f"]["Name"] = [[MagicalGirl]];
+G2L["8f"]["Text"] = [[Mystic Mermaid]];
+G2L["8f"]["Name"] = [[MysticMermaid]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.MagicalGirl.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.MysticMermaid.UICorner
 G2L["90"] = Instance.new("UICorner", G2L["8f"]);
 G2L["90"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.MagicalGirl.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.MysticMermaid.UIStroke
 G2L["91"] = Instance.new("UIStroke", G2L["8f"]);
 G2L["91"]["Thickness"] = 1.5;
 G2L["91"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.MysticMermaid
-G2L["92"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipLabel
+G2L["92"] = Instance.new("TextLabel", G2L["41"]);
 G2L["92"]["TextWrapped"] = true;
 G2L["92"]["BorderSizePixel"] = 0;
 G2L["92"]["TextSize"] = 14;
+G2L["92"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["92"]["TextScaled"] = true;
-G2L["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["92"]["BackgroundTransparency"] = 0.5;
-G2L["92"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["92"]["LayoutOrder"] = 4;
+G2L["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["92"]["BackgroundTransparency"] = 1;
+G2L["92"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["92"]["Size"] = UDim2.new(1, 0, 0.15, 0);
 G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["92"]["Text"] = [[Mystic Mermaid]];
-G2L["92"]["Name"] = [[MysticMermaid]];
+G2L["92"]["Text"] = [[Equip Mode:]];
+G2L["92"]["LayoutOrder"] = -2;
+G2L["92"]["Name"] = [[EquipLabel]];
+G2L["92"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.MysticMermaid.UICorner
-G2L["93"] = Instance.new("UICorner", G2L["92"]);
-G2L["93"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipLabel.UIPadding
+G2L["93"] = Instance.new("UIPadding", G2L["92"]);
+G2L["93"]["PaddingTop"] = UDim.new(0, 3);
+G2L["93"]["PaddingRight"] = UDim.new(0, 5);
+G2L["93"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.MysticMermaid.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipLabel.UIStroke
 G2L["94"] = Instance.new("UIStroke", G2L["92"]);
 G2L["94"]["Thickness"] = 1.5;
 G2L["94"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipLabel
-G2L["95"] = Instance.new("TextLabel", G2L["44"]);
-G2L["95"]["TextWrapped"] = true;
-G2L["95"]["BorderSizePixel"] = 0;
-G2L["95"]["TextSize"] = 14;
-G2L["95"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["95"]["TextScaled"] = true;
-G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["95"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["95"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["95"]["BackgroundTransparency"] = 1;
-G2L["95"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["95"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["95"]["Text"] = [[Equip Mode:]];
-G2L["95"]["LayoutOrder"] = -2;
-G2L["95"]["Name"] = [[EquipLabel]];
-G2L["95"]["Position"] = UDim2.new(1, 0, 0, 0);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipLabel.UIPadding
-G2L["96"] = Instance.new("UIPadding", G2L["95"]);
-G2L["96"]["PaddingTop"] = UDim.new(0, 3);
-G2L["96"]["PaddingRight"] = UDim.new(0, 5);
-G2L["96"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipLabel.UIStroke
-G2L["97"] = Instance.new("UIStroke", G2L["95"]);
-G2L["97"]["Thickness"] = 1.5;
-G2L["97"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipMode
-G2L["98"] = Instance.new("Frame", G2L["44"]);
-G2L["98"]["Active"] = true;
-G2L["98"]["BorderSizePixel"] = 0;
-G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["98"]["Selectable"] = true;
-G2L["98"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["Name"] = [[EquipMode]];
-G2L["98"]["LayoutOrder"] = -1;
-G2L["98"]["BackgroundTransparency"] = 1;
+G2L["95"] = Instance.new("Frame", G2L["41"]);
+G2L["95"]["Active"] = true;
+G2L["95"]["BorderSizePixel"] = 0;
+G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["95"]["Selectable"] = true;
+G2L["95"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["95"]["Name"] = [[EquipMode]];
+G2L["95"]["LayoutOrder"] = -1;
+G2L["95"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipMode.Button
-G2L["99"] = Instance.new("TextButton", G2L["98"]);
-G2L["99"]["TextWrapped"] = true;
-G2L["99"]["BorderSizePixel"] = 0;
-G2L["99"]["TextSize"] = 14;
-G2L["99"]["TextScaled"] = true;
-G2L["99"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["99"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["99"]["BackgroundTransparency"] = 0.5;
-G2L["99"]["Size"] = UDim2.new(0.4, 0, 1, 0);
-G2L["99"]["LayoutOrder"] = -1;
-G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["99"]["Text"] = [[Light]];
-G2L["99"]["Name"] = [[Button]];
-G2L["99"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["96"] = Instance.new("TextButton", G2L["95"]);
+G2L["96"]["TextWrapped"] = true;
+G2L["96"]["BorderSizePixel"] = 0;
+G2L["96"]["TextSize"] = 14;
+G2L["96"]["TextScaled"] = true;
+G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["96"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["96"]["BackgroundTransparency"] = 0.5;
+G2L["96"]["Size"] = UDim2.new(0.4, 0, 1, 0);
+G2L["96"]["LayoutOrder"] = -1;
+G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["96"]["Text"] = [[Light]];
+G2L["96"]["Name"] = [[Button]];
+G2L["96"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipMode.Button.UICorner
-G2L["9a"] = Instance.new("UICorner", G2L["99"]);
-G2L["9a"]["CornerRadius"] = UDim.new(0, 5);
+G2L["97"] = Instance.new("UICorner", G2L["96"]);
+G2L["97"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.EquipMode.Button.UIStroke
+G2L["98"] = Instance.new("UIStroke", G2L["96"]);
+G2L["98"]["Thickness"] = 1.5;
+G2L["98"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCLANADXPS
+G2L["99"] = Instance.new("TextLabel", G2L["41"]);
+G2L["99"]["TextWrapped"] = true;
+G2L["99"]["BorderSizePixel"] = 0;
+G2L["99"]["TextSize"] = 14;
+G2L["99"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["99"]["TextScaled"] = true;
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["99"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["BackgroundTransparency"] = 1;
+G2L["99"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["99"]["Size"] = UDim2.new(1, 0, 0.35, 0);
+G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["Text"] = [[Lana Deluxe Playset:]];
+G2L["99"]["LayoutOrder"] = 5;
+G2L["99"]["Name"] = [[DLCLANADXPS]];
+G2L["99"]["Position"] = UDim2.new(1, 0, 0, 0);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCLANADXPS.UIPadding
+G2L["9a"] = Instance.new("UIPadding", G2L["99"]);
+G2L["9a"]["PaddingTop"] = UDim.new(0, 3);
+G2L["9a"]["PaddingRight"] = UDim.new(0, 5);
+G2L["9a"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCLANADXPS.UIStroke
 G2L["9b"] = Instance.new("UIStroke", G2L["99"]);
 G2L["9b"]["Thickness"] = 1.5;
 G2L["9b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCLANADXPS
-G2L["9c"] = Instance.new("TextLabel", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaDXSet
+G2L["9c"] = Instance.new("TextButton", G2L["41"]);
 G2L["9c"]["TextWrapped"] = true;
 G2L["9c"]["BorderSizePixel"] = 0;
 G2L["9c"]["TextSize"] = 14;
-G2L["9c"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["9c"]["TextScaled"] = true;
+G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["BackgroundTransparency"] = 1;
-G2L["9c"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["9c"]["Size"] = UDim2.new(1, 0, 0.35, 0);
+G2L["9c"]["BackgroundTransparency"] = 0.5;
+G2L["9c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["9c"]["LayoutOrder"] = 6;
 G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9c"]["Text"] = [[Lana Deluxe Playset:]];
-G2L["9c"]["LayoutOrder"] = 5;
-G2L["9c"]["Name"] = [[DLCLANADXPS]];
-G2L["9c"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["9c"]["Text"] = [[Lana Scars]];
+G2L["9c"]["Name"] = [[LanaDXSet]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCLANADXPS.UIPadding
-G2L["9d"] = Instance.new("UIPadding", G2L["9c"]);
-G2L["9d"]["PaddingTop"] = UDim.new(0, 3);
-G2L["9d"]["PaddingRight"] = UDim.new(0, 5);
-G2L["9d"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaDXSet.UICorner
+G2L["9d"] = Instance.new("UICorner", G2L["9c"]);
+G2L["9d"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCLANADXPS.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaDXSet.UIStroke
 G2L["9e"] = Instance.new("UIStroke", G2L["9c"]);
 G2L["9e"]["Thickness"] = 1.5;
 G2L["9e"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaDXSet
-G2L["9f"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCBGGALDOLL
+G2L["9f"] = Instance.new("TextLabel", G2L["41"]);
 G2L["9f"]["TextWrapped"] = true;
 G2L["9f"]["BorderSizePixel"] = 0;
 G2L["9f"]["TextSize"] = 14;
+G2L["9f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["9f"]["TextScaled"] = true;
-G2L["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9f"]["BackgroundTransparency"] = 0.5;
-G2L["9f"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["9f"]["LayoutOrder"] = 6;
+G2L["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9f"]["BackgroundTransparency"] = 1;
+G2L["9f"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["9f"]["Size"] = UDim2.new(1, 0, 0.35, 0);
 G2L["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9f"]["Text"] = [[Lana Scars]];
-G2L["9f"]["Name"] = [[LanaDXSet]];
+G2L["9f"]["Text"] = [[Bubblegum Gal Fashion Doll:]];
+G2L["9f"]["LayoutOrder"] = 7;
+G2L["9f"]["Name"] = [[DLCBGGALDOLL]];
+G2L["9f"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaDXSet.UICorner
-G2L["a0"] = Instance.new("UICorner", G2L["9f"]);
-G2L["a0"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCBGGALDOLL.UIPadding
+G2L["a0"] = Instance.new("UIPadding", G2L["9f"]);
+G2L["a0"]["PaddingTop"] = UDim.new(0, 3);
+G2L["a0"]["PaddingRight"] = UDim.new(0, 5);
+G2L["a0"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.LanaDXSet.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCBGGALDOLL.UIStroke
 G2L["a1"] = Instance.new("UIStroke", G2L["9f"]);
 G2L["a1"]["Thickness"] = 1.5;
 G2L["a1"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCBGGALDOLL
-G2L["a2"] = Instance.new("TextLabel", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGalFashionDoll
+G2L["a2"] = Instance.new("TextButton", G2L["41"]);
 G2L["a2"]["TextWrapped"] = true;
 G2L["a2"]["BorderSizePixel"] = 0;
 G2L["a2"]["TextSize"] = 14;
-G2L["a2"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["a2"]["TextScaled"] = true;
+G2L["a2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a2"]["BackgroundTransparency"] = 1;
-G2L["a2"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["a2"]["Size"] = UDim2.new(1, 0, 0.35, 0);
+G2L["a2"]["BackgroundTransparency"] = 0.5;
+G2L["a2"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["a2"]["LayoutOrder"] = 8;
 G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Text"] = [[Bubblegum Gal Fashion Doll:]];
-G2L["a2"]["LayoutOrder"] = 7;
-G2L["a2"]["Name"] = [[DLCBGGALDOLL]];
-G2L["a2"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["a2"]["Text"] = [[Bubblegum Gal V2]];
+G2L["a2"]["Name"] = [[BubblegumGalFashionDoll]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCBGGALDOLL.UIPadding
-G2L["a3"] = Instance.new("UIPadding", G2L["a2"]);
-G2L["a3"]["PaddingTop"] = UDim.new(0, 3);
-G2L["a3"]["PaddingRight"] = UDim.new(0, 5);
-G2L["a3"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGalFashionDoll.UICorner
+G2L["a3"] = Instance.new("UICorner", G2L["a2"]);
+G2L["a3"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCBGGALDOLL.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGalFashionDoll.UIStroke
 G2L["a4"] = Instance.new("UIStroke", G2L["a2"]);
 G2L["a4"]["Thickness"] = 1.5;
 G2L["a4"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGalFashionDoll
-G2L["a5"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCHALLOWEEN3PK
+G2L["a5"] = Instance.new("TextLabel", G2L["41"]);
 G2L["a5"]["TextWrapped"] = true;
 G2L["a5"]["BorderSizePixel"] = 0;
 G2L["a5"]["TextSize"] = 14;
+G2L["a5"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["a5"]["TextScaled"] = true;
-G2L["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a5"]["BackgroundTransparency"] = 0.5;
-G2L["a5"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["a5"]["LayoutOrder"] = 8;
+G2L["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a5"]["BackgroundTransparency"] = 1;
+G2L["a5"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["a5"]["Size"] = UDim2.new(1, 0, 0.35, 0);
 G2L["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a5"]["Text"] = [[Bubblegum Gal V2]];
-G2L["a5"]["Name"] = [[BubblegumGalFashionDoll]];
+G2L["a5"]["Text"] = [[Halloween Limited 3 Pack:]];
+G2L["a5"]["LayoutOrder"] = 9;
+G2L["a5"]["Name"] = [[DLCHALLOWEEN3PK]];
+G2L["a5"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGalFashionDoll.UICorner
-G2L["a6"] = Instance.new("UICorner", G2L["a5"]);
-G2L["a6"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCHALLOWEEN3PK.UIPadding
+G2L["a6"] = Instance.new("UIPadding", G2L["a5"]);
+G2L["a6"]["PaddingTop"] = UDim.new(0, 3);
+G2L["a6"]["PaddingRight"] = UDim.new(0, 5);
+G2L["a6"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.BubblegumGalFashionDoll.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCHALLOWEEN3PK.UIStroke
 G2L["a7"] = Instance.new("UIStroke", G2L["a5"]);
 G2L["a7"]["Thickness"] = 1.5;
 G2L["a7"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCHALLOWEEN3PK
-G2L["a8"] = Instance.new("TextLabel", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ShipwreckedSiren3PK
+G2L["a8"] = Instance.new("TextButton", G2L["41"]);
 G2L["a8"]["TextWrapped"] = true;
 G2L["a8"]["BorderSizePixel"] = 0;
 G2L["a8"]["TextSize"] = 14;
-G2L["a8"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["a8"]["TextScaled"] = true;
+G2L["a8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a8"]["BackgroundTransparency"] = 1;
-G2L["a8"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["a8"]["Size"] = UDim2.new(1, 0, 0.35, 0);
+G2L["a8"]["BackgroundTransparency"] = 0.5;
+G2L["a8"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["a8"]["LayoutOrder"] = 10;
 G2L["a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a8"]["Text"] = [[Halloween Limited 3 Pack:]];
-G2L["a8"]["LayoutOrder"] = 9;
-G2L["a8"]["Name"] = [[DLCHALLOWEEN3PK]];
-G2L["a8"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["a8"]["Text"] = [[Shipwrecked Siren]];
+G2L["a8"]["Name"] = [[ShipwreckedSiren3PK]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCHALLOWEEN3PK.UIPadding
-G2L["a9"] = Instance.new("UIPadding", G2L["a8"]);
-G2L["a9"]["PaddingTop"] = UDim.new(0, 3);
-G2L["a9"]["PaddingRight"] = UDim.new(0, 5);
-G2L["a9"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ShipwreckedSiren3PK.UICorner
+G2L["a9"] = Instance.new("UICorner", G2L["a8"]);
+G2L["a9"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.DLCHALLOWEEN3PK.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.ShipwreckedSiren3PK.UIStroke
 G2L["aa"] = Instance.new("UIStroke", G2L["a8"]);
 G2L["aa"]["Thickness"] = 1.5;
 G2L["aa"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ShipwreckedSiren3PK
-G2L["ab"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.PumpkinWitch3PK
+G2L["ab"] = Instance.new("TextButton", G2L["41"]);
 G2L["ab"]["TextWrapped"] = true;
 G2L["ab"]["BorderSizePixel"] = 0;
 G2L["ab"]["TextSize"] = 14;
@@ -1619,23 +1618,23 @@ G2L["ab"]["BackgroundTransparency"] = 0.5;
 G2L["ab"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["ab"]["LayoutOrder"] = 10;
 G2L["ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ab"]["Text"] = [[Shipwrecked Siren]];
-G2L["ab"]["Name"] = [[ShipwreckedSiren3PK]];
+G2L["ab"]["Text"] = [[Pumpkin Witch]];
+G2L["ab"]["Name"] = [[PumpkinWitch3PK]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ShipwreckedSiren3PK.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.PumpkinWitch3PK.UICorner
 G2L["ac"] = Instance.new("UICorner", G2L["ab"]);
 G2L["ac"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.ShipwreckedSiren3PK.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.PumpkinWitch3PK.UIStroke
 G2L["ad"] = Instance.new("UIStroke", G2L["ab"]);
 G2L["ad"]["Thickness"] = 1.5;
 G2L["ad"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.PumpkinWitch3PK
-G2L["ae"] = Instance.new("TextButton", G2L["44"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.TransformedLina3PK
+G2L["ae"] = Instance.new("TextButton", G2L["41"]);
 G2L["ae"]["TextWrapped"] = true;
 G2L["ae"]["BorderSizePixel"] = 0;
 G2L["ae"]["TextSize"] = 14;
@@ -1647,207 +1646,209 @@ G2L["ae"]["BackgroundTransparency"] = 0.5;
 G2L["ae"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["ae"]["LayoutOrder"] = 10;
 G2L["ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ae"]["Text"] = [[Pumpkin Witch]];
-G2L["ae"]["Name"] = [[PumpkinWitch3PK]];
+G2L["ae"]["Text"] = [[Transformed Lina]];
+G2L["ae"]["Name"] = [[TransformedLina3PK]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.PumpkinWitch3PK.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.TransformedLina3PK.UICorner
 G2L["af"] = Instance.new("UICorner", G2L["ae"]);
 G2L["af"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.PumpkinWitch3PK.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Faces.TransformedLina3PK.UIStroke
 G2L["b0"] = Instance.new("UIStroke", G2L["ae"]);
 G2L["b0"]["Thickness"] = 1.5;
 G2L["b0"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.TransformedLina3PK
-G2L["b1"] = Instance.new("TextButton", G2L["44"]);
-G2L["b1"]["TextWrapped"] = true;
-G2L["b1"]["BorderSizePixel"] = 0;
-G2L["b1"]["TextSize"] = 14;
-G2L["b1"]["TextScaled"] = true;
-G2L["b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b1"]["BackgroundTransparency"] = 0.5;
-G2L["b1"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["b1"]["LayoutOrder"] = 10;
-G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b1"]["Text"] = [[Transformed Lina]];
-G2L["b1"]["Name"] = [[TransformedLina3PK]];
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.TransformedLina3PK.UICorner
-G2L["b2"] = Instance.new("UICorner", G2L["b1"]);
-G2L["b2"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Faces.TransformedLina3PK.UIStroke
-G2L["b3"] = Instance.new("UIStroke", G2L["b1"]);
-G2L["b3"]["Thickness"] = 1.5;
-G2L["b3"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
 -- StarterGui.DTIGUI.Main.Container.Categories.Anims
-G2L["b4"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["b4"]["Visible"] = false;
-G2L["b4"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["b4"]["BorderSizePixel"] = 0;
-G2L["b4"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["b4"]["Name"] = [[Anims]];
-G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b4"]["Selectable"] = false;
-G2L["b4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["b4"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["b4"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["b4"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b4"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b4"]["ScrollBarThickness"] = 0;
-G2L["b4"]["BackgroundTransparency"] = 1;
+G2L["b1"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["b1"]["Visible"] = false;
+G2L["b1"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["b1"]["BorderSizePixel"] = 0;
+G2L["b1"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["b1"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["b1"]["Name"] = [[Anims]];
+G2L["b1"]["ScrollBarImageTransparency"] = 0.5;
+G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b1"]["Selectable"] = false;
+G2L["b1"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["b1"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["b1"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b1"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b1"]["ScrollBarThickness"] = 3;
+G2L["b1"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler
-G2L["b5"] = Instance.new("LocalScript", G2L["b4"]);
-G2L["b5"]["Name"] = [[AnimsHandler]];
+G2L["b2"] = Instance.new("LocalScript", G2L["b1"]);
+G2L["b2"]["Name"] = [[AnimsHandler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.LabelTemplate
-G2L["b6"] = Instance.new("TextLabel", G2L["b5"]);
+G2L["b3"] = Instance.new("TextLabel", G2L["b2"]);
+G2L["b3"]["TextWrapped"] = true;
+G2L["b3"]["BorderSizePixel"] = 0;
+G2L["b3"]["TextSize"] = 14;
+G2L["b3"]["TextScaled"] = true;
+G2L["b3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b3"]["BackgroundTransparency"] = 1;
+G2L["b3"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["b3"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["b3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b3"]["Text"] = [[Walk Pack:]];
+G2L["b3"]["LayoutOrder"] = 1;
+G2L["b3"]["Name"] = [[LabelTemplate]];
+G2L["b3"]["Position"] = UDim2.new(1, 0, 0, 0);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.LabelTemplate.UIPadding
+G2L["b4"] = Instance.new("UIPadding", G2L["b3"]);
+G2L["b4"]["PaddingTop"] = UDim.new(0, 3);
+G2L["b4"]["PaddingRight"] = UDim.new(0, 5);
+G2L["b4"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["b4"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.LabelTemplate.UIStroke
+G2L["b5"] = Instance.new("UIStroke", G2L["b3"]);
+G2L["b5"]["Thickness"] = 1.5;
+G2L["b5"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.ButtonTemplate
+G2L["b6"] = Instance.new("TextButton", G2L["b2"]);
 G2L["b6"]["TextWrapped"] = true;
 G2L["b6"]["BorderSizePixel"] = 0;
 G2L["b6"]["TextSize"] = 14;
 G2L["b6"]["TextScaled"] = true;
+G2L["b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b6"]["BackgroundTransparency"] = 1;
-G2L["b6"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["b6"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b6"]["Text"] = [[Walk Pack:]];
+G2L["b6"]["BackgroundTransparency"] = 0.5;
+G2L["b6"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["b6"]["LayoutOrder"] = 1;
-G2L["b6"]["Name"] = [[LabelTemplate]];
-G2L["b6"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b6"]["Text"] = [[Equip Anim]];
+G2L["b6"]["Name"] = [[ButtonTemplate]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.LabelTemplate.UIPadding
-G2L["b7"] = Instance.new("UIPadding", G2L["b6"]);
-G2L["b7"]["PaddingTop"] = UDim.new(0, 3);
-G2L["b7"]["PaddingRight"] = UDim.new(0, 5);
-G2L["b7"]["PaddingLeft"] = UDim.new(0, 5);
-G2L["b7"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.ButtonTemplate.UICorner
+G2L["b7"] = Instance.new("UICorner", G2L["b6"]);
+G2L["b7"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.LabelTemplate.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.ButtonTemplate.UIStroke
 G2L["b8"] = Instance.new("UIStroke", G2L["b6"]);
 G2L["b8"]["Thickness"] = 1.5;
 G2L["b8"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.ButtonTemplate
-G2L["b9"] = Instance.new("TextButton", G2L["b5"]);
-G2L["b9"]["TextWrapped"] = true;
-G2L["b9"]["BorderSizePixel"] = 0;
-G2L["b9"]["TextSize"] = 14;
-G2L["b9"]["TextScaled"] = true;
-G2L["b9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b9"]["BackgroundTransparency"] = 0.5;
-G2L["b9"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["b9"]["LayoutOrder"] = 1;
-G2L["b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b9"]["Text"] = [[Equip Anim]];
-G2L["b9"]["Name"] = [[ButtonTemplate]];
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.ButtonTemplate.UICorner
-G2L["ba"] = Instance.new("UICorner", G2L["b9"]);
-G2L["ba"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler.ButtonTemplate.UIStroke
-G2L["bb"] = Instance.new("UIStroke", G2L["b9"]);
-G2L["bb"]["Thickness"] = 1.5;
-G2L["bb"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
 -- StarterGui.DTIGUI.Main.Container.Categories.Anims.UIListLayout
-G2L["bc"] = Instance.new("UIListLayout", G2L["b4"]);
-G2L["bc"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["bc"]["Padding"] = UDim.new(0, 3);
-G2L["bc"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["bc"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["b9"] = Instance.new("UIListLayout", G2L["b1"]);
+G2L["b9"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["b9"]["Padding"] = UDim.new(0, 3);
+G2L["b9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["b9"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Anims.TextLabel
-G2L["bd"] = Instance.new("TextLabel", G2L["b4"]);
-G2L["bd"]["TextWrapped"] = true;
-G2L["bd"]["BorderSizePixel"] = 0;
-G2L["bd"]["TextSize"] = 14;
-G2L["bd"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["bd"]["TextScaled"] = true;
-G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bd"]["BackgroundTransparency"] = 1;
-G2L["bd"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["bd"]["Size"] = UDim2.new(1, 0, 0.3, 0);
-G2L["bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bd"]["Text"] = [[Select an idle/walk from a walkpack for FREE! (This feature can sometimes be buggy!)]];
-G2L["bd"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["ba"] = Instance.new("TextLabel", G2L["b1"]);
+G2L["ba"]["TextWrapped"] = true;
+G2L["ba"]["BorderSizePixel"] = 0;
+G2L["ba"]["TextSize"] = 14;
+G2L["ba"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["ba"]["TextScaled"] = true;
+G2L["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ba"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ba"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ba"]["BackgroundTransparency"] = 1;
+G2L["ba"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["ba"]["Size"] = UDim2.new(1, 0, 0.3, 0);
+G2L["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ba"]["Text"] = [[Select an idle/walk from a walkpack for FREE! (This feature can sometimes be buggy!)]];
+G2L["ba"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Anims.TextLabel.UIPadding
-G2L["be"] = Instance.new("UIPadding", G2L["bd"]);
-G2L["be"]["PaddingTop"] = UDim.new(0, 3);
-G2L["be"]["PaddingRight"] = UDim.new(0, 5);
-G2L["be"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["bb"] = Instance.new("UIPadding", G2L["ba"]);
+G2L["bb"]["PaddingTop"] = UDim.new(0, 3);
+G2L["bb"]["PaddingRight"] = UDim.new(0, 5);
+G2L["bb"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Anims.TextLabel.UIStroke
-G2L["bf"] = Instance.new("UIStroke", G2L["bd"]);
-G2L["bf"]["Thickness"] = 1.5;
-G2L["bf"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["bc"] = Instance.new("UIStroke", G2L["ba"]);
+G2L["bc"]["Thickness"] = 1.5;
+G2L["bc"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.MakePreset
-G2L["c0"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["c0"]["Visible"] = false;
-G2L["c0"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["c0"]["BorderSizePixel"] = 0;
-G2L["c0"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["c0"]["Name"] = [[MakePreset]];
-G2L["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c0"]["Selectable"] = false;
-G2L["c0"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["c0"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["c0"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["c0"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c0"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c0"]["ScrollBarThickness"] = 0;
-G2L["c0"]["BackgroundTransparency"] = 1;
+G2L["bd"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["bd"]["Visible"] = false;
+G2L["bd"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["bd"]["BorderSizePixel"] = 0;
+G2L["bd"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["bd"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["bd"]["Name"] = [[MakePreset]];
+G2L["bd"]["ScrollBarImageTransparency"] = 0.5;
+G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bd"]["Selectable"] = false;
+G2L["bd"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["bd"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["bd"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["bd"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bd"]["ScrollBarThickness"] = 3;
+G2L["bd"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.SavingHandler
-G2L["c1"] = Instance.new("LocalScript", G2L["c0"]);
-G2L["c1"]["Name"] = [[SavingHandler]];
+G2L["be"] = Instance.new("LocalScript", G2L["bd"]);
+G2L["be"]["Name"] = [[SavingHandler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.UIListLayout
-G2L["c2"] = Instance.new("UIListLayout", G2L["c0"]);
-G2L["c2"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["c2"]["Padding"] = UDim.new(0, 3);
-G2L["c2"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["c2"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["bf"] = Instance.new("UIListLayout", G2L["bd"]);
+G2L["bf"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["bf"]["Padding"] = UDim.new(0, 3);
+G2L["bf"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["bf"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.CustomMakeup
-G2L["c3"] = Instance.new("TextButton", G2L["c0"]);
+G2L["c0"] = Instance.new("TextButton", G2L["bd"]);
+G2L["c0"]["TextWrapped"] = true;
+G2L["c0"]["BorderSizePixel"] = 0;
+G2L["c0"]["TextSize"] = 14;
+G2L["c0"]["TextScaled"] = true;
+G2L["c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c0"]["BackgroundTransparency"] = 0.5;
+G2L["c0"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["c0"]["LayoutOrder"] = 2;
+G2L["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c0"]["Text"] = [[Copy Custom Makeup]];
+G2L["c0"]["Name"] = [[CustomMakeup]];
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.CustomMakeup.UICorner
+G2L["c1"] = Instance.new("UICorner", G2L["c0"]);
+G2L["c1"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.CustomMakeup.UIStroke
+G2L["c2"] = Instance.new("UIStroke", G2L["c0"]);
+G2L["c2"]["Thickness"] = 1.5;
+G2L["c2"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.Outfit
+G2L["c3"] = Instance.new("TextButton", G2L["bd"]);
 G2L["c3"]["TextWrapped"] = true;
 G2L["c3"]["BorderSizePixel"] = 0;
 G2L["c3"]["TextSize"] = 14;
@@ -1859,51 +1860,54 @@ G2L["c3"]["BackgroundTransparency"] = 0.5;
 G2L["c3"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["c3"]["LayoutOrder"] = 2;
 G2L["c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c3"]["Text"] = [[Copy Custom Makeup]];
-G2L["c3"]["Name"] = [[CustomMakeup]];
+G2L["c3"]["Text"] = [[Copy Outfit]];
+G2L["c3"]["Name"] = [[Outfit]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.CustomMakeup.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.Outfit.UICorner
 G2L["c4"] = Instance.new("UICorner", G2L["c3"]);
 G2L["c4"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.CustomMakeup.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.Outfit.UIStroke
 G2L["c5"] = Instance.new("UIStroke", G2L["c3"]);
 G2L["c5"]["Thickness"] = 1.5;
 G2L["c5"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.Outfit
-G2L["c6"] = Instance.new("TextButton", G2L["c0"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.TextLabel
+G2L["c6"] = Instance.new("TextLabel", G2L["bd"]);
 G2L["c6"]["TextWrapped"] = true;
 G2L["c6"]["BorderSizePixel"] = 0;
 G2L["c6"]["TextSize"] = 14;
+G2L["c6"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["c6"]["TextScaled"] = true;
-G2L["c6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c6"]["BackgroundTransparency"] = 0.5;
-G2L["c6"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["c6"]["LayoutOrder"] = 2;
+G2L["c6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c6"]["BackgroundTransparency"] = 1;
+G2L["c6"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["c6"]["Size"] = UDim2.new(1, 0, 0.25, 0);
 G2L["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c6"]["Text"] = [[Copy Outfit]];
-G2L["c6"]["Name"] = [[Outfit]];
+G2L["c6"]["Text"] = [[Select an option to save to your clipboard:]];
+G2L["c6"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.Outfit.UICorner
-G2L["c7"] = Instance.new("UICorner", G2L["c6"]);
-G2L["c7"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.TextLabel.UIPadding
+G2L["c7"] = Instance.new("UIPadding", G2L["c6"]);
+G2L["c7"]["PaddingTop"] = UDim.new(0, 3);
+G2L["c7"]["PaddingRight"] = UDim.new(0, 5);
+G2L["c7"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.Outfit.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.TextLabel.UIStroke
 G2L["c8"] = Instance.new("UIStroke", G2L["c6"]);
 G2L["c8"]["Thickness"] = 1.5;
 G2L["c8"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.TextLabel
-G2L["c9"] = Instance.new("TextLabel", G2L["c0"]);
+G2L["c9"] = Instance.new("TextLabel", G2L["bd"]);
 G2L["c9"]["TextWrapped"] = true;
 G2L["c9"]["BorderSizePixel"] = 0;
 G2L["c9"]["TextSize"] = 14;
@@ -1914,9 +1918,10 @@ G2L["c9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], 
 G2L["c9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c9"]["BackgroundTransparency"] = 1;
 G2L["c9"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["c9"]["Size"] = UDim2.new(1, 0, 0.25, 0);
+G2L["c9"]["Size"] = UDim2.new(1, 0, 0.2, 0);
 G2L["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c9"]["Text"] = [[Select an option to save to your clipboard:]];
+G2L["c9"]["Text"] = [[STEAL FROM OTHER PLAYERS]];
+G2L["c9"]["LayoutOrder"] = 3;
 G2L["c9"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
@@ -1933,71 +1938,67 @@ G2L["cb"]["Thickness"] = 1.5;
 G2L["cb"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.TextLabel
-G2L["cc"] = Instance.new("TextLabel", G2L["c0"]);
-G2L["cc"]["TextWrapped"] = true;
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealName
+G2L["cc"] = Instance.new("TextBox", G2L["bd"]);
+G2L["cc"]["Name"] = [[StealName]];
+G2L["cc"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["cc"]["BorderSizePixel"] = 0;
+G2L["cc"]["TextWrapped"] = true;
 G2L["cc"]["TextSize"] = 14;
-G2L["cc"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["cc"]["TextScaled"] = true;
 G2L["cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cc"]["BackgroundTransparency"] = 1;
-G2L["cc"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["cc"]["Size"] = UDim2.new(1, 0, 0.2, 0);
+G2L["cc"]["ClearTextOnFocus"] = false;
+G2L["cc"]["PlaceholderText"] = [[Username/DisplayName (not case-sensitive)]];
+G2L["cc"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cc"]["Text"] = [[STEAL FROM OTHER PLAYERS]];
-G2L["cc"]["LayoutOrder"] = 3;
-G2L["cc"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["cc"]["Text"] = [[]];
+G2L["cc"]["LayoutOrder"] = 4;
+G2L["cc"]["BackgroundTransparency"] = 0.75;
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.TextLabel.UIPadding
-G2L["cd"] = Instance.new("UIPadding", G2L["cc"]);
-G2L["cd"]["PaddingTop"] = UDim.new(0, 3);
-G2L["cd"]["PaddingRight"] = UDim.new(0, 5);
-G2L["cd"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealName.UICorner
+G2L["cd"] = Instance.new("UICorner", G2L["cc"]);
+G2L["cd"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.TextLabel.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealName.UIStroke
 G2L["ce"] = Instance.new("UIStroke", G2L["cc"]);
 G2L["ce"]["Thickness"] = 1.5;
 G2L["ce"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealName
-G2L["cf"] = Instance.new("TextBox", G2L["c0"]);
-G2L["cf"]["Name"] = [[StealName]];
-G2L["cf"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cf"]["BorderSizePixel"] = 0;
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCM
+G2L["cf"] = Instance.new("TextButton", G2L["bd"]);
 G2L["cf"]["TextWrapped"] = true;
+G2L["cf"]["BorderSizePixel"] = 0;
 G2L["cf"]["TextSize"] = 14;
-G2L["cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["cf"]["TextScaled"] = true;
+G2L["cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["cf"]["ClearTextOnFocus"] = false;
-G2L["cf"]["PlaceholderText"] = [[Username/DisplayName (not case-sensitive)]];
+G2L["cf"]["BackgroundTransparency"] = 0.5;
 G2L["cf"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cf"]["Text"] = [[]];
 G2L["cf"]["LayoutOrder"] = 4;
-G2L["cf"]["BackgroundTransparency"] = 0.75;
+G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cf"]["Text"] = [[Steal Custom Makeup (Copy)]];
+G2L["cf"]["Name"] = [[StealCM]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealName.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCM.UICorner
 G2L["d0"] = Instance.new("UICorner", G2L["cf"]);
 G2L["d0"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealName.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCM.UIStroke
 G2L["d1"] = Instance.new("UIStroke", G2L["cf"]);
 G2L["d1"]["Thickness"] = 1.5;
 G2L["d1"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCM
-G2L["d2"] = Instance.new("TextButton", G2L["c0"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfit
+G2L["d2"] = Instance.new("TextButton", G2L["bd"]);
 G2L["d2"]["TextWrapped"] = true;
 G2L["d2"]["BorderSizePixel"] = 0;
 G2L["d2"]["TextSize"] = 14;
@@ -2009,23 +2010,23 @@ G2L["d2"]["BackgroundTransparency"] = 0.5;
 G2L["d2"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["d2"]["LayoutOrder"] = 4;
 G2L["d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d2"]["Text"] = [[Steal Custom Makeup (Copy)]];
-G2L["d2"]["Name"] = [[StealCM]];
+G2L["d2"]["Text"] = [[Steal Outfit (Copy)]];
+G2L["d2"]["Name"] = [[StealOutfit]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCM.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfit.UICorner
 G2L["d3"] = Instance.new("UICorner", G2L["d2"]);
 G2L["d3"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCM.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfit.UIStroke
 G2L["d4"] = Instance.new("UIStroke", G2L["d2"]);
 G2L["d4"]["Thickness"] = 1.5;
 G2L["d4"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfit
-G2L["d5"] = Instance.new("TextButton", G2L["c0"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCMEQ
+G2L["d5"] = Instance.new("TextButton", G2L["bd"]);
 G2L["d5"]["TextWrapped"] = true;
 G2L["d5"]["BorderSizePixel"] = 0;
 G2L["d5"]["TextSize"] = 14;
@@ -2037,23 +2038,23 @@ G2L["d5"]["BackgroundTransparency"] = 0.5;
 G2L["d5"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["d5"]["LayoutOrder"] = 4;
 G2L["d5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d5"]["Text"] = [[Steal Outfit (Copy)]];
-G2L["d5"]["Name"] = [[StealOutfit]];
+G2L["d5"]["Text"] = [[Steal Custom Makeup (Equip)]];
+G2L["d5"]["Name"] = [[StealCMEQ]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfit.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCMEQ.UICorner
 G2L["d6"] = Instance.new("UICorner", G2L["d5"]);
 G2L["d6"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfit.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCMEQ.UIStroke
 G2L["d7"] = Instance.new("UIStroke", G2L["d5"]);
 G2L["d7"]["Thickness"] = 1.5;
 G2L["d7"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCMEQ
-G2L["d8"] = Instance.new("TextButton", G2L["c0"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfitEQ
+G2L["d8"] = Instance.new("TextButton", G2L["bd"]);
 G2L["d8"]["TextWrapped"] = true;
 G2L["d8"]["BorderSizePixel"] = 0;
 G2L["d8"]["TextSize"] = 14;
@@ -2065,113 +2066,114 @@ G2L["d8"]["BackgroundTransparency"] = 0.5;
 G2L["d8"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["d8"]["LayoutOrder"] = 4;
 G2L["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d8"]["Text"] = [[Steal Custom Makeup (Equip)]];
-G2L["d8"]["Name"] = [[StealCMEQ]];
+G2L["d8"]["Text"] = [[Steal Outfit (Equip)]];
+G2L["d8"]["Name"] = [[StealOutfitEQ]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCMEQ.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfitEQ.UICorner
 G2L["d9"] = Instance.new("UICorner", G2L["d8"]);
 G2L["d9"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealCMEQ.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfitEQ.UIStroke
 G2L["da"] = Instance.new("UIStroke", G2L["d8"]);
 G2L["da"]["Thickness"] = 1.5;
 G2L["da"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfitEQ
-G2L["db"] = Instance.new("TextButton", G2L["c0"]);
-G2L["db"]["TextWrapped"] = true;
-G2L["db"]["BorderSizePixel"] = 0;
-G2L["db"]["TextSize"] = 14;
-G2L["db"]["TextScaled"] = true;
-G2L["db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["db"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["db"]["BackgroundTransparency"] = 0.5;
-G2L["db"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["db"]["LayoutOrder"] = 4;
-G2L["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["db"]["Text"] = [[Steal Outfit (Equip)]];
-G2L["db"]["Name"] = [[StealOutfitEQ]];
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfitEQ.UICorner
-G2L["dc"] = Instance.new("UICorner", G2L["db"]);
-G2L["dc"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.StealOutfitEQ.UIStroke
-G2L["dd"] = Instance.new("UIStroke", G2L["db"]);
-G2L["dd"]["Thickness"] = 1.5;
-G2L["dd"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets
-G2L["de"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["de"]["Visible"] = false;
-G2L["de"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["de"]["BorderSizePixel"] = 0;
-G2L["de"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["de"]["Name"] = [[FitPresets]];
-G2L["de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["de"]["Selectable"] = false;
-G2L["de"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["de"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["de"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["de"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["de"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["de"]["ScrollBarThickness"] = 0;
-G2L["de"]["BackgroundTransparency"] = 1;
+G2L["db"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["db"]["Visible"] = false;
+G2L["db"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["db"]["BorderSizePixel"] = 0;
+G2L["db"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["db"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["db"]["Name"] = [[FitPresets]];
+G2L["db"]["ScrollBarImageTransparency"] = 0.5;
+G2L["db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["db"]["Selectable"] = false;
+G2L["db"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["db"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["db"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["db"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["db"]["ScrollBarThickness"] = 3;
+G2L["db"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.EquipHandler
-G2L["df"] = Instance.new("LocalScript", G2L["de"]);
-G2L["df"]["Name"] = [[EquipHandler]];
+G2L["dc"] = Instance.new("LocalScript", G2L["db"]);
+G2L["dc"]["Name"] = [[EquipHandler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.UIListLayout
-G2L["e0"] = Instance.new("UIListLayout", G2L["de"]);
-G2L["e0"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["e0"]["Padding"] = UDim.new(0, 3);
-G2L["e0"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["e0"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["dd"] = Instance.new("UIListLayout", G2L["db"]);
+G2L["dd"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["dd"]["Padding"] = UDim.new(0, 3);
+G2L["dd"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["dd"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TextLabel
-G2L["e1"] = Instance.new("TextLabel", G2L["de"]);
-G2L["e1"]["TextWrapped"] = true;
-G2L["e1"]["BorderSizePixel"] = 0;
-G2L["e1"]["TextSize"] = 14;
-G2L["e1"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["e1"]["TextScaled"] = true;
-G2L["e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e1"]["BackgroundTransparency"] = 1;
-G2L["e1"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["e1"]["Size"] = UDim2.new(1, 0, 0.45, 0);
-G2L["e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e1"]["Text"] = [[Choose from the list of STUNNING Outfits submitted by our community and devs.]];
-G2L["e1"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["de"] = Instance.new("TextLabel", G2L["db"]);
+G2L["de"]["TextWrapped"] = true;
+G2L["de"]["BorderSizePixel"] = 0;
+G2L["de"]["TextSize"] = 14;
+G2L["de"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["de"]["TextScaled"] = true;
+G2L["de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["de"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["de"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["de"]["BackgroundTransparency"] = 1;
+G2L["de"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["de"]["Size"] = UDim2.new(1, 0, 0.45, 0);
+G2L["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["de"]["Text"] = [[Choose from the list of STUNNING Outfits submitted by our community and devs.]];
+G2L["de"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TextLabel.UIPadding
-G2L["e2"] = Instance.new("UIPadding", G2L["e1"]);
-G2L["e2"]["PaddingTop"] = UDim.new(0, 3);
-G2L["e2"]["PaddingRight"] = UDim.new(0, 5);
-G2L["e2"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["df"] = Instance.new("UIPadding", G2L["de"]);
+G2L["df"]["PaddingTop"] = UDim.new(0, 3);
+G2L["df"]["PaddingRight"] = UDim.new(0, 5);
+G2L["df"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TextLabel.UIStroke
-G2L["e3"] = Instance.new("UIStroke", G2L["e1"]);
-G2L["e3"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["e0"] = Instance.new("UIStroke", G2L["de"]);
+G2L["e0"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CvntyY2K
-G2L["e4"] = Instance.new("TextButton", G2L["de"]);
+G2L["e1"] = Instance.new("TextButton", G2L["db"]);
+G2L["e1"]["TextWrapped"] = true;
+G2L["e1"]["BorderSizePixel"] = 0;
+G2L["e1"]["TextSize"] = 14;
+G2L["e1"]["TextScaled"] = true;
+G2L["e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e1"]["BackgroundTransparency"] = 0.5;
+G2L["e1"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["e1"]["LayoutOrder"] = 2;
+G2L["e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e1"]["Text"] = [[Denim Diva/Cvnty Y2K]];
+G2L["e1"]["Name"] = [[CvntyY2K]];
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CvntyY2K.UICorner
+G2L["e2"] = Instance.new("UICorner", G2L["e1"]);
+G2L["e2"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CvntyY2K.UIStroke
+G2L["e3"] = Instance.new("UIStroke", G2L["e1"]);
+G2L["e3"]["Thickness"] = 1.5;
+G2L["e3"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MessyLana
+G2L["e4"] = Instance.new("TextButton", G2L["db"]);
 G2L["e4"]["TextWrapped"] = true;
 G2L["e4"]["BorderSizePixel"] = 0;
 G2L["e4"]["TextSize"] = 14;
@@ -2183,23 +2185,23 @@ G2L["e4"]["BackgroundTransparency"] = 0.5;
 G2L["e4"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["e4"]["LayoutOrder"] = 2;
 G2L["e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e4"]["Text"] = [[Denim Diva/Cvnty Y2K]];
-G2L["e4"]["Name"] = [[CvntyY2K]];
+G2L["e4"]["Text"] = [[Messy Lana/Bloody Lana]];
+G2L["e4"]["Name"] = [[MessyLana]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CvntyY2K.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MessyLana.UICorner
 G2L["e5"] = Instance.new("UICorner", G2L["e4"]);
 G2L["e5"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CvntyY2K.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MessyLana.UIStroke
 G2L["e6"] = Instance.new("UIStroke", G2L["e4"]);
 G2L["e6"]["Thickness"] = 1.5;
 G2L["e6"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MessyLana
-G2L["e7"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BubblegumCandycane
+G2L["e7"] = Instance.new("TextButton", G2L["db"]);
 G2L["e7"]["TextWrapped"] = true;
 G2L["e7"]["BorderSizePixel"] = 0;
 G2L["e7"]["TextSize"] = 14;
@@ -2211,23 +2213,23 @@ G2L["e7"]["BackgroundTransparency"] = 0.5;
 G2L["e7"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["e7"]["LayoutOrder"] = 2;
 G2L["e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e7"]["Text"] = [[Messy Lana/Bloody Lana]];
-G2L["e7"]["Name"] = [[MessyLana]];
+G2L["e7"]["Text"] = [[Bubblegum Candycane]];
+G2L["e7"]["Name"] = [[BubblegumCandycane]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MessyLana.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BubblegumCandycane.UICorner
 G2L["e8"] = Instance.new("UICorner", G2L["e7"]);
 G2L["e8"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MessyLana.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BubblegumCandycane.UIStroke
 G2L["e9"] = Instance.new("UIStroke", G2L["e7"]);
 G2L["e9"]["Thickness"] = 1.5;
 G2L["e9"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BubblegumCandycane
-G2L["ea"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CuteGothic
+G2L["ea"] = Instance.new("TextButton", G2L["db"]);
 G2L["ea"]["TextWrapped"] = true;
 G2L["ea"]["BorderSizePixel"] = 0;
 G2L["ea"]["TextSize"] = 14;
@@ -2239,23 +2241,23 @@ G2L["ea"]["BackgroundTransparency"] = 0.5;
 G2L["ea"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["ea"]["LayoutOrder"] = 2;
 G2L["ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ea"]["Text"] = [[Bubblegum Candycane]];
-G2L["ea"]["Name"] = [[BubblegumCandycane]];
+G2L["ea"]["Text"] = [[Cute Gothic]];
+G2L["ea"]["Name"] = [[CuteGothic]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BubblegumCandycane.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CuteGothic.UICorner
 G2L["eb"] = Instance.new("UICorner", G2L["ea"]);
 G2L["eb"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BubblegumCandycane.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CuteGothic.UIStroke
 G2L["ec"] = Instance.new("UIStroke", G2L["ea"]);
 G2L["ec"]["Thickness"] = 1.5;
 G2L["ec"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.FrenchLuxeGal
-G2L["ed"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TallBitch
+G2L["ed"] = Instance.new("TextButton", G2L["db"]);
 G2L["ed"]["TextWrapped"] = true;
 G2L["ed"]["BorderSizePixel"] = 0;
 G2L["ed"]["TextSize"] = 14;
@@ -2267,23 +2269,23 @@ G2L["ed"]["BackgroundTransparency"] = 0.5;
 G2L["ed"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["ed"]["LayoutOrder"] = 2;
 G2L["ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ed"]["Text"] = [[French Luxe Gal]];
-G2L["ed"]["Name"] = [[FrenchLuxeGal]];
+G2L["ed"]["Text"] = [[Tall Bitch]];
+G2L["ed"]["Name"] = [[TallBitch]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.FrenchLuxeGal.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TallBitch.UICorner
 G2L["ee"] = Instance.new("UICorner", G2L["ed"]);
 G2L["ee"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.FrenchLuxeGal.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TallBitch.UIStroke
 G2L["ef"] = Instance.new("UIStroke", G2L["ed"]);
 G2L["ef"]["Thickness"] = 1.5;
 G2L["ef"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TallBitch
-G2L["f0"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.NakedLana
+G2L["f0"] = Instance.new("TextButton", G2L["db"]);
 G2L["f0"]["TextWrapped"] = true;
 G2L["f0"]["BorderSizePixel"] = 0;
 G2L["f0"]["TextSize"] = 14;
@@ -2295,23 +2297,23 @@ G2L["f0"]["BackgroundTransparency"] = 0.5;
 G2L["f0"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["f0"]["LayoutOrder"] = 2;
 G2L["f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f0"]["Text"] = [[Tall Bitch]];
-G2L["f0"]["Name"] = [[TallBitch]];
+G2L["f0"]["Text"] = [[Naked Lana]];
+G2L["f0"]["Name"] = [[NakedLana]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TallBitch.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.NakedLana.UICorner
 G2L["f1"] = Instance.new("UICorner", G2L["f0"]);
 G2L["f1"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.TallBitch.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.NakedLana.UIStroke
 G2L["f2"] = Instance.new("UIStroke", G2L["f0"]);
 G2L["f2"]["Thickness"] = 1.5;
 G2L["f2"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.NakedLana
-G2L["f3"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GyaruUniform
+G2L["f3"] = Instance.new("TextButton", G2L["db"]);
 G2L["f3"]["TextWrapped"] = true;
 G2L["f3"]["BorderSizePixel"] = 0;
 G2L["f3"]["TextSize"] = 14;
@@ -2323,23 +2325,23 @@ G2L["f3"]["BackgroundTransparency"] = 0.5;
 G2L["f3"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["f3"]["LayoutOrder"] = 2;
 G2L["f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f3"]["Text"] = [[Naked Lana]];
-G2L["f3"]["Name"] = [[NakedLana]];
+G2L["f3"]["Text"] = [[Gyaru Uniform]];
+G2L["f3"]["Name"] = [[GyaruUniform]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.NakedLana.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GyaruUniform.UICorner
 G2L["f4"] = Instance.new("UICorner", G2L["f3"]);
 G2L["f4"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.NakedLana.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GyaruUniform.UIStroke
 G2L["f5"] = Instance.new("UIStroke", G2L["f3"]);
 G2L["f5"]["Thickness"] = 1.5;
 G2L["f5"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GyaruUniform
-G2L["f6"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BeachBaddie
+G2L["f6"] = Instance.new("TextButton", G2L["db"]);
 G2L["f6"]["TextWrapped"] = true;
 G2L["f6"]["BorderSizePixel"] = 0;
 G2L["f6"]["TextSize"] = 14;
@@ -2351,23 +2353,23 @@ G2L["f6"]["BackgroundTransparency"] = 0.5;
 G2L["f6"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["f6"]["LayoutOrder"] = 2;
 G2L["f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f6"]["Text"] = [[Gyaru Uniform]];
-G2L["f6"]["Name"] = [[GyaruUniform]];
+G2L["f6"]["Text"] = [[Beach Baddie]];
+G2L["f6"]["Name"] = [[BeachBaddie]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GyaruUniform.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BeachBaddie.UICorner
 G2L["f7"] = Instance.new("UICorner", G2L["f6"]);
 G2L["f7"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GyaruUniform.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BeachBaddie.UIStroke
 G2L["f8"] = Instance.new("UIStroke", G2L["f6"]);
 G2L["f8"]["Thickness"] = 1.5;
 G2L["f8"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BeachBaddie
-G2L["f9"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MrsClause
+G2L["f9"] = Instance.new("TextButton", G2L["db"]);
 G2L["f9"]["TextWrapped"] = true;
 G2L["f9"]["BorderSizePixel"] = 0;
 G2L["f9"]["TextSize"] = 14;
@@ -2379,23 +2381,23 @@ G2L["f9"]["BackgroundTransparency"] = 0.5;
 G2L["f9"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["f9"]["LayoutOrder"] = 2;
 G2L["f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f9"]["Text"] = [[Beach Baddie]];
-G2L["f9"]["Name"] = [[BeachBaddie]];
+G2L["f9"]["Text"] = [[Mrs Clause]];
+G2L["f9"]["Name"] = [[MrsClause]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BeachBaddie.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MrsClause.UICorner
 G2L["fa"] = Instance.new("UICorner", G2L["f9"]);
 G2L["fa"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.BeachBaddie.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MrsClause.UIStroke
 G2L["fb"] = Instance.new("UIStroke", G2L["f9"]);
 G2L["fb"]["Thickness"] = 1.5;
 G2L["fb"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MrsClause
-G2L["fc"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ArouraStar
+G2L["fc"] = Instance.new("TextButton", G2L["db"]);
 G2L["fc"]["TextWrapped"] = true;
 G2L["fc"]["BorderSizePixel"] = 0;
 G2L["fc"]["TextSize"] = 14;
@@ -2407,23 +2409,23 @@ G2L["fc"]["BackgroundTransparency"] = 0.5;
 G2L["fc"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["fc"]["LayoutOrder"] = 2;
 G2L["fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fc"]["Text"] = [[Mrs Clause]];
-G2L["fc"]["Name"] = [[MrsClause]];
+G2L["fc"]["Text"] = [[Aroura Star]];
+G2L["fc"]["Name"] = [[ArouraStar]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MrsClause.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ArouraStar.UICorner
 G2L["fd"] = Instance.new("UICorner", G2L["fc"]);
 G2L["fd"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.MrsClause.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ArouraStar.UIStroke
 G2L["fe"] = Instance.new("UIStroke", G2L["fc"]);
 G2L["fe"]["Thickness"] = 1.5;
 G2L["fe"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ArouraStar
-G2L["ff"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.HotPinkY2K
+G2L["ff"] = Instance.new("TextButton", G2L["db"]);
 G2L["ff"]["TextWrapped"] = true;
 G2L["ff"]["BorderSizePixel"] = 0;
 G2L["ff"]["TextSize"] = 14;
@@ -2435,23 +2437,23 @@ G2L["ff"]["BackgroundTransparency"] = 0.5;
 G2L["ff"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["ff"]["LayoutOrder"] = 2;
 G2L["ff"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ff"]["Text"] = [[Aroura Star]];
-G2L["ff"]["Name"] = [[ArouraStar]];
+G2L["ff"]["Text"] = [[Hot Pink Y2K]];
+G2L["ff"]["Name"] = [[HotPinkY2K]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ArouraStar.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.HotPinkY2K.UICorner
 G2L["100"] = Instance.new("UICorner", G2L["ff"]);
 G2L["100"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ArouraStar.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.HotPinkY2K.UIStroke
 G2L["101"] = Instance.new("UIStroke", G2L["ff"]);
 G2L["101"]["Thickness"] = 1.5;
 G2L["101"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.HotPinkY2K
-G2L["102"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ARFameIsAGun
+G2L["102"] = Instance.new("TextButton", G2L["db"]);
 G2L["102"]["TextWrapped"] = true;
 G2L["102"]["BorderSizePixel"] = 0;
 G2L["102"]["TextSize"] = 14;
@@ -2463,23 +2465,23 @@ G2L["102"]["BackgroundTransparency"] = 0.5;
 G2L["102"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["102"]["LayoutOrder"] = 2;
 G2L["102"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["102"]["Text"] = [[Hot Pink Y2K]];
-G2L["102"]["Name"] = [[HotPinkY2K]];
+G2L["102"]["Text"] = [[Fame is a Gun MV]];
+G2L["102"]["Name"] = [[ARFameIsAGun]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.HotPinkY2K.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ARFameIsAGun.UICorner
 G2L["103"] = Instance.new("UICorner", G2L["102"]);
 G2L["103"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.HotPinkY2K.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ARFameIsAGun.UIStroke
 G2L["104"] = Instance.new("UIStroke", G2L["102"]);
 G2L["104"]["Thickness"] = 1.5;
 G2L["104"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ARFameIsAGun
-G2L["105"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEMeganGnarly
+G2L["105"] = Instance.new("TextButton", G2L["db"]);
 G2L["105"]["TextWrapped"] = true;
 G2L["105"]["BorderSizePixel"] = 0;
 G2L["105"]["TextSize"] = 14;
@@ -2491,23 +2493,23 @@ G2L["105"]["BackgroundTransparency"] = 0.5;
 G2L["105"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["105"]["LayoutOrder"] = 2;
 G2L["105"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["105"]["Text"] = [[Fame is a Gun MV]];
-G2L["105"]["Name"] = [[ARFameIsAGun]];
+G2L["105"]["Text"] = [[KATSEYE Megan - Gnarly]];
+G2L["105"]["Name"] = [[KATSEYEMeganGnarly]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ARFameIsAGun.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEMeganGnarly.UICorner
 G2L["106"] = Instance.new("UICorner", G2L["105"]);
 G2L["106"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.ARFameIsAGun.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEMeganGnarly.UIStroke
 G2L["107"] = Instance.new("UIStroke", G2L["105"]);
 G2L["107"]["Thickness"] = 1.5;
 G2L["107"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEMeganGnarly
-G2L["108"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYELaraPinkyUp
+G2L["108"] = Instance.new("TextButton", G2L["db"]);
 G2L["108"]["TextWrapped"] = true;
 G2L["108"]["BorderSizePixel"] = 0;
 G2L["108"]["TextSize"] = 14;
@@ -2519,23 +2521,23 @@ G2L["108"]["BackgroundTransparency"] = 0.5;
 G2L["108"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["108"]["LayoutOrder"] = 2;
 G2L["108"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["108"]["Text"] = [[KATSEYE Megan - Gnarly]];
-G2L["108"]["Name"] = [[KATSEYEMeganGnarly]];
+G2L["108"]["Text"] = [[KATSEYE Lara - Pinky Up]];
+G2L["108"]["Name"] = [[KATSEYELaraPinkyUp]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEMeganGnarly.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYELaraPinkyUp.UICorner
 G2L["109"] = Instance.new("UICorner", G2L["108"]);
 G2L["109"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEMeganGnarly.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYELaraPinkyUp.UIStroke
 G2L["10a"] = Instance.new("UIStroke", G2L["108"]);
 G2L["10a"]["Thickness"] = 1.5;
 G2L["10a"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYELaraPinkyUp
-G2L["10b"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEYoonchaePinkyUp
+G2L["10b"] = Instance.new("TextButton", G2L["db"]);
 G2L["10b"]["TextWrapped"] = true;
 G2L["10b"]["BorderSizePixel"] = 0;
 G2L["10b"]["TextSize"] = 14;
@@ -2547,23 +2549,23 @@ G2L["10b"]["BackgroundTransparency"] = 0.5;
 G2L["10b"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["10b"]["LayoutOrder"] = 2;
 G2L["10b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10b"]["Text"] = [[KATSEYE Lara - Pinky Up]];
-G2L["10b"]["Name"] = [[KATSEYELaraPinkyUp]];
+G2L["10b"]["Text"] = [[KATSEYE Yoonchae - Pinky Up]];
+G2L["10b"]["Name"] = [[KATSEYEYoonchaePinkyUp]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYELaraPinkyUp.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEYoonchaePinkyUp.UICorner
 G2L["10c"] = Instance.new("UICorner", G2L["10b"]);
 G2L["10c"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYELaraPinkyUp.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEYoonchaePinkyUp.UIStroke
 G2L["10d"] = Instance.new("UIStroke", G2L["10b"]);
 G2L["10d"]["Thickness"] = 1.5;
 G2L["10d"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEYoonchaePinkyUp
-G2L["10e"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYESophiaGabriela
+G2L["10e"] = Instance.new("TextButton", G2L["db"]);
 G2L["10e"]["TextWrapped"] = true;
 G2L["10e"]["BorderSizePixel"] = 0;
 G2L["10e"]["TextSize"] = 14;
@@ -2575,23 +2577,23 @@ G2L["10e"]["BackgroundTransparency"] = 0.5;
 G2L["10e"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["10e"]["LayoutOrder"] = 2;
 G2L["10e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10e"]["Text"] = [[KATSEYE Yoonchae - Pinky Up]];
-G2L["10e"]["Name"] = [[KATSEYEYoonchaePinkyUp]];
+G2L["10e"]["Text"] = [[KATSEYE Sophia - Gabriela]];
+G2L["10e"]["Name"] = [[KATSEYESophiaGabriela]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEYoonchaePinkyUp.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYESophiaGabriela.UICorner
 G2L["10f"] = Instance.new("UICorner", G2L["10e"]);
 G2L["10f"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEYoonchaePinkyUp.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYESophiaGabriela.UIStroke
 G2L["110"] = Instance.new("UIStroke", G2L["10e"]);
 G2L["110"]["Thickness"] = 1.5;
 G2L["110"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYESophiaGabriela
-G2L["111"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEDanielaBCTour
+G2L["111"] = Instance.new("TextButton", G2L["db"]);
 G2L["111"]["TextWrapped"] = true;
 G2L["111"]["BorderSizePixel"] = 0;
 G2L["111"]["TextSize"] = 14;
@@ -2603,23 +2605,23 @@ G2L["111"]["BackgroundTransparency"] = 0.5;
 G2L["111"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["111"]["LayoutOrder"] = 2;
 G2L["111"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["111"]["Text"] = [[KATSEYE Sophia - Gabriela]];
-G2L["111"]["Name"] = [[KATSEYESophiaGabriela]];
+G2L["111"]["Text"] = [[KATSEYE Daniela - BC Tour]];
+G2L["111"]["Name"] = [[KATSEYEDanielaBCTour]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYESophiaGabriela.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEDanielaBCTour.UICorner
 G2L["112"] = Instance.new("UICorner", G2L["111"]);
 G2L["112"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYESophiaGabriela.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEDanielaBCTour.UIStroke
 G2L["113"] = Instance.new("UIStroke", G2L["111"]);
 G2L["113"]["Thickness"] = 1.5;
 G2L["113"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEDanielaBCTour
-G2L["114"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonGnarly
+G2L["114"] = Instance.new("TextButton", G2L["db"]);
 G2L["114"]["TextWrapped"] = true;
 G2L["114"]["BorderSizePixel"] = 0;
 G2L["114"]["TextSize"] = 14;
@@ -2631,23 +2633,23 @@ G2L["114"]["BackgroundTransparency"] = 0.5;
 G2L["114"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["114"]["LayoutOrder"] = 2;
 G2L["114"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["114"]["Text"] = [[KATSEYE Daniela - BC Tour]];
-G2L["114"]["Name"] = [[KATSEYEDanielaBCTour]];
+G2L["114"]["Text"] = [[KATSEYE Manon - Gnarly]];
+G2L["114"]["Name"] = [[KATSEYEManonGnarly]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEDanielaBCTour.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonGnarly.UICorner
 G2L["115"] = Instance.new("UICorner", G2L["114"]);
 G2L["115"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEDanielaBCTour.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonGnarly.UIStroke
 G2L["116"] = Instance.new("UIStroke", G2L["114"]);
 G2L["116"]["Thickness"] = 1.5;
 G2L["116"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonGnarly
-G2L["117"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonTouch
+G2L["117"] = Instance.new("TextButton", G2L["db"]);
 G2L["117"]["TextWrapped"] = true;
 G2L["117"]["BorderSizePixel"] = 0;
 G2L["117"]["TextSize"] = 14;
@@ -2659,23 +2661,23 @@ G2L["117"]["BackgroundTransparency"] = 0.5;
 G2L["117"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["117"]["LayoutOrder"] = 2;
 G2L["117"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["117"]["Text"] = [[KATSEYE Manon - Gnarly]];
-G2L["117"]["Name"] = [[KATSEYEManonGnarly]];
+G2L["117"]["Text"] = [[KATSEYE Manon - Touch]];
+G2L["117"]["Name"] = [[KATSEYEManonTouch]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonGnarly.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonTouch.UICorner
 G2L["118"] = Instance.new("UICorner", G2L["117"]);
 G2L["118"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonGnarly.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonTouch.UIStroke
 G2L["119"] = Instance.new("UIStroke", G2L["117"]);
 G2L["119"]["Thickness"] = 1.5;
 G2L["119"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonTouch
-G2L["11a"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CutePinkFrilly
+G2L["11a"] = Instance.new("TextButton", G2L["db"]);
 G2L["11a"]["TextWrapped"] = true;
 G2L["11a"]["BorderSizePixel"] = 0;
 G2L["11a"]["TextSize"] = 14;
@@ -2687,23 +2689,23 @@ G2L["11a"]["BackgroundTransparency"] = 0.5;
 G2L["11a"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["11a"]["LayoutOrder"] = 2;
 G2L["11a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11a"]["Text"] = [[KATSEYE Manon - Touch]];
-G2L["11a"]["Name"] = [[KATSEYEManonTouch]];
+G2L["11a"]["Text"] = [[Cute Pink Frilly]];
+G2L["11a"]["Name"] = [[CutePinkFrilly]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonTouch.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CutePinkFrilly.UICorner
 G2L["11b"] = Instance.new("UICorner", G2L["11a"]);
 G2L["11b"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.KATSEYEManonTouch.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CutePinkFrilly.UIStroke
 G2L["11c"] = Instance.new("UIStroke", G2L["11a"]);
 G2L["11c"]["Thickness"] = 1.5;
 G2L["11c"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CutePinkFrilly
-G2L["11d"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.PinkSpacebuns
+G2L["11d"] = Instance.new("TextButton", G2L["db"]);
 G2L["11d"]["TextWrapped"] = true;
 G2L["11d"]["BorderSizePixel"] = 0;
 G2L["11d"]["TextSize"] = 14;
@@ -2715,23 +2717,23 @@ G2L["11d"]["BackgroundTransparency"] = 0.5;
 G2L["11d"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["11d"]["LayoutOrder"] = 2;
 G2L["11d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11d"]["Text"] = [[Cute Pink Frilly]];
-G2L["11d"]["Name"] = [[CutePinkFrilly]];
+G2L["11d"]["Text"] = [[Pink Spacebuns]];
+G2L["11d"]["Name"] = [[PinkSpacebuns]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CutePinkFrilly.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.PinkSpacebuns.UICorner
 G2L["11e"] = Instance.new("UICorner", G2L["11d"]);
 G2L["11e"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CutePinkFrilly.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.PinkSpacebuns.UIStroke
 G2L["11f"] = Instance.new("UIStroke", G2L["11d"]);
 G2L["11f"]["Thickness"] = 1.5;
 G2L["11f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.PinkSpacebuns
-G2L["120"] = Instance.new("TextButton", G2L["de"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GothicRomance
+G2L["120"] = Instance.new("TextButton", G2L["db"]);
 G2L["120"]["TextWrapped"] = true;
 G2L["120"]["BorderSizePixel"] = 0;
 G2L["120"]["TextSize"] = 14;
@@ -2743,147 +2745,152 @@ G2L["120"]["BackgroundTransparency"] = 0.5;
 G2L["120"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["120"]["LayoutOrder"] = 2;
 G2L["120"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["120"]["Text"] = [[Pink Spacebuns]];
-G2L["120"]["Name"] = [[PinkSpacebuns]];
+G2L["120"]["Text"] = [[Gothic Romance (Funeral)]];
+G2L["120"]["Name"] = [[GothicRomance]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.PinkSpacebuns.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GothicRomance.UICorner
 G2L["121"] = Instance.new("UICorner", G2L["120"]);
 G2L["121"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.PinkSpacebuns.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GothicRomance.UIStroke
 G2L["122"] = Instance.new("UIStroke", G2L["120"]);
 G2L["122"]["Thickness"] = 1.5;
 G2L["122"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GothicRomance
-G2L["123"] = Instance.new("TextButton", G2L["de"]);
-G2L["123"]["TextWrapped"] = true;
-G2L["123"]["BorderSizePixel"] = 0;
-G2L["123"]["TextSize"] = 14;
-G2L["123"]["TextScaled"] = true;
-G2L["123"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["123"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["123"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["123"]["BackgroundTransparency"] = 0.5;
-G2L["123"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["123"]["LayoutOrder"] = 2;
-G2L["123"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["123"]["Text"] = [[Gothic Romance (Funeral)]];
-G2L["123"]["Name"] = [[GothicRomance]];
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GothicRomance.UICorner
-G2L["124"] = Instance.new("UICorner", G2L["123"]);
-G2L["124"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.GothicRomance.UIStroke
-G2L["125"] = Instance.new("UIStroke", G2L["123"]);
-G2L["125"]["Thickness"] = 1.5;
-G2L["125"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CuteGothic
-G2L["126"] = Instance.new("TextButton", G2L["de"]);
-G2L["126"]["TextWrapped"] = true;
-G2L["126"]["BorderSizePixel"] = 0;
-G2L["126"]["TextSize"] = 14;
-G2L["126"]["TextScaled"] = true;
-G2L["126"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["126"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["126"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["126"]["BackgroundTransparency"] = 0.5;
-G2L["126"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["126"]["LayoutOrder"] = 2;
-G2L["126"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["126"]["Text"] = [[Cute Gothic]];
-G2L["126"]["Name"] = [[CuteGothic]];
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CuteGothic.UICorner
-G2L["127"] = Instance.new("UICorner", G2L["126"]);
-G2L["127"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.CuteGothic.UIStroke
-G2L["128"] = Instance.new("UIStroke", G2L["126"]);
-G2L["128"]["Thickness"] = 1.5;
-G2L["128"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff
-G2L["129"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["129"]["Visible"] = false;
-G2L["129"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["129"]["BorderSizePixel"] = 0;
-G2L["129"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["129"]["Name"] = [[FreeStuff]];
-G2L["129"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["129"]["Selectable"] = false;
-G2L["129"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["129"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["129"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["129"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["129"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["129"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["129"]["ScrollBarThickness"] = 0;
-G2L["129"]["BackgroundTransparency"] = 1;
+G2L["123"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["123"]["Visible"] = false;
+G2L["123"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["123"]["BorderSizePixel"] = 0;
+G2L["123"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["123"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["123"]["Name"] = [[FreeStuff]];
+G2L["123"]["ScrollBarImageTransparency"] = 0.5;
+G2L["123"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["123"]["Selectable"] = false;
+G2L["123"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["123"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["123"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["123"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["123"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["123"]["ScrollBarThickness"] = 3;
+G2L["123"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.EquipItems
-G2L["12a"] = Instance.new("LocalScript", G2L["129"]);
-G2L["12a"]["Name"] = [[EquipItems]];
+G2L["124"] = Instance.new("LocalScript", G2L["123"]);
+G2L["124"]["Name"] = [[EquipItems]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.Gamepasses
-G2L["12b"] = Instance.new("LocalScript", G2L["129"]);
-G2L["12b"]["Name"] = [[Gamepasses]];
+G2L["125"] = Instance.new("LocalScript", G2L["123"]);
+G2L["125"]["Name"] = [[Gamepasses]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.UIListLayout
-G2L["12c"] = Instance.new("UIListLayout", G2L["129"]);
-G2L["12c"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["12c"]["Padding"] = UDim.new(0, 3);
-G2L["12c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["12c"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["126"] = Instance.new("UIListLayout", G2L["123"]);
+G2L["126"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["126"]["Padding"] = UDim.new(0, 3);
+G2L["126"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["126"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel
-G2L["12d"] = Instance.new("TextLabel", G2L["129"]);
-G2L["12d"]["TextWrapped"] = true;
-G2L["12d"]["BorderSizePixel"] = 0;
-G2L["12d"]["TextSize"] = 14;
-G2L["12d"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["12d"]["TextScaled"] = true;
-G2L["12d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["12d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12d"]["BackgroundTransparency"] = 1;
-G2L["12d"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["12d"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["12d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12d"]["Text"] = [[Unlocked Items:]];
-G2L["12d"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["127"] = Instance.new("TextLabel", G2L["123"]);
+G2L["127"]["TextWrapped"] = true;
+G2L["127"]["BorderSizePixel"] = 0;
+G2L["127"]["TextSize"] = 14;
+G2L["127"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["127"]["TextScaled"] = true;
+G2L["127"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["127"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["127"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["127"]["BackgroundTransparency"] = 1;
+G2L["127"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["127"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["127"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["127"]["Text"] = [[Unlocked Items:]];
+G2L["127"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIPadding
-G2L["12e"] = Instance.new("UIPadding", G2L["12d"]);
-G2L["12e"]["PaddingTop"] = UDim.new(0, 3);
-G2L["12e"]["PaddingRight"] = UDim.new(0, 5);
-G2L["12e"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["128"] = Instance.new("UIPadding", G2L["127"]);
+G2L["128"]["PaddingTop"] = UDim.new(0, 3);
+G2L["128"]["PaddingRight"] = UDim.new(0, 5);
+G2L["128"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIStroke
+G2L["129"] = Instance.new("UIStroke", G2L["127"]);
+G2L["129"]["Thickness"] = 1.5;
+G2L["129"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.PetalDress
+G2L["12a"] = Instance.new("TextButton", G2L["123"]);
+G2L["12a"]["TextWrapped"] = true;
+G2L["12a"]["BorderSizePixel"] = 0;
+G2L["12a"]["TextSize"] = 14;
+G2L["12a"]["TextScaled"] = true;
+G2L["12a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12a"]["BackgroundTransparency"] = 0.5;
+G2L["12a"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["12a"]["LayoutOrder"] = 1;
+G2L["12a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12a"]["Text"] = [[Petal Dress]];
+G2L["12a"]["Name"] = [[PetalDress]];
+-- Attributes
+G2L["12a"]:SetAttribute([[Item]], [[]]);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.PetalDress.UICorner
+G2L["12b"] = Instance.new("UICorner", G2L["12a"]);
+G2L["12b"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.PetalDress.UIStroke
+G2L["12c"] = Instance.new("UIStroke", G2L["12a"]);
+G2L["12c"]["Thickness"] = 1.5;
+G2L["12c"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CupidsCloud
+G2L["12d"] = Instance.new("TextButton", G2L["123"]);
+G2L["12d"]["TextWrapped"] = true;
+G2L["12d"]["BorderSizePixel"] = 0;
+G2L["12d"]["TextSize"] = 14;
+G2L["12d"]["TextScaled"] = true;
+G2L["12d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12d"]["BackgroundTransparency"] = 0.5;
+G2L["12d"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["12d"]["LayoutOrder"] = 1;
+G2L["12d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12d"]["Text"] = [[Cupids Cloud]];
+G2L["12d"]["Name"] = [[CupidsCloud]];
+-- Attributes
+G2L["12d"]:SetAttribute([[Item]], [[]]);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CupidsCloud.UICorner
+G2L["12e"] = Instance.new("UICorner", G2L["12d"]);
+G2L["12e"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CupidsCloud.UIStroke
 G2L["12f"] = Instance.new("UIStroke", G2L["12d"]);
 G2L["12f"]["Thickness"] = 1.5;
 G2L["12f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.PetalDress
-G2L["130"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ElphabaItems
+G2L["130"] = Instance.new("TextButton", G2L["123"]);
 G2L["130"]["TextWrapped"] = true;
 G2L["130"]["BorderSizePixel"] = 0;
 G2L["130"]["TextSize"] = 14;
@@ -2895,25 +2902,25 @@ G2L["130"]["BackgroundTransparency"] = 0.5;
 G2L["130"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["130"]["LayoutOrder"] = 1;
 G2L["130"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["130"]["Text"] = [[Petal Dress]];
-G2L["130"]["Name"] = [[PetalDress]];
+G2L["130"]["Text"] = [[ELPHABA Code Items]];
+G2L["130"]["Name"] = [[ElphabaItems]];
 -- Attributes
 G2L["130"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.PetalDress.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ElphabaItems.UICorner
 G2L["131"] = Instance.new("UICorner", G2L["130"]);
 G2L["131"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.PetalDress.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ElphabaItems.UIStroke
 G2L["132"] = Instance.new("UIStroke", G2L["130"]);
 G2L["132"]["Thickness"] = 1.5;
 G2L["132"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CupidsCloud
-G2L["133"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GlindaItems
+G2L["133"] = Instance.new("TextButton", G2L["123"]);
 G2L["133"]["TextWrapped"] = true;
 G2L["133"]["BorderSizePixel"] = 0;
 G2L["133"]["TextSize"] = 14;
@@ -2925,25 +2932,25 @@ G2L["133"]["BackgroundTransparency"] = 0.5;
 G2L["133"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["133"]["LayoutOrder"] = 1;
 G2L["133"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["133"]["Text"] = [[Cupids Cloud]];
-G2L["133"]["Name"] = [[CupidsCloud]];
+G2L["133"]["Text"] = [[GLINDA Code Items]];
+G2L["133"]["Name"] = [[GlindaItems]];
 -- Attributes
 G2L["133"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CupidsCloud.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GlindaItems.UICorner
 G2L["134"] = Instance.new("UICorner", G2L["133"]);
 G2L["134"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CupidsCloud.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GlindaItems.UIStroke
 G2L["135"] = Instance.new("UIStroke", G2L["133"]);
 G2L["135"]["Thickness"] = 1.5;
 G2L["135"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ElphabaItems
-G2L["136"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDoll
+G2L["136"] = Instance.new("TextButton", G2L["123"]);
 G2L["136"]["TextWrapped"] = true;
 G2L["136"]["BorderSizePixel"] = 0;
 G2L["136"]["TextSize"] = 14;
@@ -2955,25 +2962,25 @@ G2L["136"]["BackgroundTransparency"] = 0.5;
 G2L["136"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["136"]["LayoutOrder"] = 1;
 G2L["136"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["136"]["Text"] = [[ELPHABA Code Items]];
-G2L["136"]["Name"] = [[ElphabaItems]];
+G2L["136"]["Text"] = [[2YEARS Code Doll]];
+G2L["136"]["Name"] = [[2YearDoll]];
 -- Attributes
 G2L["136"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ElphabaItems.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDoll.UICorner
 G2L["137"] = Instance.new("UICorner", G2L["136"]);
 G2L["137"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ElphabaItems.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDoll.UIStroke
 G2L["138"] = Instance.new("UIStroke", G2L["136"]);
 G2L["138"]["Thickness"] = 1.5;
 G2L["138"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GlindaItems
-G2L["139"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDress
+G2L["139"] = Instance.new("TextButton", G2L["123"]);
 G2L["139"]["TextWrapped"] = true;
 G2L["139"]["BorderSizePixel"] = 0;
 G2L["139"]["TextSize"] = 14;
@@ -2985,25 +2992,25 @@ G2L["139"]["BackgroundTransparency"] = 0.5;
 G2L["139"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["139"]["LayoutOrder"] = 1;
 G2L["139"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["139"]["Text"] = [[GLINDA Code Items]];
-G2L["139"]["Name"] = [[GlindaItems]];
+G2L["139"]["Text"] = [[2GETHER Code Dress]];
+G2L["139"]["Name"] = [[2YearDress]];
 -- Attributes
 G2L["139"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GlindaItems.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDress.UICorner
 G2L["13a"] = Instance.new("UICorner", G2L["139"]);
 G2L["13a"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GlindaItems.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDress.UIStroke
 G2L["13b"] = Instance.new("UIStroke", G2L["139"]);
 G2L["13b"]["Thickness"] = 1.5;
 G2L["13b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDoll
-G2L["13c"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RDC25Items
+G2L["13c"] = Instance.new("TextButton", G2L["123"]);
 G2L["13c"]["TextWrapped"] = true;
 G2L["13c"]["BorderSizePixel"] = 0;
 G2L["13c"]["TextSize"] = 14;
@@ -3015,25 +3022,25 @@ G2L["13c"]["BackgroundTransparency"] = 0.5;
 G2L["13c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["13c"]["LayoutOrder"] = 1;
 G2L["13c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13c"]["Text"] = [[2YEARS Code Doll]];
-G2L["13c"]["Name"] = [[2YearDoll]];
+G2L["13c"]["Text"] = [[RDC2025 Items]];
+G2L["13c"]["Name"] = [[RDC25Items]];
 -- Attributes
 G2L["13c"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDoll.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RDC25Items.UICorner
 G2L["13d"] = Instance.new("UICorner", G2L["13c"]);
 G2L["13d"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDoll.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RDC25Items.UIStroke
 G2L["13e"] = Instance.new("UIStroke", G2L["13c"]);
 G2L["13e"]["Thickness"] = 1.5;
 G2L["13e"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDress
-G2L["13f"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.4BilItems
+G2L["13f"] = Instance.new("TextButton", G2L["123"]);
 G2L["13f"]["TextWrapped"] = true;
 G2L["13f"]["BorderSizePixel"] = 0;
 G2L["13f"]["TextSize"] = 14;
@@ -3045,55 +3052,57 @@ G2L["13f"]["BackgroundTransparency"] = 0.5;
 G2L["13f"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["13f"]["LayoutOrder"] = 1;
 G2L["13f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13f"]["Text"] = [[2GETHER Code Dress]];
-G2L["13f"]["Name"] = [[2YearDress]];
+G2L["13f"]["Text"] = [[4BILLION Items]];
+G2L["13f"]["Name"] = [[4BilItems]];
 -- Attributes
 G2L["13f"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDress.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.4BilItems.UICorner
 G2L["140"] = Instance.new("UICorner", G2L["13f"]);
 G2L["140"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.2YearDress.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.4BilItems.UIStroke
 G2L["141"] = Instance.new("UIStroke", G2L["13f"]);
 G2L["141"]["Thickness"] = 1.5;
 G2L["141"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RDC25Items
-G2L["142"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel
+G2L["142"] = Instance.new("TextLabel", G2L["123"]);
 G2L["142"]["TextWrapped"] = true;
 G2L["142"]["BorderSizePixel"] = 0;
 G2L["142"]["TextSize"] = 14;
+G2L["142"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["142"]["TextScaled"] = true;
-G2L["142"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["142"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["142"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["142"]["BackgroundTransparency"] = 0.5;
-G2L["142"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["142"]["LayoutOrder"] = 1;
+G2L["142"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["142"]["BackgroundTransparency"] = 1;
+G2L["142"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["142"]["Size"] = UDim2.new(1, 0, 0.15, 0);
 G2L["142"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["142"]["Text"] = [[RDC2025 Items]];
-G2L["142"]["Name"] = [[RDC25Items]];
--- Attributes
-G2L["142"]:SetAttribute([[Item]], [[]]);
+G2L["142"]["Text"] = [[Unlock Stuff:]];
+G2L["142"]["LayoutOrder"] = 2;
+G2L["142"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RDC25Items.UICorner
-G2L["143"] = Instance.new("UICorner", G2L["142"]);
-G2L["143"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIPadding
+G2L["143"] = Instance.new("UIPadding", G2L["142"]);
+G2L["143"]["PaddingTop"] = UDim.new(0, 3);
+G2L["143"]["PaddingRight"] = UDim.new(0, 5);
+G2L["143"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RDC25Items.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIStroke
 G2L["144"] = Instance.new("UIStroke", G2L["142"]);
 G2L["144"]["Thickness"] = 1.5;
 G2L["144"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.4BilItems
-G2L["145"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.SweetBerry
+G2L["145"] = Instance.new("TextButton", G2L["123"]);
 G2L["145"]["TextWrapped"] = true;
 G2L["145"]["BorderSizePixel"] = 0;
 G2L["145"]["TextSize"] = 14;
@@ -3105,216 +3114,216 @@ G2L["145"]["BackgroundTransparency"] = 0.5;
 G2L["145"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["145"]["LayoutOrder"] = 1;
 G2L["145"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["145"]["Text"] = [[4BILLION Items]];
-G2L["145"]["Name"] = [[4BilItems]];
+G2L["145"]["Text"] = [[Sweet Berry Set]];
+G2L["145"]["Name"] = [[SweetBerry]];
 -- Attributes
 G2L["145"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.4BilItems.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.SweetBerry.UICorner
 G2L["146"] = Instance.new("UICorner", G2L["145"]);
 G2L["146"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.4BilItems.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.SweetBerry.UIStroke
 G2L["147"] = Instance.new("UIStroke", G2L["145"]);
 G2L["147"]["Thickness"] = 1.5;
 G2L["147"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel
-G2L["148"] = Instance.new("TextLabel", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RedeemCodes
+G2L["148"] = Instance.new("TextButton", G2L["123"]);
 G2L["148"]["TextWrapped"] = true;
 G2L["148"]["BorderSizePixel"] = 0;
 G2L["148"]["TextSize"] = 14;
-G2L["148"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["148"]["TextScaled"] = true;
+G2L["148"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["148"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["148"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["148"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["148"]["BackgroundTransparency"] = 1;
-G2L["148"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["148"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["148"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["148"]["Text"] = [[Unlock Stuff:]];
+G2L["148"]["BackgroundTransparency"] = 0.5;
+G2L["148"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["148"]["LayoutOrder"] = 2;
-G2L["148"]["Position"] = UDim2.new(1, 0, 0, 0);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIPadding
-G2L["149"] = Instance.new("UIPadding", G2L["148"]);
-G2L["149"]["PaddingTop"] = UDim.new(0, 3);
-G2L["149"]["PaddingRight"] = UDim.new(0, 5);
-G2L["149"]["PaddingBottom"] = UDim.new(0, 3);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIStroke
-G2L["14a"] = Instance.new("UIStroke", G2L["148"]);
-G2L["14a"]["Thickness"] = 1.5;
-G2L["14a"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.FrenchLuxSet
-G2L["14b"] = Instance.new("TextButton", G2L["129"]);
-G2L["14b"]["TextWrapped"] = true;
-G2L["14b"]["BorderSizePixel"] = 0;
-G2L["14b"]["TextSize"] = 14;
-G2L["14b"]["TextScaled"] = true;
-G2L["14b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["14b"]["BackgroundTransparency"] = 0.5;
-G2L["14b"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["14b"]["LayoutOrder"] = 1;
-G2L["14b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14b"]["Text"] = [[French Luxury Set]];
-G2L["14b"]["Name"] = [[FrenchLuxSet]];
--- Attributes
-G2L["14b"]:SetAttribute([[Item]], [[]]);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.FrenchLuxSet.UICorner
-G2L["14c"] = Instance.new("UICorner", G2L["14b"]);
-G2L["14c"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.FrenchLuxSet.UIStroke
-G2L["14d"] = Instance.new("UIStroke", G2L["14b"]);
-G2L["14d"]["Thickness"] = 1.5;
-G2L["14d"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RedeemCodes
-G2L["14e"] = Instance.new("TextButton", G2L["129"]);
-G2L["14e"]["TextWrapped"] = true;
-G2L["14e"]["BorderSizePixel"] = 0;
-G2L["14e"]["TextSize"] = 14;
-G2L["14e"]["TextScaled"] = true;
-G2L["14e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["14e"]["BackgroundTransparency"] = 0.5;
-G2L["14e"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["14e"]["LayoutOrder"] = 2;
-G2L["14e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14e"]["Text"] = [[Unlock all Codes]];
-G2L["14e"]["Name"] = [[RedeemCodes]];
+G2L["148"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["148"]["Text"] = [[Unlock all Codes]];
+G2L["148"]["Name"] = [[RedeemCodes]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RedeemCodes.Unlock
-G2L["14f"] = Instance.new("LocalScript", G2L["14e"]);
-G2L["14f"]["Name"] = [[Unlock]];
+G2L["149"] = Instance.new("LocalScript", G2L["148"]);
+G2L["149"]["Name"] = [[Unlock]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RedeemCodes.UICorner
-G2L["150"] = Instance.new("UICorner", G2L["14e"]);
-G2L["150"]["CornerRadius"] = UDim.new(0, 5);
+G2L["14a"] = Instance.new("UICorner", G2L["148"]);
+G2L["14a"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RedeemCodes.UIStroke
-G2L["151"] = Instance.new("UIStroke", G2L["14e"]);
-G2L["151"]["Thickness"] = 1.5;
-G2L["151"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["14b"] = Instance.new("UIStroke", G2L["148"]);
+G2L["14b"]["Thickness"] = 1.5;
+G2L["14b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.UnlockPoses
-G2L["152"] = Instance.new("TextButton", G2L["129"]);
-G2L["152"]["TextWrapped"] = true;
-G2L["152"]["BorderSizePixel"] = 0;
-G2L["152"]["TextSize"] = 14;
-G2L["152"]["TextScaled"] = true;
-G2L["152"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["152"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["152"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["152"]["BackgroundTransparency"] = 0.5;
-G2L["152"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["152"]["LayoutOrder"] = 2;
-G2L["152"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["152"]["Text"] = [[Unlock all Poses (will rejoin you)]];
-G2L["152"]["Name"] = [[UnlockPoses]];
+G2L["14c"] = Instance.new("TextButton", G2L["123"]);
+G2L["14c"]["TextWrapped"] = true;
+G2L["14c"]["BorderSizePixel"] = 0;
+G2L["14c"]["TextSize"] = 14;
+G2L["14c"]["TextScaled"] = true;
+G2L["14c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14c"]["BackgroundTransparency"] = 0.5;
+G2L["14c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["14c"]["LayoutOrder"] = 2;
+G2L["14c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14c"]["Text"] = [[Unlock all Poses (will rejoin you)]];
+G2L["14c"]["Name"] = [[UnlockPoses]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.UnlockPoses.Unlock
-G2L["153"] = Instance.new("LocalScript", G2L["152"]);
-G2L["153"]["Name"] = [[Unlock]];
+G2L["14d"] = Instance.new("LocalScript", G2L["14c"]);
+G2L["14d"]["Name"] = [[Unlock]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.UnlockPoses.UICorner
-G2L["154"] = Instance.new("UICorner", G2L["152"]);
-G2L["154"]["CornerRadius"] = UDim.new(0, 5);
+G2L["14e"] = Instance.new("UICorner", G2L["14c"]);
+G2L["14e"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.UnlockPoses.UIStroke
-G2L["155"] = Instance.new("UIStroke", G2L["152"]);
-G2L["155"]["Thickness"] = 1.5;
-G2L["155"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["14f"] = Instance.new("UIStroke", G2L["14c"]);
+G2L["14f"]["Thickness"] = 1.5;
+G2L["14f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.VIPDoor
-G2L["156"] = Instance.new("TextButton", G2L["129"]);
-G2L["156"]["TextWrapped"] = true;
-G2L["156"]["BorderSizePixel"] = 0;
-G2L["156"]["TextSize"] = 14;
-G2L["156"]["TextScaled"] = true;
-G2L["156"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["156"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["156"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["156"]["BackgroundTransparency"] = 0.5;
-G2L["156"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["156"]["LayoutOrder"] = 2;
-G2L["156"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["156"]["Text"] = [[Delete VIP Door (New items might be free)]];
-G2L["156"]["Name"] = [[VIPDoor]];
+G2L["150"] = Instance.new("TextButton", G2L["123"]);
+G2L["150"]["TextWrapped"] = true;
+G2L["150"]["BorderSizePixel"] = 0;
+G2L["150"]["TextSize"] = 14;
+G2L["150"]["TextScaled"] = true;
+G2L["150"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["150"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["150"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["150"]["BackgroundTransparency"] = 0.5;
+G2L["150"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["150"]["LayoutOrder"] = 2;
+G2L["150"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["150"]["Text"] = [[Delete VIP Door (New items might be free)]];
+G2L["150"]["Name"] = [[VIPDoor]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.VIPDoor.Remove
-G2L["157"] = Instance.new("LocalScript", G2L["156"]);
-G2L["157"]["Name"] = [[Remove]];
+G2L["151"] = Instance.new("LocalScript", G2L["150"]);
+G2L["151"]["Name"] = [[Remove]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.VIPDoor.UICorner
-G2L["158"] = Instance.new("UICorner", G2L["156"]);
-G2L["158"]["CornerRadius"] = UDim.new(0, 5);
+G2L["152"] = Instance.new("UICorner", G2L["150"]);
+G2L["152"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.VIPDoor.UIStroke
-G2L["159"] = Instance.new("UIStroke", G2L["156"]);
+G2L["153"] = Instance.new("UIStroke", G2L["150"]);
+G2L["153"]["Thickness"] = 1.5;
+G2L["153"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.EasterHuntDress
+G2L["154"] = Instance.new("TextButton", G2L["123"]);
+G2L["154"]["TextWrapped"] = true;
+G2L["154"]["BorderSizePixel"] = 0;
+G2L["154"]["TextSize"] = 14;
+G2L["154"]["TextScaled"] = true;
+G2L["154"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["154"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["154"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["154"]["BackgroundTransparency"] = 0.5;
+G2L["154"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["154"]["LayoutOrder"] = 1;
+G2L["154"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["154"]["Text"] = [[2024 Easter Hunt Dress]];
+G2L["154"]["Name"] = [[EasterHuntDress]];
+-- Attributes
+G2L["154"]:SetAttribute([[Item]], [[]]);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.EasterHuntDress.UICorner
+G2L["155"] = Instance.new("UICorner", G2L["154"]);
+G2L["155"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.EasterHuntDress.UIStroke
+G2L["156"] = Instance.new("UIStroke", G2L["154"]);
+G2L["156"]["Thickness"] = 1.5;
+G2L["156"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ClassicDress
+G2L["157"] = Instance.new("TextButton", G2L["123"]);
+G2L["157"]["TextWrapped"] = true;
+G2L["157"]["BorderSizePixel"] = 0;
+G2L["157"]["TextSize"] = 14;
+G2L["157"]["TextScaled"] = true;
+G2L["157"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["157"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["157"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["157"]["BackgroundTransparency"] = 0.5;
+G2L["157"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["157"]["LayoutOrder"] = 1;
+G2L["157"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["157"]["Text"] = [[REWARD4CLASS1C Dress]];
+G2L["157"]["Name"] = [[ClassicDress]];
+-- Attributes
+G2L["157"]:SetAttribute([[Item]], [[]]);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ClassicDress.UICorner
+G2L["158"] = Instance.new("UICorner", G2L["157"]);
+G2L["158"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ClassicDress.UIStroke
+G2L["159"] = Instance.new("UIStroke", G2L["157"]);
 G2L["159"]["Thickness"] = 1.5;
 G2L["159"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.EasterHuntDress
-G2L["15a"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel
+G2L["15a"] = Instance.new("TextLabel", G2L["123"]);
 G2L["15a"]["TextWrapped"] = true;
 G2L["15a"]["BorderSizePixel"] = 0;
 G2L["15a"]["TextSize"] = 14;
+G2L["15a"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["15a"]["TextScaled"] = true;
-G2L["15a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["15a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["15a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["15a"]["BackgroundTransparency"] = 0.5;
-G2L["15a"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["15a"]["LayoutOrder"] = 1;
+G2L["15a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15a"]["BackgroundTransparency"] = 1;
+G2L["15a"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["15a"]["Size"] = UDim2.new(1, 0, 0.15, 0);
 G2L["15a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15a"]["Text"] = [[2024 Easter Hunt Dress]];
-G2L["15a"]["Name"] = [[EasterHuntDress]];
--- Attributes
-G2L["15a"]:SetAttribute([[Item]], [[]]);
+G2L["15a"]["Text"] = [[Free Gamepasses:]];
+G2L["15a"]["LayoutOrder"] = -2;
+G2L["15a"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.EasterHuntDress.UICorner
-G2L["15b"] = Instance.new("UICorner", G2L["15a"]);
-G2L["15b"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIPadding
+G2L["15b"] = Instance.new("UIPadding", G2L["15a"]);
+G2L["15b"]["PaddingTop"] = UDim.new(0, 3);
+G2L["15b"]["PaddingRight"] = UDim.new(0, 5);
+G2L["15b"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.EasterHuntDress.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIStroke
 G2L["15c"] = Instance.new("UIStroke", G2L["15a"]);
 G2L["15c"]["Thickness"] = 1.5;
 G2L["15c"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ClassicDress
-G2L["15d"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CUSTOMPASS
+G2L["15d"] = Instance.new("TextButton", G2L["123"]);
 G2L["15d"]["TextWrapped"] = true;
 G2L["15d"]["BorderSizePixel"] = 0;
 G2L["15d"]["TextSize"] = 14;
@@ -3324,59 +3333,53 @@ G2L["15d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["15d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["15d"]["BackgroundTransparency"] = 0.5;
 G2L["15d"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["15d"]["LayoutOrder"] = 1;
+G2L["15d"]["LayoutOrder"] = -1;
 G2L["15d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15d"]["Text"] = [[REWARD4CLASS1C Dress]];
-G2L["15d"]["Name"] = [[ClassicDress]];
--- Attributes
-G2L["15d"]:SetAttribute([[Item]], [[]]);
+G2L["15d"]["Text"] = [[Custom Makeup]];
+G2L["15d"]["Name"] = [[CUSTOMPASS]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ClassicDress.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CUSTOMPASS.UICorner
 G2L["15e"] = Instance.new("UICorner", G2L["15d"]);
 G2L["15e"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.ClassicDress.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CUSTOMPASS.UIStroke
 G2L["15f"] = Instance.new("UIStroke", G2L["15d"]);
 G2L["15f"]["Thickness"] = 1.5;
 G2L["15f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel
-G2L["160"] = Instance.new("TextLabel", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RUNFASTPASS
+G2L["160"] = Instance.new("TextButton", G2L["123"]);
 G2L["160"]["TextWrapped"] = true;
 G2L["160"]["BorderSizePixel"] = 0;
 G2L["160"]["TextSize"] = 14;
-G2L["160"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["160"]["TextScaled"] = true;
+G2L["160"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["160"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["160"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["160"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["160"]["BackgroundTransparency"] = 1;
-G2L["160"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["160"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["160"]["BackgroundTransparency"] = 0.5;
+G2L["160"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["160"]["LayoutOrder"] = -1;
 G2L["160"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["160"]["Text"] = [[Free Gamepasses:]];
-G2L["160"]["LayoutOrder"] = -2;
-G2L["160"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["160"]["Text"] = [[Run Faster]];
+G2L["160"]["Name"] = [[RUNFASTPASS]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIPadding
-G2L["161"] = Instance.new("UIPadding", G2L["160"]);
-G2L["161"]["PaddingTop"] = UDim.new(0, 3);
-G2L["161"]["PaddingRight"] = UDim.new(0, 5);
-G2L["161"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RUNFASTPASS.UICorner
+G2L["161"] = Instance.new("UICorner", G2L["160"]);
+G2L["161"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TextLabel.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RUNFASTPASS.UIStroke
 G2L["162"] = Instance.new("UIStroke", G2L["160"]);
 G2L["162"]["Thickness"] = 1.5;
 G2L["162"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CUSTOMPASS
-G2L["163"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.MATERIALSPASS
+G2L["163"] = Instance.new("TextButton", G2L["123"]);
 G2L["163"]["TextWrapped"] = true;
 G2L["163"]["BorderSizePixel"] = 0;
 G2L["163"]["TextSize"] = 14;
@@ -3388,23 +3391,23 @@ G2L["163"]["BackgroundTransparency"] = 0.5;
 G2L["163"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["163"]["LayoutOrder"] = -1;
 G2L["163"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["163"]["Text"] = [[Custom Makeup]];
-G2L["163"]["Name"] = [[CUSTOMPASS]];
+G2L["163"]["Text"] = [[Materials+]];
+G2L["163"]["Name"] = [[MATERIALSPASS]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CUSTOMPASS.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.MATERIALSPASS.UICorner
 G2L["164"] = Instance.new("UICorner", G2L["163"]);
 G2L["164"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.CUSTOMPASS.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.MATERIALSPASS.UIStroke
 G2L["165"] = Instance.new("UIStroke", G2L["163"]);
 G2L["165"]["Thickness"] = 1.5;
 G2L["165"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RUNFASTPASS
-G2L["166"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.KATSEYECode
+G2L["166"] = Instance.new("TextButton", G2L["123"]);
 G2L["166"]["TextWrapped"] = true;
 G2L["166"]["BorderSizePixel"] = 0;
 G2L["166"]["TextSize"] = 14;
@@ -3414,25 +3417,27 @@ G2L["166"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["166"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["166"]["BackgroundTransparency"] = 0.5;
 G2L["166"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["166"]["LayoutOrder"] = -1;
+G2L["166"]["LayoutOrder"] = 1;
 G2L["166"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["166"]["Text"] = [[Run Faster]];
-G2L["166"]["Name"] = [[RUNFASTPASS]];
+G2L["166"]["Text"] = [[KATSEYE Code items]];
+G2L["166"]["Name"] = [[KATSEYECode]];
+-- Attributes
+G2L["166"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RUNFASTPASS.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.KATSEYECode.UICorner
 G2L["167"] = Instance.new("UICorner", G2L["166"]);
 G2L["167"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RUNFASTPASS.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.KATSEYECode.UIStroke
 G2L["168"] = Instance.new("UIStroke", G2L["166"]);
 G2L["168"]["Thickness"] = 1.5;
 G2L["168"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.MATERIALSPASS
-G2L["169"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TrollHead
+G2L["169"] = Instance.new("TextButton", G2L["123"]);
 G2L["169"]["TextWrapped"] = true;
 G2L["169"]["BorderSizePixel"] = 0;
 G2L["169"]["TextSize"] = 14;
@@ -3442,25 +3447,27 @@ G2L["169"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["169"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["169"]["BackgroundTransparency"] = 0.5;
 G2L["169"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["169"]["LayoutOrder"] = -1;
+G2L["169"]["LayoutOrder"] = 1;
 G2L["169"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["169"]["Text"] = [[Materials+]];
-G2L["169"]["Name"] = [[MATERIALSPASS]];
+G2L["169"]["Text"] = [[Troll Head]];
+G2L["169"]["Name"] = [[TrollHead]];
+-- Attributes
+G2L["169"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.MATERIALSPASS.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TrollHead.UICorner
 G2L["16a"] = Instance.new("UICorner", G2L["169"]);
 G2L["16a"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.MATERIALSPASS.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TrollHead.UIStroke
 G2L["16b"] = Instance.new("UIStroke", G2L["169"]);
 G2L["16b"]["Thickness"] = 1.5;
 G2L["16b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.KATSEYECode
-G2L["16c"] = Instance.new("TextButton", G2L["129"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL
+G2L["16c"] = Instance.new("TextButton", G2L["123"]);
 G2L["16c"]["TextWrapped"] = true;
 G2L["16c"]["BorderSizePixel"] = 0;
 G2L["16c"]["TextSize"] = 14;
@@ -3470,956 +3477,952 @@ G2L["16c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["16c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["16c"]["BackgroundTransparency"] = 0.5;
 G2L["16c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["16c"]["LayoutOrder"] = 1;
+G2L["16c"]["LayoutOrder"] = -999;
 G2L["16c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16c"]["Text"] = [[KATSEYE Code items]];
-G2L["16c"]["Name"] = [[KATSEYECode]];
--- Attributes
-G2L["16c"]:SetAttribute([[Item]], [[]]);
+G2L["16c"]["Text"] = [[Unlock Toy Codes + Locked Makeup]];
+G2L["16c"]["Name"] = [[GETALL]];
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.KATSEYECode.UICorner
-G2L["16d"] = Instance.new("UICorner", G2L["16c"]);
-G2L["16d"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.LocalScript
+G2L["16d"] = Instance.new("LocalScript", G2L["16c"]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.KATSEYECode.UIStroke
-G2L["16e"] = Instance.new("UIStroke", G2L["16c"]);
-G2L["16e"]["Thickness"] = 1.5;
-G2L["16e"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.UICorner
+G2L["16e"] = Instance.new("UICorner", G2L["16c"]);
+G2L["16e"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TrollHead
-G2L["16f"] = Instance.new("TextButton", G2L["129"]);
-G2L["16f"]["TextWrapped"] = true;
-G2L["16f"]["BorderSizePixel"] = 0;
-G2L["16f"]["TextSize"] = 14;
-G2L["16f"]["TextScaled"] = true;
-G2L["16f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["16f"]["BackgroundTransparency"] = 0.5;
-G2L["16f"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["16f"]["LayoutOrder"] = 1;
-G2L["16f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16f"]["Text"] = [[Troll Head]];
-G2L["16f"]["Name"] = [[TrollHead]];
--- Attributes
-G2L["16f"]:SetAttribute([[Item]], [[]]);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TrollHead.UICorner
-G2L["170"] = Instance.new("UICorner", G2L["16f"]);
-G2L["170"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.TrollHead.UIStroke
-G2L["171"] = Instance.new("UIStroke", G2L["16f"]);
-G2L["171"]["Thickness"] = 1.5;
-G2L["171"]["Color"] = Color3.fromRGB(255, 135, 206);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.UIStroke
+G2L["16f"] = Instance.new("UIStroke", G2L["16c"]);
+G2L["16f"]["Thickness"] = 1.5;
+G2L["16f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport
-G2L["172"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["172"]["Visible"] = false;
-G2L["172"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["172"]["BorderSizePixel"] = 0;
-G2L["172"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["172"]["Name"] = [[Teleport]];
-G2L["172"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["172"]["Selectable"] = false;
-G2L["172"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["172"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["172"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["172"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["172"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["172"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["172"]["ScrollBarThickness"] = 0;
-G2L["172"]["BackgroundTransparency"] = 1;
+G2L["170"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["170"]["Visible"] = false;
+G2L["170"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["170"]["BorderSizePixel"] = 0;
+G2L["170"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["170"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["170"]["Name"] = [[Teleport]];
+G2L["170"]["ScrollBarImageTransparency"] = 0.5;
+G2L["170"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["170"]["Selectable"] = false;
+G2L["170"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["170"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["170"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["170"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["170"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["170"]["ScrollBarThickness"] = 3;
+G2L["170"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.PlaceTeleports
-G2L["173"] = Instance.new("LocalScript", G2L["172"]);
-G2L["173"]["Name"] = [[PlaceTeleports]];
+G2L["171"] = Instance.new("LocalScript", G2L["170"]);
+G2L["171"]["Name"] = [[PlaceTeleports]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.CFTeleports
-G2L["174"] = Instance.new("LocalScript", G2L["172"]);
-G2L["174"]["Name"] = [[CFTeleports]];
+G2L["172"] = Instance.new("LocalScript", G2L["170"]);
+G2L["172"]["Name"] = [[CFTeleports]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.UIListLayout
-G2L["175"] = Instance.new("UIListLayout", G2L["172"]);
-G2L["175"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["175"]["Padding"] = UDim.new(0, 3);
-G2L["175"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["175"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["173"] = Instance.new("UIListLayout", G2L["170"]);
+G2L["173"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["173"]["Padding"] = UDim.new(0, 3);
+G2L["173"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["173"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.TextLabel
-G2L["176"] = Instance.new("TextLabel", G2L["172"]);
-G2L["176"]["TextWrapped"] = true;
-G2L["176"]["BorderSizePixel"] = 0;
-G2L["176"]["TextSize"] = 14;
-G2L["176"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["176"]["TextScaled"] = true;
-G2L["176"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["176"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["176"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["176"]["BackgroundTransparency"] = 1;
-G2L["176"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["176"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["176"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["176"]["Text"] = [[Game Locations:]];
-G2L["176"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["174"] = Instance.new("TextLabel", G2L["170"]);
+G2L["174"]["TextWrapped"] = true;
+G2L["174"]["BorderSizePixel"] = 0;
+G2L["174"]["TextSize"] = 14;
+G2L["174"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["174"]["TextScaled"] = true;
+G2L["174"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["174"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["174"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["174"]["BackgroundTransparency"] = 1;
+G2L["174"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["174"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["174"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["174"]["Text"] = [[Game Locations:]];
+G2L["174"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.TextLabel.UIPadding
-G2L["177"] = Instance.new("UIPadding", G2L["176"]);
-G2L["177"]["PaddingTop"] = UDim.new(0, 3);
-G2L["177"]["PaddingRight"] = UDim.new(0, 5);
-G2L["177"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["175"] = Instance.new("UIPadding", G2L["174"]);
+G2L["175"]["PaddingTop"] = UDim.new(0, 3);
+G2L["175"]["PaddingRight"] = UDim.new(0, 5);
+G2L["175"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.TextLabel.UIStroke
-G2L["178"] = Instance.new("UIStroke", G2L["176"]);
-G2L["178"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["176"] = Instance.new("UIStroke", G2L["174"]);
+G2L["176"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Lobby
-G2L["179"] = Instance.new("TextButton", G2L["172"]);
-G2L["179"]["TextWrapped"] = true;
-G2L["179"]["BorderSizePixel"] = 0;
-G2L["179"]["TextSize"] = 14;
-G2L["179"]["TextScaled"] = true;
-G2L["179"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["179"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["179"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["179"]["BackgroundTransparency"] = 0.5;
-G2L["179"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["179"]["LayoutOrder"] = 1;
-G2L["179"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["179"]["Text"] = [[Lobby]];
-G2L["179"]["Name"] = [[Lobby]];
+G2L["177"] = Instance.new("TextButton", G2L["170"]);
+G2L["177"]["TextWrapped"] = true;
+G2L["177"]["BorderSizePixel"] = 0;
+G2L["177"]["TextSize"] = 14;
+G2L["177"]["TextScaled"] = true;
+G2L["177"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["177"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["177"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["177"]["BackgroundTransparency"] = 0.5;
+G2L["177"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["177"]["LayoutOrder"] = 1;
+G2L["177"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["177"]["Text"] = [[Lobby]];
+G2L["177"]["Name"] = [[Lobby]];
 -- Attributes
-G2L["179"]:SetAttribute([[Game]], [[]]);
+G2L["177"]:SetAttribute([[Game]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Lobby.UICorner
-G2L["17a"] = Instance.new("UICorner", G2L["179"]);
-G2L["17a"]["CornerRadius"] = UDim.new(0, 5);
+G2L["178"] = Instance.new("UICorner", G2L["177"]);
+G2L["178"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Lobby.UIStroke
-G2L["17b"] = Instance.new("UIStroke", G2L["179"]);
-G2L["17b"]["Thickness"] = 1.5;
-G2L["17b"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["179"] = Instance.new("UIStroke", G2L["177"]);
+G2L["179"]["Thickness"] = 1.5;
+G2L["179"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.DressingRoom
-G2L["17c"] = Instance.new("TextButton", G2L["172"]);
-G2L["17c"]["TextWrapped"] = true;
-G2L["17c"]["BorderSizePixel"] = 0;
-G2L["17c"]["TextSize"] = 14;
-G2L["17c"]["TextScaled"] = true;
-G2L["17c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17c"]["BackgroundTransparency"] = 0.5;
-G2L["17c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["17c"]["LayoutOrder"] = 1;
-G2L["17c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17c"]["Text"] = [[Dressing Room]];
-G2L["17c"]["Name"] = [[DressingRoom]];
+G2L["17a"] = Instance.new("TextButton", G2L["170"]);
+G2L["17a"]["TextWrapped"] = true;
+G2L["17a"]["BorderSizePixel"] = 0;
+G2L["17a"]["TextSize"] = 14;
+G2L["17a"]["TextScaled"] = true;
+G2L["17a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17a"]["BackgroundTransparency"] = 0.5;
+G2L["17a"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["17a"]["LayoutOrder"] = 1;
+G2L["17a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17a"]["Text"] = [[Dressing Room]];
+G2L["17a"]["Name"] = [[DressingRoom]];
 -- Attributes
-G2L["17c"]:SetAttribute([[Game]], [[]]);
+G2L["17a"]:SetAttribute([[Game]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.DressingRoom.UICorner
-G2L["17d"] = Instance.new("UICorner", G2L["17c"]);
-G2L["17d"]["CornerRadius"] = UDim.new(0, 5);
+G2L["17b"] = Instance.new("UICorner", G2L["17a"]);
+G2L["17b"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.DressingRoom.UIStroke
-G2L["17e"] = Instance.new("UIStroke", G2L["17c"]);
-G2L["17e"]["Thickness"] = 1.5;
-G2L["17e"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["17c"] = Instance.new("UIStroke", G2L["17a"]);
+G2L["17c"]["Thickness"] = 1.5;
+G2L["17c"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Runway
-G2L["17f"] = Instance.new("TextButton", G2L["172"]);
-G2L["17f"]["TextWrapped"] = true;
-G2L["17f"]["BorderSizePixel"] = 0;
-G2L["17f"]["TextSize"] = 14;
-G2L["17f"]["TextScaled"] = true;
-G2L["17f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17f"]["BackgroundTransparency"] = 0.5;
-G2L["17f"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["17f"]["LayoutOrder"] = 1;
-G2L["17f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17f"]["Text"] = [[Runway]];
-G2L["17f"]["Name"] = [[Runway]];
+G2L["17d"] = Instance.new("TextButton", G2L["170"]);
+G2L["17d"]["TextWrapped"] = true;
+G2L["17d"]["BorderSizePixel"] = 0;
+G2L["17d"]["TextSize"] = 14;
+G2L["17d"]["TextScaled"] = true;
+G2L["17d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17d"]["BackgroundTransparency"] = 0.5;
+G2L["17d"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["17d"]["LayoutOrder"] = 1;
+G2L["17d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17d"]["Text"] = [[Runway]];
+G2L["17d"]["Name"] = [[Runway]];
 -- Attributes
-G2L["17f"]:SetAttribute([[Game]], [[]]);
+G2L["17d"]:SetAttribute([[Game]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Runway.UICorner
-G2L["180"] = Instance.new("UICorner", G2L["17f"]);
-G2L["180"]["CornerRadius"] = UDim.new(0, 5);
+G2L["17e"] = Instance.new("UICorner", G2L["17d"]);
+G2L["17e"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Runway.UIStroke
-G2L["181"] = Instance.new("UIStroke", G2L["17f"]);
-G2L["181"]["Thickness"] = 1.5;
-G2L["181"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["17f"] = Instance.new("UIStroke", G2L["17d"]);
+G2L["17f"]["Thickness"] = 1.5;
+G2L["17f"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.TextLabel
-G2L["182"] = Instance.new("TextLabel", G2L["172"]);
-G2L["182"]["TextWrapped"] = true;
-G2L["182"]["BorderSizePixel"] = 0;
-G2L["182"]["TextSize"] = 14;
-G2L["182"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["182"]["TextScaled"] = true;
-G2L["182"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["182"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["182"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["182"]["BackgroundTransparency"] = 1;
-G2L["182"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["182"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["182"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["182"]["Text"] = [[Server-Types:]];
-G2L["182"]["LayoutOrder"] = 2;
-G2L["182"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["180"] = Instance.new("TextLabel", G2L["170"]);
+G2L["180"]["TextWrapped"] = true;
+G2L["180"]["BorderSizePixel"] = 0;
+G2L["180"]["TextSize"] = 14;
+G2L["180"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["180"]["TextScaled"] = true;
+G2L["180"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["180"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["180"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["180"]["BackgroundTransparency"] = 1;
+G2L["180"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["180"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["180"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["180"]["Text"] = [[Server-Types:]];
+G2L["180"]["LayoutOrder"] = 2;
+G2L["180"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.TextLabel.UIPadding
-G2L["183"] = Instance.new("UIPadding", G2L["182"]);
-G2L["183"]["PaddingTop"] = UDim.new(0, 3);
-G2L["183"]["PaddingRight"] = UDim.new(0, 5);
-G2L["183"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["181"] = Instance.new("UIPadding", G2L["180"]);
+G2L["181"]["PaddingTop"] = UDim.new(0, 3);
+G2L["181"]["PaddingRight"] = UDim.new(0, 5);
+G2L["181"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.TextLabel.UIStroke
-G2L["184"] = Instance.new("UIStroke", G2L["182"]);
-G2L["184"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["182"] = Instance.new("UIStroke", G2L["180"]);
+G2L["182"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Regular
-G2L["185"] = Instance.new("TextButton", G2L["172"]);
-G2L["185"]["TextWrapped"] = true;
-G2L["185"]["BorderSizePixel"] = 0;
-G2L["185"]["TextSize"] = 14;
-G2L["185"]["TextScaled"] = true;
-G2L["185"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["185"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["185"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["185"]["BackgroundTransparency"] = 0.5;
-G2L["185"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["185"]["LayoutOrder"] = 3;
-G2L["185"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["185"]["Text"] = [[Regular Server]];
-G2L["185"]["Name"] = [[Regular]];
+G2L["183"] = Instance.new("TextButton", G2L["170"]);
+G2L["183"]["TextWrapped"] = true;
+G2L["183"]["BorderSizePixel"] = 0;
+G2L["183"]["TextSize"] = 14;
+G2L["183"]["TextScaled"] = true;
+G2L["183"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["183"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["183"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["183"]["BackgroundTransparency"] = 0.5;
+G2L["183"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["183"]["LayoutOrder"] = 3;
+G2L["183"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["183"]["Text"] = [[Regular Server]];
+G2L["183"]["Name"] = [[Regular]];
 -- Attributes
-G2L["185"]:SetAttribute([[Place]], [[]]);
+G2L["183"]:SetAttribute([[Place]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Regular.UICorner
-G2L["186"] = Instance.new("UICorner", G2L["185"]);
-G2L["186"]["CornerRadius"] = UDim.new(0, 5);
+G2L["184"] = Instance.new("UICorner", G2L["183"]);
+G2L["184"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Regular.UIStroke
-G2L["187"] = Instance.new("UIStroke", G2L["185"]);
-G2L["187"]["Thickness"] = 1.5;
-G2L["187"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["185"] = Instance.new("UIStroke", G2L["183"]);
+G2L["185"]["Thickness"] = 1.5;
+G2L["185"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Freeplay
-G2L["188"] = Instance.new("TextButton", G2L["172"]);
-G2L["188"]["TextWrapped"] = true;
-G2L["188"]["BorderSizePixel"] = 0;
-G2L["188"]["TextSize"] = 14;
-G2L["188"]["TextScaled"] = true;
-G2L["188"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["188"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["188"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["188"]["BackgroundTransparency"] = 0.5;
-G2L["188"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["188"]["LayoutOrder"] = 3;
-G2L["188"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["188"]["Text"] = [[Freeplay Server]];
-G2L["188"]["Name"] = [[Freeplay]];
+G2L["186"] = Instance.new("TextButton", G2L["170"]);
+G2L["186"]["TextWrapped"] = true;
+G2L["186"]["BorderSizePixel"] = 0;
+G2L["186"]["TextSize"] = 14;
+G2L["186"]["TextScaled"] = true;
+G2L["186"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["186"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["186"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["186"]["BackgroundTransparency"] = 0.5;
+G2L["186"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["186"]["LayoutOrder"] = 3;
+G2L["186"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["186"]["Text"] = [[Freeplay Server]];
+G2L["186"]["Name"] = [[Freeplay]];
 -- Attributes
-G2L["188"]:SetAttribute([[Place]], [[]]);
+G2L["186"]:SetAttribute([[Place]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Freeplay.UICorner
-G2L["189"] = Instance.new("UICorner", G2L["188"]);
-G2L["189"]["CornerRadius"] = UDim.new(0, 5);
+G2L["187"] = Instance.new("UICorner", G2L["186"]);
+G2L["187"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Freeplay.UIStroke
-G2L["18a"] = Instance.new("UIStroke", G2L["188"]);
-G2L["18a"]["Thickness"] = 1.5;
-G2L["18a"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["188"] = Instance.new("UIStroke", G2L["186"]);
+G2L["188"]["Thickness"] = 1.5;
+G2L["188"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Pro
-G2L["18b"] = Instance.new("TextButton", G2L["172"]);
-G2L["18b"]["TextWrapped"] = true;
-G2L["18b"]["BorderSizePixel"] = 0;
-G2L["18b"]["TextSize"] = 14;
-G2L["18b"]["TextScaled"] = true;
-G2L["18b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["18b"]["BackgroundTransparency"] = 0.5;
-G2L["18b"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["18b"]["LayoutOrder"] = 3;
-G2L["18b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18b"]["Text"] = [[Pro Server (Rank)]];
-G2L["18b"]["Name"] = [[Pro]];
+G2L["189"] = Instance.new("TextButton", G2L["170"]);
+G2L["189"]["TextWrapped"] = true;
+G2L["189"]["BorderSizePixel"] = 0;
+G2L["189"]["TextSize"] = 14;
+G2L["189"]["TextScaled"] = true;
+G2L["189"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["189"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["189"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["189"]["BackgroundTransparency"] = 0.5;
+G2L["189"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["189"]["LayoutOrder"] = 3;
+G2L["189"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["189"]["Text"] = [[Pro Server (Rank)]];
+G2L["189"]["Name"] = [[Pro]];
 -- Attributes
-G2L["18b"]:SetAttribute([[Place]], [[]]);
+G2L["189"]:SetAttribute([[Place]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Pro.UICorner
-G2L["18c"] = Instance.new("UICorner", G2L["18b"]);
-G2L["18c"]["CornerRadius"] = UDim.new(0, 5);
+G2L["18a"] = Instance.new("UICorner", G2L["189"]);
+G2L["18a"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Pro.UIStroke
-G2L["18d"] = Instance.new("UIStroke", G2L["18b"]);
-G2L["18d"]["Thickness"] = 1.5;
-G2L["18d"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["18b"] = Instance.new("UIStroke", G2L["189"]);
+G2L["18b"]["Thickness"] = 1.5;
+G2L["18b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Master
-G2L["18e"] = Instance.new("TextButton", G2L["172"]);
-G2L["18e"]["TextWrapped"] = true;
-G2L["18e"]["BorderSizePixel"] = 0;
-G2L["18e"]["TextSize"] = 14;
-G2L["18e"]["TextScaled"] = true;
-G2L["18e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["18e"]["BackgroundTransparency"] = 0.5;
-G2L["18e"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["18e"]["LayoutOrder"] = 3;
-G2L["18e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18e"]["Text"] = [[Master Server (Rank)]];
-G2L["18e"]["Name"] = [[Master]];
+G2L["18c"] = Instance.new("TextButton", G2L["170"]);
+G2L["18c"]["TextWrapped"] = true;
+G2L["18c"]["BorderSizePixel"] = 0;
+G2L["18c"]["TextSize"] = 14;
+G2L["18c"]["TextScaled"] = true;
+G2L["18c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18c"]["BackgroundTransparency"] = 0.5;
+G2L["18c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["18c"]["LayoutOrder"] = 3;
+G2L["18c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18c"]["Text"] = [[Master Server (Rank)]];
+G2L["18c"]["Name"] = [[Master]];
 -- Attributes
-G2L["18e"]:SetAttribute([[Place]], [[]]);
+G2L["18c"]:SetAttribute([[Place]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Master.UICorner
-G2L["18f"] = Instance.new("UICorner", G2L["18e"]);
-G2L["18f"]["CornerRadius"] = UDim.new(0, 5);
+G2L["18d"] = Instance.new("UICorner", G2L["18c"]);
+G2L["18d"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Master.UIStroke
-G2L["190"] = Instance.new("UIStroke", G2L["18e"]);
-G2L["190"]["Thickness"] = 1.5;
-G2L["190"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["18e"] = Instance.new("UIStroke", G2L["18c"]);
+G2L["18e"]["Thickness"] = 1.5;
+G2L["18e"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Casual
-G2L["191"] = Instance.new("TextButton", G2L["172"]);
-G2L["191"]["TextWrapped"] = true;
-G2L["191"]["BorderSizePixel"] = 0;
-G2L["191"]["TextSize"] = 14;
-G2L["191"]["TextScaled"] = true;
-G2L["191"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["191"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["191"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["191"]["BackgroundTransparency"] = 0.5;
-G2L["191"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["191"]["LayoutOrder"] = 3;
-G2L["191"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["191"]["Text"] = [[Casual Server]];
-G2L["191"]["Name"] = [[Casual]];
+G2L["18f"] = Instance.new("TextButton", G2L["170"]);
+G2L["18f"]["TextWrapped"] = true;
+G2L["18f"]["BorderSizePixel"] = 0;
+G2L["18f"]["TextSize"] = 14;
+G2L["18f"]["TextScaled"] = true;
+G2L["18f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18f"]["BackgroundTransparency"] = 0.5;
+G2L["18f"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["18f"]["LayoutOrder"] = 3;
+G2L["18f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18f"]["Text"] = [[Casual Server]];
+G2L["18f"]["Name"] = [[Casual]];
 -- Attributes
-G2L["191"]:SetAttribute([[Place]], [[]]);
+G2L["18f"]:SetAttribute([[Place]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Casual.UICorner
-G2L["192"] = Instance.new("UICorner", G2L["191"]);
-G2L["192"]["CornerRadius"] = UDim.new(0, 5);
+G2L["190"] = Instance.new("UICorner", G2L["18f"]);
+G2L["190"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.Casual.UIStroke
-G2L["193"] = Instance.new("UIStroke", G2L["191"]);
-G2L["193"]["Thickness"] = 1.5;
-G2L["193"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["191"] = Instance.new("UIStroke", G2L["18f"]);
+G2L["191"]["Thickness"] = 1.5;
+G2L["191"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll
-G2L["194"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["194"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["194"]["BorderSizePixel"] = 0;
-G2L["194"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["194"]["Name"] = [[Troll]];
-G2L["194"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["194"]["Selectable"] = false;
-G2L["194"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["194"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["194"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["194"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["194"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["194"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["194"]["ScrollBarThickness"] = 0;
-G2L["194"]["BackgroundTransparency"] = 1;
+G2L["192"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["192"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["192"]["BorderSizePixel"] = 0;
+G2L["192"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["192"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["192"]["Name"] = [[Troll]];
+G2L["192"]["ScrollBarImageTransparency"] = 0.5;
+G2L["192"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["192"]["Selectable"] = false;
+G2L["192"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["192"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["192"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["192"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["192"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["192"]["ScrollBarThickness"] = 3;
+G2L["192"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.SkinLoop
+G2L["193"] = Instance.new("LocalScript", G2L["192"]);
+G2L["193"]["Name"] = [[SkinLoop]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.UIListLayout
-G2L["195"] = Instance.new("UIListLayout", G2L["194"]);
-G2L["195"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["195"]["Padding"] = UDim.new(0, 3);
-G2L["195"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["195"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["194"] = Instance.new("UIListLayout", G2L["192"]);
+G2L["194"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["194"]["Padding"] = UDim.new(0, 3);
+G2L["194"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["194"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel
-G2L["196"] = Instance.new("TextLabel", G2L["194"]);
-G2L["196"]["TextWrapped"] = true;
-G2L["196"]["BorderSizePixel"] = 0;
-G2L["196"]["TextSize"] = 14;
-G2L["196"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["196"]["TextScaled"] = true;
-G2L["196"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["196"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["196"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["196"]["BackgroundTransparency"] = 1;
-G2L["196"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["196"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["196"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["196"]["Text"] = [[VFX Trolls:]];
-G2L["196"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["195"] = Instance.new("TextLabel", G2L["192"]);
+G2L["195"]["TextWrapped"] = true;
+G2L["195"]["BorderSizePixel"] = 0;
+G2L["195"]["TextSize"] = 14;
+G2L["195"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["195"]["TextScaled"] = true;
+G2L["195"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["195"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["195"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["195"]["BackgroundTransparency"] = 1;
+G2L["195"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["195"]["Size"] = UDim2.new(1, 0, 0.2, 0);
+G2L["195"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["195"]["Text"] = [[NOTE: THE BELOW FEATURE IS VERY UGLY AND HORRIBLE]];
+G2L["195"]["LayoutOrder"] = 4;
+G2L["195"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIPadding
-G2L["197"] = Instance.new("UIPadding", G2L["196"]);
-G2L["197"]["PaddingTop"] = UDim.new(0, 3);
-G2L["197"]["PaddingRight"] = UDim.new(0, 5);
-G2L["197"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["196"] = Instance.new("UIPadding", G2L["195"]);
+G2L["196"]["PaddingTop"] = UDim.new(0, 3);
+G2L["196"]["PaddingRight"] = UDim.new(0, 5);
+G2L["196"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIStroke
-G2L["198"] = Instance.new("UIStroke", G2L["196"]);
-G2L["198"]["Thickness"] = 1.5;
-G2L["198"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["197"] = Instance.new("UIStroke", G2L["195"]);
+G2L["197"]["Thickness"] = 1.5;
+G2L["197"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.AddVFX
-G2L["199"] = Instance.new("TextButton", G2L["194"]);
-G2L["199"]["TextWrapped"] = true;
-G2L["199"]["BorderSizePixel"] = 0;
-G2L["199"]["TextSize"] = 14;
-G2L["199"]["TextScaled"] = true;
-G2L["199"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["199"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["199"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["199"]["BackgroundTransparency"] = 0.5;
-G2L["199"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["199"]["LayoutOrder"] = 2;
-G2L["199"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["199"]["Text"] = [[Add VFX]];
-G2L["199"]["Name"] = [[AddVFX]];
+G2L["198"] = Instance.new("TextButton", G2L["192"]);
+G2L["198"]["TextWrapped"] = true;
+G2L["198"]["BorderSizePixel"] = 0;
+G2L["198"]["TextSize"] = 14;
+G2L["198"]["TextScaled"] = true;
+G2L["198"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["198"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["198"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["198"]["BackgroundTransparency"] = 0.5;
+G2L["198"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["198"]["LayoutOrder"] = 2;
+G2L["198"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["198"]["Text"] = [[Add VFX]];
+G2L["198"]["Name"] = [[AddVFX]];
 -- Attributes
-G2L["199"]:SetAttribute([[Item]], [[]]);
+G2L["198"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.AddVFX.Handler
-G2L["19a"] = Instance.new("LocalScript", G2L["199"]);
-G2L["19a"]["Name"] = [[Handler]];
+G2L["199"] = Instance.new("LocalScript", G2L["198"]);
+G2L["199"]["Name"] = [[Handler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.AddVFX.UICorner
-G2L["19b"] = Instance.new("UICorner", G2L["199"]);
-G2L["19b"]["CornerRadius"] = UDim.new(0, 5);
+G2L["19a"] = Instance.new("UICorner", G2L["198"]);
+G2L["19a"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.AddVFX.UIStroke
-G2L["19c"] = Instance.new("UIStroke", G2L["199"]);
-G2L["19c"]["Thickness"] = 1.5;
-G2L["19c"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["19b"] = Instance.new("UIStroke", G2L["198"]);
+G2L["19b"]["Thickness"] = 1.5;
+G2L["19b"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.VFXName
-G2L["19d"] = Instance.new("TextBox", G2L["194"]);
-G2L["19d"]["Name"] = [[VFXName]];
-G2L["19d"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19d"]["BorderSizePixel"] = 0;
-G2L["19d"]["TextWrapped"] = true;
-G2L["19d"]["TextSize"] = 14;
-G2L["19d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19d"]["TextScaled"] = true;
-G2L["19d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["19d"]["ClearTextOnFocus"] = false;
-G2L["19d"]["PlaceholderText"] = [[VFX Name]];
-G2L["19d"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["19d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19d"]["Text"] = [[]];
-G2L["19d"]["LayoutOrder"] = 1;
-G2L["19d"]["BackgroundTransparency"] = 0.75;
+G2L["19c"] = Instance.new("TextBox", G2L["192"]);
+G2L["19c"]["Name"] = [[VFXName]];
+G2L["19c"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19c"]["BorderSizePixel"] = 0;
+G2L["19c"]["TextWrapped"] = true;
+G2L["19c"]["TextSize"] = 14;
+G2L["19c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19c"]["TextScaled"] = true;
+G2L["19c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19c"]["ClearTextOnFocus"] = false;
+G2L["19c"]["PlaceholderText"] = [[VFX Name]];
+G2L["19c"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["19c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19c"]["Text"] = [[]];
+G2L["19c"]["LayoutOrder"] = 1;
+G2L["19c"]["BackgroundTransparency"] = 0.75;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.VFXName.UICorner
-G2L["19e"] = Instance.new("UICorner", G2L["19d"]);
-G2L["19e"]["CornerRadius"] = UDim.new(0, 5);
+G2L["19d"] = Instance.new("UICorner", G2L["19c"]);
+G2L["19d"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.VFXName.UIStroke
-G2L["19f"] = Instance.new("UIStroke", G2L["19d"]);
-G2L["19f"]["Thickness"] = 1.5;
-G2L["19f"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["19e"] = Instance.new("UIStroke", G2L["19c"]);
+G2L["19e"]["Thickness"] = 1.5;
+G2L["19e"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel
-G2L["1a0"] = Instance.new("TextLabel", G2L["194"]);
-G2L["1a0"]["TextWrapped"] = true;
-G2L["1a0"]["BorderSizePixel"] = 0;
-G2L["1a0"]["TextSize"] = 14;
-G2L["1a0"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["1a0"]["TextScaled"] = true;
-G2L["1a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a0"]["BackgroundTransparency"] = 1;
-G2L["1a0"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1a0"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["1a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a0"]["Text"] = [[Outfit Trolls:]];
-G2L["1a0"]["LayoutOrder"] = 3;
-G2L["1a0"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["19f"] = Instance.new("TextLabel", G2L["192"]);
+G2L["19f"]["TextWrapped"] = true;
+G2L["19f"]["BorderSizePixel"] = 0;
+G2L["19f"]["TextSize"] = 14;
+G2L["19f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["19f"]["TextScaled"] = true;
+G2L["19f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19f"]["BackgroundTransparency"] = 1;
+G2L["19f"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["19f"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["19f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19f"]["Text"] = [[Outfit Trolls:]];
+G2L["19f"]["LayoutOrder"] = 3;
+G2L["19f"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIPadding
-G2L["1a1"] = Instance.new("UIPadding", G2L["1a0"]);
-G2L["1a1"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1a1"]["PaddingRight"] = UDim.new(0, 5);
-G2L["1a1"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1a0"] = Instance.new("UIPadding", G2L["19f"]);
+G2L["1a0"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1a0"]["PaddingRight"] = UDim.new(0, 5);
+G2L["1a0"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIStroke
-G2L["1a2"] = Instance.new("UIStroke", G2L["1a0"]);
-G2L["1a2"]["Thickness"] = 1.5;
-G2L["1a2"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1a1"] = Instance.new("UIStroke", G2L["19f"]);
+G2L["1a1"]["Thickness"] = 1.5;
+G2L["1a1"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.HeadOnly
-G2L["1a3"] = Instance.new("TextButton", G2L["194"]);
-G2L["1a3"]["TextWrapped"] = true;
-G2L["1a3"]["BorderSizePixel"] = 0;
-G2L["1a3"]["TextSize"] = 14;
-G2L["1a3"]["TextScaled"] = true;
-G2L["1a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1a3"]["BackgroundTransparency"] = 0.5;
-G2L["1a3"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1a3"]["LayoutOrder"] = 3;
-G2L["1a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a3"]["Text"] = [[Floating Head]];
-G2L["1a3"]["Name"] = [[HeadOnly]];
+G2L["1a2"] = Instance.new("TextButton", G2L["192"]);
+G2L["1a2"]["TextWrapped"] = true;
+G2L["1a2"]["BorderSizePixel"] = 0;
+G2L["1a2"]["TextSize"] = 14;
+G2L["1a2"]["TextScaled"] = true;
+G2L["1a2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a2"]["BackgroundTransparency"] = 0.5;
+G2L["1a2"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1a2"]["LayoutOrder"] = 3;
+G2L["1a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a2"]["Text"] = [[Floating Head]];
+G2L["1a2"]["Name"] = [[HeadOnly]];
 -- Attributes
-G2L["1a3"]:SetAttribute([[Item]], [[]]);
+G2L["1a2"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.HeadOnly.Handler
-G2L["1a4"] = Instance.new("LocalScript", G2L["1a3"]);
-G2L["1a4"]["Name"] = [[Handler]];
+G2L["1a3"] = Instance.new("LocalScript", G2L["1a2"]);
+G2L["1a3"]["Name"] = [[Handler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.HeadOnly.UICorner
-G2L["1a5"] = Instance.new("UICorner", G2L["1a3"]);
-G2L["1a5"]["CornerRadius"] = UDim.new(0, 5);
+G2L["1a4"] = Instance.new("UICorner", G2L["1a2"]);
+G2L["1a4"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.HeadOnly.UIStroke
-G2L["1a6"] = Instance.new("UIStroke", G2L["1a3"]);
-G2L["1a6"]["Thickness"] = 1.5;
-G2L["1a6"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1a5"] = Instance.new("UIStroke", G2L["1a2"]);
+G2L["1a5"]["Thickness"] = 1.5;
+G2L["1a5"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel
-G2L["1a7"] = Instance.new("TextLabel", G2L["194"]);
-G2L["1a7"]["TextWrapped"] = true;
-G2L["1a7"]["BorderSizePixel"] = 0;
-G2L["1a7"]["TextSize"] = 14;
-G2L["1a7"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["1a7"]["TextScaled"] = true;
-G2L["1a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a7"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1a7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a7"]["BackgroundTransparency"] = 1;
-G2L["1a7"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1a7"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["1a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a7"]["Text"] = [[Misc:]];
-G2L["1a7"]["LayoutOrder"] = 4;
-G2L["1a7"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["1a6"] = Instance.new("TextLabel", G2L["192"]);
+G2L["1a6"]["TextWrapped"] = true;
+G2L["1a6"]["BorderSizePixel"] = 0;
+G2L["1a6"]["TextSize"] = 14;
+G2L["1a6"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["1a6"]["TextScaled"] = true;
+G2L["1a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a6"]["BackgroundTransparency"] = 1;
+G2L["1a6"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1a6"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["1a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a6"]["Text"] = [[Misc:]];
+G2L["1a6"]["LayoutOrder"] = 5;
+G2L["1a6"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIPadding
-G2L["1a8"] = Instance.new("UIPadding", G2L["1a7"]);
-G2L["1a8"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1a8"]["PaddingRight"] = UDim.new(0, 5);
-G2L["1a8"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1a7"] = Instance.new("UIPadding", G2L["1a6"]);
+G2L["1a7"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1a7"]["PaddingRight"] = UDim.new(0, 5);
+G2L["1a7"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIStroke
-G2L["1a9"] = Instance.new("UIStroke", G2L["1a7"]);
-G2L["1a9"]["Thickness"] = 1.5;
-G2L["1a9"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1a8"] = Instance.new("UIStroke", G2L["1a6"]);
+G2L["1a8"]["Thickness"] = 1.5;
+G2L["1a8"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.BlockRunway
-G2L["1aa"] = Instance.new("TextButton", G2L["194"]);
-G2L["1aa"]["TextWrapped"] = true;
-G2L["1aa"]["BorderSizePixel"] = 0;
-G2L["1aa"]["TextSize"] = 14;
-G2L["1aa"]["TextScaled"] = true;
-G2L["1aa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1aa"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1aa"]["BackgroundTransparency"] = 0.5;
-G2L["1aa"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1aa"]["LayoutOrder"] = 4;
-G2L["1aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1aa"]["Text"] = [[Block Runway (Run before Runway]];
-G2L["1aa"]["Name"] = [[BlockRunway]];
+G2L["1a9"] = Instance.new("TextButton", G2L["192"]);
+G2L["1a9"]["TextWrapped"] = true;
+G2L["1a9"]["BorderSizePixel"] = 0;
+G2L["1a9"]["TextSize"] = 14;
+G2L["1a9"]["TextScaled"] = true;
+G2L["1a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a9"]["BackgroundTransparency"] = 0.5;
+G2L["1a9"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1a9"]["LayoutOrder"] = 6;
+G2L["1a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a9"]["Text"] = [[Block Runway (Run before Runway]];
+G2L["1a9"]["Name"] = [[BlockRunway]];
 -- Attributes
-G2L["1aa"]:SetAttribute([[Item]], [[]]);
+G2L["1a9"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.BlockRunway.Handler
-G2L["1ab"] = Instance.new("LocalScript", G2L["1aa"]);
-G2L["1ab"]["Name"] = [[Handler]];
+G2L["1aa"] = Instance.new("LocalScript", G2L["1a9"]);
+G2L["1aa"]["Name"] = [[Handler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.BlockRunway.UICorner
-G2L["1ac"] = Instance.new("UICorner", G2L["1aa"]);
-G2L["1ac"]["CornerRadius"] = UDim.new(0, 5);
+G2L["1ab"] = Instance.new("UICorner", G2L["1a9"]);
+G2L["1ab"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.BlockRunway.UIStroke
-G2L["1ad"] = Instance.new("UIStroke", G2L["1aa"]);
-G2L["1ad"]["Thickness"] = 1.5;
-G2L["1ad"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1ac"] = Instance.new("UIStroke", G2L["1a9"]);
+G2L["1ac"]["Thickness"] = 1.5;
+G2L["1ac"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.DeleteVFX
-G2L["1ae"] = Instance.new("TextButton", G2L["194"]);
-G2L["1ae"]["TextWrapped"] = true;
-G2L["1ae"]["BorderSizePixel"] = 0;
-G2L["1ae"]["TextSize"] = 14;
-G2L["1ae"]["TextScaled"] = true;
-G2L["1ae"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ae"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1ae"]["BackgroundTransparency"] = 0.5;
-G2L["1ae"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1ae"]["LayoutOrder"] = 2;
-G2L["1ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ae"]["Text"] = [[Remove Poses VFX]];
-G2L["1ae"]["Name"] = [[DeleteVFX]];
+G2L["1ad"] = Instance.new("TextButton", G2L["192"]);
+G2L["1ad"]["TextWrapped"] = true;
+G2L["1ad"]["BorderSizePixel"] = 0;
+G2L["1ad"]["TextSize"] = 14;
+G2L["1ad"]["TextScaled"] = true;
+G2L["1ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ad"]["BackgroundTransparency"] = 0.5;
+G2L["1ad"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1ad"]["LayoutOrder"] = 2;
+G2L["1ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ad"]["Text"] = [[Remove Poses VFX]];
+G2L["1ad"]["Name"] = [[DeleteVFX]];
 -- Attributes
-G2L["1ae"]:SetAttribute([[Item]], [[]]);
+G2L["1ad"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.DeleteVFX.Handler
-G2L["1af"] = Instance.new("LocalScript", G2L["1ae"]);
-G2L["1af"]["Name"] = [[Handler]];
+G2L["1ae"] = Instance.new("LocalScript", G2L["1ad"]);
+G2L["1ae"]["Name"] = [[Handler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.DeleteVFX.UICorner
-G2L["1b0"] = Instance.new("UICorner", G2L["1ae"]);
-G2L["1b0"]["CornerRadius"] = UDim.new(0, 5);
+G2L["1af"] = Instance.new("UICorner", G2L["1ad"]);
+G2L["1af"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.DeleteVFX.UIStroke
-G2L["1b1"] = Instance.new("UIStroke", G2L["1ae"]);
-G2L["1b1"]["Thickness"] = 1.5;
-G2L["1b1"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1b0"] = Instance.new("UIStroke", G2L["1ad"]);
+G2L["1b0"]["Thickness"] = 1.5;
+G2L["1b0"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Naked
-G2L["1b2"] = Instance.new("TextButton", G2L["194"]);
-G2L["1b2"]["TextWrapped"] = true;
-G2L["1b2"]["BorderSizePixel"] = 0;
-G2L["1b2"]["TextSize"] = 14;
-G2L["1b2"]["TextScaled"] = true;
-G2L["1b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1b2"]["BackgroundTransparency"] = 0.5;
-G2L["1b2"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1b2"]["LayoutOrder"] = 3;
-G2L["1b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b2"]["Text"] = [[Naked]];
-G2L["1b2"]["Name"] = [[Naked]];
+G2L["1b1"] = Instance.new("TextButton", G2L["192"]);
+G2L["1b1"]["TextWrapped"] = true;
+G2L["1b1"]["BorderSizePixel"] = 0;
+G2L["1b1"]["TextSize"] = 14;
+G2L["1b1"]["TextScaled"] = true;
+G2L["1b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b1"]["BackgroundTransparency"] = 0.5;
+G2L["1b1"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1b1"]["LayoutOrder"] = 3;
+G2L["1b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b1"]["Text"] = [[Naked]];
+G2L["1b1"]["Name"] = [[Naked]];
 -- Attributes
-G2L["1b2"]:SetAttribute([[Item]], [[]]);
+G2L["1b1"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Naked.Handler
-G2L["1b3"] = Instance.new("LocalScript", G2L["1b2"]);
-G2L["1b3"]["Name"] = [[Handler]];
+G2L["1b2"] = Instance.new("LocalScript", G2L["1b1"]);
+G2L["1b2"]["Name"] = [[Handler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Naked.UICorner
-G2L["1b4"] = Instance.new("UICorner", G2L["1b2"]);
-G2L["1b4"]["CornerRadius"] = UDim.new(0, 5);
+G2L["1b3"] = Instance.new("UICorner", G2L["1b1"]);
+G2L["1b3"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Naked.UIStroke
-G2L["1b5"] = Instance.new("UIStroke", G2L["1b2"]);
-G2L["1b5"]["Thickness"] = 1.5;
-G2L["1b5"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1b4"] = Instance.new("UIStroke", G2L["1b1"]);
+G2L["1b4"]["Thickness"] = 1.5;
+G2L["1b4"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel
-G2L["1b6"] = Instance.new("TextLabel", G2L["194"]);
-G2L["1b6"]["TextWrapped"] = true;
-G2L["1b6"]["BorderSizePixel"] = 0;
-G2L["1b6"]["TextSize"] = 14;
-G2L["1b6"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["1b6"]["TextScaled"] = true;
-G2L["1b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b6"]["BackgroundTransparency"] = 1;
-G2L["1b6"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1b6"]["Size"] = UDim2.new(1, 0, 0.25, 0);
-G2L["1b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b6"]["Text"] = [[WARNING! VFX Added can only be removed by resetting character.]];
-G2L["1b6"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["1b5"] = Instance.new("TextLabel", G2L["192"]);
+G2L["1b5"]["TextWrapped"] = true;
+G2L["1b5"]["BorderSizePixel"] = 0;
+G2L["1b5"]["TextSize"] = 14;
+G2L["1b5"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["1b5"]["TextScaled"] = true;
+G2L["1b5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b5"]["BackgroundTransparency"] = 1;
+G2L["1b5"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1b5"]["Size"] = UDim2.new(1, 0, 0.25, 0);
+G2L["1b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b5"]["Text"] = [[WARNING! VFX Added can only be removed by resetting character.]];
+G2L["1b5"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIPadding
-G2L["1b7"] = Instance.new("UIPadding", G2L["1b6"]);
-G2L["1b7"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1b7"]["PaddingRight"] = UDim.new(0, 5);
-G2L["1b7"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1b6"] = Instance.new("UIPadding", G2L["1b5"]);
+G2L["1b6"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1b6"]["PaddingRight"] = UDim.new(0, 5);
+G2L["1b6"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIStroke
-G2L["1b8"] = Instance.new("UIStroke", G2L["1b6"]);
-G2L["1b8"]["Thickness"] = 1.5;
-G2L["1b8"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1b7"] = Instance.new("UIStroke", G2L["1b5"]);
+G2L["1b7"]["Thickness"] = 1.5;
+G2L["1b7"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Reset
-G2L["1b9"] = Instance.new("TextButton", G2L["194"]);
-G2L["1b9"]["TextWrapped"] = true;
-G2L["1b9"]["BorderSizePixel"] = 0;
-G2L["1b9"]["TextSize"] = 14;
-G2L["1b9"]["TextScaled"] = true;
-G2L["1b9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1b9"]["BackgroundTransparency"] = 0.5;
-G2L["1b9"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1b9"]["LayoutOrder"] = 2;
-G2L["1b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b9"]["Text"] = [[Reset Character]];
-G2L["1b9"]["Name"] = [[Reset]];
+G2L["1b8"] = Instance.new("TextButton", G2L["192"]);
+G2L["1b8"]["TextWrapped"] = true;
+G2L["1b8"]["BorderSizePixel"] = 0;
+G2L["1b8"]["TextSize"] = 14;
+G2L["1b8"]["TextScaled"] = true;
+G2L["1b8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b8"]["BackgroundTransparency"] = 0.5;
+G2L["1b8"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1b8"]["LayoutOrder"] = 2;
+G2L["1b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b8"]["Text"] = [[Reset Character]];
+G2L["1b8"]["Name"] = [[Reset]];
 -- Attributes
-G2L["1b9"]:SetAttribute([[Item]], [[]]);
+G2L["1b8"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Reset.Handler
-G2L["1ba"] = Instance.new("LocalScript", G2L["1b9"]);
-G2L["1ba"]["Name"] = [[Handler]];
+G2L["1b9"] = Instance.new("LocalScript", G2L["1b8"]);
+G2L["1b9"]["Name"] = [[Handler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Reset.UICorner
-G2L["1bb"] = Instance.new("UICorner", G2L["1b9"]);
-G2L["1bb"]["CornerRadius"] = UDim.new(0, 5);
+G2L["1ba"] = Instance.new("UICorner", G2L["1b8"]);
+G2L["1ba"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Reset.UIStroke
-G2L["1bc"] = Instance.new("UIStroke", G2L["1b9"]);
-G2L["1bc"]["Thickness"] = 1.5;
-G2L["1bc"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1bb"] = Instance.new("UIStroke", G2L["1b8"]);
+G2L["1bb"]["Thickness"] = 1.5;
+G2L["1bb"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Invisible
-G2L["1bd"] = Instance.new("TextButton", G2L["194"]);
-G2L["1bd"]["TextWrapped"] = true;
-G2L["1bd"]["BorderSizePixel"] = 0;
-G2L["1bd"]["TextSize"] = 14;
-G2L["1bd"]["TextScaled"] = true;
-G2L["1bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1bd"]["BackgroundTransparency"] = 0.5;
-G2L["1bd"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1bd"]["LayoutOrder"] = 3;
-G2L["1bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1bd"]["Text"] = [[Invisible Body (Keeps Equipped Items)]];
-G2L["1bd"]["Name"] = [[Invisible]];
+G2L["1bc"] = Instance.new("TextButton", G2L["192"]);
+G2L["1bc"]["TextWrapped"] = true;
+G2L["1bc"]["BorderSizePixel"] = 0;
+G2L["1bc"]["TextSize"] = 14;
+G2L["1bc"]["TextScaled"] = true;
+G2L["1bc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1bc"]["BackgroundTransparency"] = 0.5;
+G2L["1bc"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1bc"]["LayoutOrder"] = 3;
+G2L["1bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bc"]["Text"] = [[Invisible Body (Keeps Equipped Items)]];
+G2L["1bc"]["Name"] = [[Invisible]];
 -- Attributes
-G2L["1bd"]:SetAttribute([[Item]], [[]]);
+G2L["1bc"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Invisible.Handler
-G2L["1be"] = Instance.new("LocalScript", G2L["1bd"]);
-G2L["1be"]["Name"] = [[Handler]];
+G2L["1bd"] = Instance.new("LocalScript", G2L["1bc"]);
+G2L["1bd"]["Name"] = [[Handler]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Invisible.UICorner
-G2L["1bf"] = Instance.new("UICorner", G2L["1bd"]);
-G2L["1bf"]["CornerRadius"] = UDim.new(0, 5);
+G2L["1be"] = Instance.new("UICorner", G2L["1bc"]);
+G2L["1be"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.Invisible.UIStroke
-G2L["1c0"] = Instance.new("UIStroke", G2L["1bd"]);
-G2L["1c0"]["Thickness"] = 1.5;
-G2L["1c0"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1bf"] = Instance.new("UIStroke", G2L["1bc"]);
+G2L["1bf"]["Thickness"] = 1.5;
+G2L["1bf"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TPName
-G2L["1c1"] = Instance.new("TextBox", G2L["194"]);
-G2L["1c1"]["Name"] = [[TPName]];
-G2L["1c1"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c1"]["BorderSizePixel"] = 0;
-G2L["1c1"]["TextWrapped"] = true;
-G2L["1c1"]["TextSize"] = 14;
-G2L["1c1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c1"]["TextScaled"] = true;
-G2L["1c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c1"]["ClearTextOnFocus"] = false;
-G2L["1c1"]["PlaceholderText"] = [[Teleport To Player]];
-G2L["1c1"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c1"]["Text"] = [[]];
-G2L["1c1"]["LayoutOrder"] = 5;
-G2L["1c1"]["BackgroundTransparency"] = 0.75;
+G2L["1c0"] = Instance.new("TextBox", G2L["192"]);
+G2L["1c0"]["CursorPosition"] = -1;
+G2L["1c0"]["Name"] = [[TPName]];
+G2L["1c0"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c0"]["BorderSizePixel"] = 0;
+G2L["1c0"]["TextWrapped"] = true;
+G2L["1c0"]["TextSize"] = 14;
+G2L["1c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c0"]["TextScaled"] = true;
+G2L["1c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c0"]["ClearTextOnFocus"] = false;
+G2L["1c0"]["PlaceholderText"] = [[Teleport To Player]];
+G2L["1c0"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c0"]["Text"] = [[]];
+G2L["1c0"]["LayoutOrder"] = 6;
+G2L["1c0"]["BackgroundTransparency"] = 0.75;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TPName.LocalScript
-G2L["1c2"] = Instance.new("LocalScript", G2L["1c1"]);
+G2L["1c1"] = Instance.new("LocalScript", G2L["1c0"]);
 
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TPName.UICorner
-G2L["1c3"] = Instance.new("UICorner", G2L["1c1"]);
-G2L["1c3"]["CornerRadius"] = UDim.new(0, 5);
+G2L["1c2"] = Instance.new("UICorner", G2L["1c0"]);
+G2L["1c2"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.TPName.UIStroke
-G2L["1c4"] = Instance.new("UIStroke", G2L["1c1"]);
-G2L["1c4"]["Thickness"] = 1.5;
-G2L["1c4"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1c3"] = Instance.new("UIStroke", G2L["1c0"]);
+G2L["1c3"]["Thickness"] = 1.5;
+G2L["1c3"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.RainbowSkin
-G2L["1c5"] = Instance.new("TextButton", G2L["194"]);
-G2L["1c5"]["TextWrapped"] = true;
-G2L["1c5"]["BorderSizePixel"] = 0;
-G2L["1c5"]["TextSize"] = 14;
-G2L["1c5"]["TextScaled"] = true;
-G2L["1c5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c5"]["BackgroundTransparency"] = 0.5;
-G2L["1c5"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1c5"]["LayoutOrder"] = 3;
-G2L["1c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c5"]["Text"] = [[Rainbow Skin : Off]];
-G2L["1c5"]["Name"] = [[RainbowSkin]];
+G2L["1c4"] = Instance.new("TextButton", G2L["192"]);
+G2L["1c4"]["TextWrapped"] = true;
+G2L["1c4"]["BorderSizePixel"] = 0;
+G2L["1c4"]["TextSize"] = 14;
+G2L["1c4"]["TextScaled"] = true;
+G2L["1c4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c4"]["BackgroundTransparency"] = 0.5;
+G2L["1c4"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1c4"]["LayoutOrder"] = 3;
+G2L["1c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c4"]["Text"] = [[Rainbow Skin : Off]];
+G2L["1c4"]["Name"] = [[RainbowSkin]];
 -- Attributes
-G2L["1c5"]:SetAttribute([[Item]], [[]]);
+G2L["1c4"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.RainbowSkin.UICorner
-G2L["1c6"] = Instance.new("UICorner", G2L["1c5"]);
-G2L["1c6"]["CornerRadius"] = UDim.new(0, 5);
+G2L["1c5"] = Instance.new("UICorner", G2L["1c4"]);
+G2L["1c5"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.RainbowSkin.UIStroke
-G2L["1c7"] = Instance.new("UIStroke", G2L["1c5"]);
-G2L["1c7"]["Thickness"] = 1.5;
-G2L["1c7"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1c6"] = Instance.new("UIStroke", G2L["1c4"]);
+G2L["1c6"]["Thickness"] = 1.5;
+G2L["1c6"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.SkinLoop
-G2L["1c8"] = Instance.new("LocalScript", G2L["194"]);
-G2L["1c8"]["Name"] = [[SkinLoop]];
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom
+G2L["1c7"] = Instance.new("Frame", G2L["192"]);
+G2L["1c7"]["Active"] = true;
+G2L["1c7"]["BorderSizePixel"] = 0;
+G2L["1c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c7"]["Selectable"] = true;
+G2L["1c7"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c7"]["Name"] = [[DecalCustom]];
+G2L["1c7"]["LayoutOrder"] = 4;
+G2L["1c7"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils
-G2L["1c9"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["1c9"]["Visible"] = false;
-G2L["1c9"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["1c9"]["BorderSizePixel"] = 0;
-G2L["1c9"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["1c9"]["Name"] = [[GameUtils]];
-G2L["1c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c9"]["Selectable"] = false;
-G2L["1c9"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["1c9"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["1c9"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1c9"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c9"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["1c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c9"]["ScrollBarThickness"] = 0;
-G2L["1c9"]["BackgroundTransparency"] = 1;
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom.Image
+G2L["1c8"] = Instance.new("TextBox", G2L["1c7"]);
+G2L["1c8"]["Name"] = [[Image]];
+G2L["1c8"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c8"]["BorderSizePixel"] = 0;
+G2L["1c8"]["TextWrapped"] = true;
+G2L["1c8"]["TextSize"] = 14;
+G2L["1c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c8"]["TextScaled"] = true;
+G2L["1c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c8"]["ClearTextOnFocus"] = false;
+G2L["1c8"]["PlaceholderText"] = [[Image ID]];
+G2L["1c8"]["Size"] = UDim2.new(0.49, 0, 1, 0);
+G2L["1c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c8"]["Text"] = [[]];
+G2L["1c8"]["LayoutOrder"] = 3;
+G2L["1c8"]["BackgroundTransparency"] = 0.75;
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CashFarming
-G2L["1ca"] = Instance.new("LocalScript", G2L["1c9"]);
-G2L["1ca"]["Name"] = [[CashFarming]];
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom.Image.UICorner
+G2L["1c9"] = Instance.new("UICorner", G2L["1c8"]);
+G2L["1c9"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.UIListLayout
-G2L["1cb"] = Instance.new("UIListLayout", G2L["1c9"]);
-G2L["1cb"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["1cb"]["Padding"] = UDim.new(0, 3);
-G2L["1cb"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["1cb"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom.Image.UIStroke
+G2L["1ca"] = Instance.new("UIStroke", G2L["1c8"]);
+G2L["1ca"]["Thickness"] = 1.5;
+G2L["1ca"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.ToggleCashFarm
-G2L["1cc"] = Instance.new("TextButton", G2L["1c9"]);
-G2L["1cc"]["TextWrapped"] = true;
-G2L["1cc"]["BorderSizePixel"] = 0;
-G2L["1cc"]["TextSize"] = 14;
-G2L["1cc"]["TextScaled"] = true;
-G2L["1cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1cc"]["BackgroundTransparency"] = 0.5;
-G2L["1cc"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1cc"]["LayoutOrder"] = 1;
-G2L["1cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1cc"]["Text"] = [[Toggle Cash Farm : Off]];
-G2L["1cc"]["Name"] = [[ToggleCashFarm]];
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom.Equip
+G2L["1cb"] = Instance.new("TextButton", G2L["1c7"]);
+G2L["1cb"]["TextWrapped"] = true;
+G2L["1cb"]["BorderSizePixel"] = 0;
+G2L["1cb"]["TextSize"] = 14;
+G2L["1cb"]["TextScaled"] = true;
+G2L["1cb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1cb"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1cb"]["BackgroundTransparency"] = 0.5;
+G2L["1cb"]["Size"] = UDim2.new(0.49, 0, 1, 0);
+G2L["1cb"]["LayoutOrder"] = 1;
+G2L["1cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cb"]["Text"] = [[Equip Head Decal]];
+G2L["1cb"]["Name"] = [[Equip]];
+G2L["1cb"]["Position"] = UDim2.new(1, 0, 0, 0);
 -- Attributes
-G2L["1cc"]:SetAttribute([[Item]], [[]]);
+G2L["1cb"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.ToggleCashFarm.UICorner
-G2L["1cd"] = Instance.new("UICorner", G2L["1cc"]);
-G2L["1cd"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom.Equip.UICorner
+G2L["1cc"] = Instance.new("UICorner", G2L["1cb"]);
+G2L["1cc"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.ToggleCashFarm.UIStroke
-G2L["1ce"] = Instance.new("UIStroke", G2L["1cc"]);
-G2L["1ce"]["Thickness"] = 1.5;
-G2L["1ce"]["Color"] = Color3.fromRGB(255, 135, 206);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom.Equip.UIStroke
+G2L["1cd"] = Instance.new("UIStroke", G2L["1cb"]);
+G2L["1cd"]["Thickness"] = 1.5;
+G2L["1cd"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel
-G2L["1cf"] = Instance.new("TextLabel", G2L["1c9"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom.Equip.LocalScript
+G2L["1ce"] = Instance.new("LocalScript", G2L["1cb"]);
+
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel
+G2L["1cf"] = Instance.new("TextLabel", G2L["192"]);
 G2L["1cf"]["TextWrapped"] = true;
 G2L["1cf"]["BorderSizePixel"] = 0;
 G2L["1cf"]["TextSize"] = 14;
@@ -4430,294 +4433,289 @@ G2L["1cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]],
 G2L["1cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1cf"]["BackgroundTransparency"] = 1;
 G2L["1cf"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1cf"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1cf"]["Size"] = UDim2.new(1, 0, 0.15, 0);
 G2L["1cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1cf"]["Text"] = [[Farming:]];
+G2L["1cf"]["Text"] = [[VFX Trolls:]];
 G2L["1cf"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel.UIStroke
-G2L["1d0"] = Instance.new("UIStroke", G2L["1cf"]);
-G2L["1d0"]["Thickness"] = 1.5;
-G2L["1d0"]["Color"] = Color3.fromRGB(255, 135, 206);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIPadding
+G2L["1d0"] = Instance.new("UIPadding", G2L["1cf"]);
+G2L["1d0"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1d0"]["PaddingRight"] = UDim.new(0, 5);
+G2L["1d0"]["PaddingBottom"] = UDim.new(0, 3);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CollectCash
-G2L["1d1"] = Instance.new("TextButton", G2L["1c9"]);
-G2L["1d1"]["TextWrapped"] = true;
-G2L["1d1"]["BorderSizePixel"] = 0;
-G2L["1d1"]["TextSize"] = 14;
-G2L["1d1"]["TextScaled"] = true;
-G2L["1d1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1d1"]["BackgroundTransparency"] = 0.5;
-G2L["1d1"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1d1"]["LayoutOrder"] = 1;
-G2L["1d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d1"]["Text"] = [[Collect All Cash]];
-G2L["1d1"]["Name"] = [[CollectCash]];
--- Attributes
-G2L["1d1"]:SetAttribute([[Item]], [[]]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.TextLabel.UIStroke
+G2L["1d1"] = Instance.new("UIStroke", G2L["1cf"]);
+G2L["1d1"]["Thickness"] = 1.5;
+G2L["1d1"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CollectCash.UICorner
-G2L["1d2"] = Instance.new("UICorner", G2L["1d1"]);
-G2L["1d2"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils
+G2L["1d2"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["1d2"]["Visible"] = false;
+G2L["1d2"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["1d2"]["BorderSizePixel"] = 0;
+G2L["1d2"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["1d2"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["1d2"]["Name"] = [[GameUtils]];
+G2L["1d2"]["ScrollBarImageTransparency"] = 0.5;
+G2L["1d2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d2"]["Selectable"] = false;
+G2L["1d2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["1d2"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["1d2"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1d2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["1d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d2"]["ScrollBarThickness"] = 3;
+G2L["1d2"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CollectCash.UIStroke
-G2L["1d3"] = Instance.new("UIStroke", G2L["1d1"]);
-G2L["1d3"]["Thickness"] = 1.5;
-G2L["1d3"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel
-G2L["1d4"] = Instance.new("TextLabel", G2L["1c9"]);
-G2L["1d4"]["TextWrapped"] = true;
-G2L["1d4"]["BorderSizePixel"] = 0;
-G2L["1d4"]["TextSize"] = 14;
-G2L["1d4"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["1d4"]["TextScaled"] = true;
-G2L["1d4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1d4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d4"]["BackgroundTransparency"] = 1;
-G2L["1d4"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1d4"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d4"]["Text"] = [[Shopping:]];
-G2L["1d4"]["LayoutOrder"] = 2;
-G2L["1d4"]["Position"] = UDim2.new(1, 0, 0, 0);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel.UIStroke
-G2L["1d5"] = Instance.new("UIStroke", G2L["1d4"]);
-G2L["1d5"]["Thickness"] = 1.5;
-G2L["1d5"]["Color"] = Color3.fromRGB(255, 135, 206);
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CashFarming
+G2L["1d3"] = Instance.new("LocalScript", G2L["1d2"]);
+G2L["1d3"]["Name"] = [[CashFarming]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping
-G2L["1d6"] = Instance.new("LocalScript", G2L["1c9"]);
-G2L["1d6"]["Name"] = [[Shopping]];
+G2L["1d4"] = Instance.new("LocalScript", G2L["1d2"]);
+G2L["1d4"]["Name"] = [[Shopping]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template
-G2L["1d7"] = Instance.new("Frame", G2L["1d6"]);
-G2L["1d7"]["BorderSizePixel"] = 0;
-G2L["1d7"]["BackgroundColor3"] = Color3.fromRGB(213, 154, 192);
-G2L["1d7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["1d7"]["Size"] = UDim2.new(0.2, 0, 0.5, 0);
-G2L["1d7"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["1d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d7"]["Name"] = [[Template]];
-G2L["1d7"]["BackgroundTransparency"] = 0.25;
+G2L["1d5"] = Instance.new("Frame", G2L["1d4"]);
+G2L["1d5"]["BorderSizePixel"] = 0;
+G2L["1d5"]["BackgroundColor3"] = Color3.fromRGB(213, 154, 192);
+G2L["1d5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["1d5"]["Size"] = UDim2.new(0.2, 0, 0.5, 0);
+G2L["1d5"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["1d5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d5"]["Name"] = [[Template]];
+G2L["1d5"]["BackgroundTransparency"] = 0.25;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.UICorner
-G2L["1d8"] = Instance.new("UICorner", G2L["1d7"]);
-G2L["1d8"]["CornerRadius"] = UDim.new(0, 7);
+G2L["1d6"] = Instance.new("UICorner", G2L["1d5"]);
+G2L["1d6"]["CornerRadius"] = UDim.new(0, 7);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.UIStroke
-G2L["1d9"] = Instance.new("UIStroke", G2L["1d7"]);
-G2L["1d9"]["Thickness"] = 1.5;
-G2L["1d9"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["1d9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1d7"] = Instance.new("UIStroke", G2L["1d5"]);
+G2L["1d7"]["Thickness"] = 1.5;
+G2L["1d7"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["1d7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.ItemName
-G2L["1da"] = Instance.new("TextLabel", G2L["1d7"]);
-G2L["1da"]["TextWrapped"] = true;
-G2L["1da"]["BorderSizePixel"] = 0;
-G2L["1da"]["TextSize"] = 14;
-G2L["1da"]["TextScaled"] = true;
-G2L["1da"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1da"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1da"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1da"]["BackgroundTransparency"] = 1;
-G2L["1da"]["Size"] = UDim2.new(1, 0, 0.1, 0);
-G2L["1da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1da"]["Text"] = [[ItemName]];
-G2L["1da"]["Name"] = [[ItemName]];
+G2L["1d8"] = Instance.new("TextLabel", G2L["1d5"]);
+G2L["1d8"]["TextWrapped"] = true;
+G2L["1d8"]["BorderSizePixel"] = 0;
+G2L["1d8"]["TextSize"] = 14;
+G2L["1d8"]["TextScaled"] = true;
+G2L["1d8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d8"]["BackgroundTransparency"] = 1;
+G2L["1d8"]["Size"] = UDim2.new(1, 0, 0.1, 0);
+G2L["1d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d8"]["Text"] = [[ItemName]];
+G2L["1d8"]["Name"] = [[ItemName]];
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.ItemName.UIPadding
-G2L["1db"] = Instance.new("UIPadding", G2L["1da"]);
-G2L["1db"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1db"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["1db"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1d9"] = Instance.new("UIPadding", G2L["1d8"]);
+G2L["1d9"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1d9"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["1d9"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.ItemName.UIStroke
-G2L["1dc"] = Instance.new("UIStroke", G2L["1da"]);
-G2L["1dc"]["Thickness"] = 1.5;
-G2L["1dc"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1da"] = Instance.new("UIStroke", G2L["1d8"]);
+G2L["1da"]["Thickness"] = 1.5;
+G2L["1da"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Price
-G2L["1dd"] = Instance.new("TextLabel", G2L["1d7"]);
-G2L["1dd"]["TextWrapped"] = true;
-G2L["1dd"]["BorderSizePixel"] = 0;
-G2L["1dd"]["TextSize"] = 14;
-G2L["1dd"]["TextScaled"] = true;
-G2L["1dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1dd"]["BackgroundTransparency"] = 1;
-G2L["1dd"]["AnchorPoint"] = Vector2.new(0, 1);
-G2L["1dd"]["Size"] = UDim2.new(1, 0, 0.1, 0);
-G2L["1dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1dd"]["Text"] = [[$000]];
-G2L["1dd"]["Name"] = [[Price]];
-G2L["1dd"]["Position"] = UDim2.new(0, 0, 1, 0);
+G2L["1db"] = Instance.new("TextLabel", G2L["1d5"]);
+G2L["1db"]["TextWrapped"] = true;
+G2L["1db"]["BorderSizePixel"] = 0;
+G2L["1db"]["TextSize"] = 14;
+G2L["1db"]["TextScaled"] = true;
+G2L["1db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1db"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1db"]["BackgroundTransparency"] = 1;
+G2L["1db"]["AnchorPoint"] = Vector2.new(0, 1);
+G2L["1db"]["Size"] = UDim2.new(1, 0, 0.1, 0);
+G2L["1db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1db"]["Text"] = [[$000]];
+G2L["1db"]["Name"] = [[Price]];
+G2L["1db"]["Position"] = UDim2.new(0, 0, 1, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Price.UIPadding
-G2L["1de"] = Instance.new("UIPadding", G2L["1dd"]);
-G2L["1de"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1de"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["1de"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1dc"] = Instance.new("UIPadding", G2L["1db"]);
+G2L["1dc"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1dc"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["1dc"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Price.UIStroke
-G2L["1df"] = Instance.new("UIStroke", G2L["1dd"]);
-G2L["1df"]["Thickness"] = 1.5;
-G2L["1df"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1dd"] = Instance.new("UIStroke", G2L["1db"]);
+G2L["1dd"]["Thickness"] = 1.5;
+G2L["1dd"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Close
-G2L["1e0"] = Instance.new("TextButton", G2L["1d7"]);
-G2L["1e0"]["TextWrapped"] = true;
-G2L["1e0"]["BorderSizePixel"] = 0;
-G2L["1e0"]["TextSize"] = 14;
-G2L["1e0"]["TextScaled"] = true;
-G2L["1e0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e0"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1e0"]["BackgroundTransparency"] = 1;
-G2L["1e0"]["Size"] = UDim2.new(0.1, 0, 0, 30);
-G2L["1e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e0"]["Text"] = [[X]];
-G2L["1e0"]["Name"] = [[Close]];
-G2L["1e0"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["1de"] = Instance.new("TextButton", G2L["1d5"]);
+G2L["1de"]["TextWrapped"] = true;
+G2L["1de"]["BorderSizePixel"] = 0;
+G2L["1de"]["TextSize"] = 14;
+G2L["1de"]["TextScaled"] = true;
+G2L["1de"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1de"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1de"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1de"]["BackgroundTransparency"] = 1;
+G2L["1de"]["Size"] = UDim2.new(0.1, 0, 0, 30);
+G2L["1de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1de"]["Text"] = [[X]];
+G2L["1de"]["Name"] = [[Close]];
+G2L["1de"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Close.UIPadding
-G2L["1e1"] = Instance.new("UIPadding", G2L["1e0"]);
-G2L["1e1"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1e1"]["PaddingRight"] = UDim.new(0, 5);
-G2L["1e1"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1df"] = Instance.new("UIPadding", G2L["1de"]);
+G2L["1df"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1df"]["PaddingRight"] = UDim.new(0, 5);
+G2L["1df"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Close.UIStroke
-G2L["1e2"] = Instance.new("UIStroke", G2L["1e0"]);
-G2L["1e2"]["Thickness"] = 1.5;
-G2L["1e2"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1e0"] = Instance.new("UIStroke", G2L["1de"]);
+G2L["1e0"]["Thickness"] = 1.5;
+G2L["1e0"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Render
-G2L["1e3"] = Instance.new("ImageLabel", G2L["1d7"]);
-G2L["1e3"]["BorderSizePixel"] = 0;
-G2L["1e3"]["ScaleType"] = Enum.ScaleType.Fit;
-G2L["1e3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["1e3"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
-G2L["1e3"]["Size"] = UDim2.new(0.7, 0, 0.7, 0);
-G2L["1e3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e3"]["BackgroundTransparency"] = 1;
-G2L["1e3"]["Name"] = [[Render]];
-G2L["1e3"]["Position"] = UDim2.new(0.5, 0, 0.45, 0);
+G2L["1e1"] = Instance.new("ImageLabel", G2L["1d5"]);
+G2L["1e1"]["BorderSizePixel"] = 0;
+G2L["1e1"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["1e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e1"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["1e1"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["1e1"]["Size"] = UDim2.new(0.7, 0, 0.7, 0);
+G2L["1e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e1"]["BackgroundTransparency"] = 1;
+G2L["1e1"]["Name"] = [[Render]];
+G2L["1e1"]["Position"] = UDim2.new(0.5, 0, 0.45, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Render.UIAspectRatioConstraint
-G2L["1e4"] = Instance.new("UIAspectRatioConstraint", G2L["1e3"]);
+G2L["1e2"] = Instance.new("UIAspectRatioConstraint", G2L["1e1"]);
 
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Render.UICorner
-G2L["1e5"] = Instance.new("UICorner", G2L["1e3"]);
-G2L["1e5"]["CornerRadius"] = UDim.new(0, 7);
+G2L["1e3"] = Instance.new("UICorner", G2L["1e1"]);
+G2L["1e3"]["CornerRadius"] = UDim.new(0, 7);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Type
-G2L["1e6"] = Instance.new("TextLabel", G2L["1d7"]);
-G2L["1e6"]["TextWrapped"] = true;
-G2L["1e6"]["BorderSizePixel"] = 0;
-G2L["1e6"]["TextSize"] = 14;
-G2L["1e6"]["TextScaled"] = true;
-G2L["1e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e6"]["BackgroundTransparency"] = 1;
-G2L["1e6"]["AnchorPoint"] = Vector2.new(0, 1);
-G2L["1e6"]["Size"] = UDim2.new(1, 0, 0.1, 0);
-G2L["1e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e6"]["Text"] = [[Item, Pose/Walk Pack]];
-G2L["1e6"]["Name"] = [[Type]];
-G2L["1e6"]["Position"] = UDim2.new(0, 0, 0.875, 0);
+G2L["1e4"] = Instance.new("TextLabel", G2L["1d5"]);
+G2L["1e4"]["TextWrapped"] = true;
+G2L["1e4"]["BorderSizePixel"] = 0;
+G2L["1e4"]["TextSize"] = 14;
+G2L["1e4"]["TextScaled"] = true;
+G2L["1e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e4"]["BackgroundTransparency"] = 1;
+G2L["1e4"]["AnchorPoint"] = Vector2.new(0, 1);
+G2L["1e4"]["Size"] = UDim2.new(1, 0, 0.1, 0);
+G2L["1e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e4"]["Text"] = [[Item, Pose/Walk Pack]];
+G2L["1e4"]["Name"] = [[Type]];
+G2L["1e4"]["Position"] = UDim2.new(0, 0, 0.875, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Type.UIPadding
-G2L["1e7"] = Instance.new("UIPadding", G2L["1e6"]);
-G2L["1e7"]["PaddingTop"] = UDim.new(0, 3);
-G2L["1e7"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["1e7"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["1e5"] = Instance.new("UIPadding", G2L["1e4"]);
+G2L["1e5"]["PaddingTop"] = UDim.new(0, 3);
+G2L["1e5"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["1e5"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping.Template.Type.UIStroke
-G2L["1e8"] = Instance.new("UIStroke", G2L["1e6"]);
-G2L["1e8"]["Thickness"] = 1.5;
-G2L["1e8"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1e6"] = Instance.new("UIStroke", G2L["1e4"]);
+G2L["1e6"]["Thickness"] = 1.5;
+G2L["1e6"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1
-G2L["1e9"] = Instance.new("Frame", G2L["1c9"]);
-G2L["1e9"]["Active"] = true;
-G2L["1e9"]["BorderSizePixel"] = 0;
-G2L["1e9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e9"]["Selectable"] = true;
-G2L["1e9"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e9"]["Name"] = [[_HOLDER1]];
-G2L["1e9"]["LayoutOrder"] = 3;
-G2L["1e9"]["BackgroundTransparency"] = 1;
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.UIListLayout
+G2L["1e7"] = Instance.new("UIListLayout", G2L["1d2"]);
+G2L["1e7"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["1e7"]["Padding"] = UDim.new(0, 3);
+G2L["1e7"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1e7"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.PurchaseName
-G2L["1ea"] = Instance.new("TextBox", G2L["1e9"]);
-G2L["1ea"]["Name"] = [[PurchaseName]];
-G2L["1ea"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ea"]["BorderSizePixel"] = 0;
-G2L["1ea"]["TextWrapped"] = true;
-G2L["1ea"]["TextSize"] = 14;
-G2L["1ea"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ea"]["TextScaled"] = true;
-G2L["1ea"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ea"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1ea"]["ClearTextOnFocus"] = false;
-G2L["1ea"]["PlaceholderText"] = [[Item/Pack Name]];
-G2L["1ea"]["Size"] = UDim2.new(0.62, 0, 1, 0);
-G2L["1ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ea"]["Text"] = [[]];
-G2L["1ea"]["LayoutOrder"] = 3;
-G2L["1ea"]["BackgroundTransparency"] = 0.75;
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.ToggleCashFarm
+G2L["1e8"] = Instance.new("TextButton", G2L["1d2"]);
+G2L["1e8"]["TextWrapped"] = true;
+G2L["1e8"]["BorderSizePixel"] = 0;
+G2L["1e8"]["TextSize"] = 14;
+G2L["1e8"]["TextScaled"] = true;
+G2L["1e8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e8"]["BackgroundTransparency"] = 0.5;
+G2L["1e8"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1e8"]["LayoutOrder"] = 1;
+G2L["1e8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e8"]["Text"] = [[Toggle Cash Farm : Off]];
+G2L["1e8"]["Name"] = [[ToggleCashFarm]];
+-- Attributes
+G2L["1e8"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.PurchaseName.UICorner
-G2L["1eb"] = Instance.new("UICorner", G2L["1ea"]);
-G2L["1eb"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.ToggleCashFarm.UICorner
+G2L["1e9"] = Instance.new("UICorner", G2L["1e8"]);
+G2L["1e9"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.PurchaseName.UIStroke
-G2L["1ec"] = Instance.new("UIStroke", G2L["1ea"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.ToggleCashFarm.UIStroke
+G2L["1ea"] = Instance.new("UIStroke", G2L["1e8"]);
+G2L["1ea"]["Thickness"] = 1.5;
+G2L["1ea"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel
+G2L["1eb"] = Instance.new("TextLabel", G2L["1d2"]);
+G2L["1eb"]["TextWrapped"] = true;
+G2L["1eb"]["BorderSizePixel"] = 0;
+G2L["1eb"]["TextSize"] = 14;
+G2L["1eb"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["1eb"]["TextScaled"] = true;
+G2L["1eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1eb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1eb"]["BackgroundTransparency"] = 1;
+G2L["1eb"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1eb"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1eb"]["Text"] = [[Farming:]];
+G2L["1eb"]["Position"] = UDim2.new(1, 0, 0, 0);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel.UIStroke
+G2L["1ec"] = Instance.new("UIStroke", G2L["1eb"]);
 G2L["1ec"]["Thickness"] = 1.5;
 G2L["1ec"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.LoadInfo
-G2L["1ed"] = Instance.new("TextButton", G2L["1e9"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CollectCash
+G2L["1ed"] = Instance.new("TextButton", G2L["1d2"]);
 G2L["1ed"]["TextWrapped"] = true;
 G2L["1ed"]["BorderSizePixel"] = 0;
 G2L["1ed"]["TextSize"] = 14;
@@ -4725,334 +4723,331 @@ G2L["1ed"]["TextScaled"] = true;
 G2L["1ed"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1ed"]["AnchorPoint"] = Vector2.new(1, 0);
 G2L["1ed"]["BackgroundTransparency"] = 0.5;
-G2L["1ed"]["Size"] = UDim2.new(0.35, 0, 1, 0);
+G2L["1ed"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["1ed"]["LayoutOrder"] = 1;
 G2L["1ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ed"]["Text"] = [[Load Info]];
-G2L["1ed"]["Name"] = [[LoadInfo]];
-G2L["1ed"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["1ed"]["Text"] = [[Collect All Cash]];
+G2L["1ed"]["Name"] = [[CollectCash]];
 -- Attributes
 G2L["1ed"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.LoadInfo.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CollectCash.UICorner
 G2L["1ee"] = Instance.new("UICorner", G2L["1ed"]);
 G2L["1ee"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.LoadInfo.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CollectCash.UIStroke
 G2L["1ef"] = Instance.new("UIStroke", G2L["1ed"]);
 G2L["1ef"]["Thickness"] = 1.5;
 G2L["1ef"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.FirePurchase
-G2L["1f0"] = Instance.new("TextButton", G2L["1c9"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel
+G2L["1f0"] = Instance.new("TextLabel", G2L["1d2"]);
 G2L["1f0"]["TextWrapped"] = true;
 G2L["1f0"]["BorderSizePixel"] = 0;
 G2L["1f0"]["TextSize"] = 14;
+G2L["1f0"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["1f0"]["TextScaled"] = true;
-G2L["1f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1f0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1f0"]["BackgroundTransparency"] = 0.5;
+G2L["1f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f0"]["BackgroundTransparency"] = 1;
+G2L["1f0"]["AnchorPoint"] = Vector2.new(1, 0);
 G2L["1f0"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1f0"]["LayoutOrder"] = 3;
 G2L["1f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f0"]["Text"] = [[Fire Purchase Remote]];
-G2L["1f0"]["Name"] = [[FirePurchase]];
--- Attributes
-G2L["1f0"]:SetAttribute([[Item]], [[]]);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.FirePurchase.UICorner
-G2L["1f1"] = Instance.new("UICorner", G2L["1f0"]);
-G2L["1f1"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.FirePurchase.UIStroke
-G2L["1f2"] = Instance.new("UIStroke", G2L["1f0"]);
-G2L["1f2"]["Thickness"] = 1.5;
-G2L["1f2"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel
-G2L["1f3"] = Instance.new("TextLabel", G2L["1c9"]);
-G2L["1f3"]["TextWrapped"] = true;
-G2L["1f3"]["BorderSizePixel"] = 0;
-G2L["1f3"]["TextSize"] = 14;
-G2L["1f3"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["1f3"]["TextScaled"] = true;
-G2L["1f3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1f3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f3"]["BackgroundTransparency"] = 1;
-G2L["1f3"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1f3"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f3"]["Text"] = [[Universal:]];
-G2L["1f3"]["LayoutOrder"] = 4;
-G2L["1f3"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["1f0"]["Text"] = [[Shopping:]];
+G2L["1f0"]["LayoutOrder"] = 2;
+G2L["1f0"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel.UIStroke
-G2L["1f4"] = Instance.new("UIStroke", G2L["1f3"]);
-G2L["1f4"]["Thickness"] = 1.5;
-G2L["1f4"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1f1"] = Instance.new("UIStroke", G2L["1f0"]);
+G2L["1f1"]["Thickness"] = 1.5;
+G2L["1f1"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1
+G2L["1f2"] = Instance.new("Frame", G2L["1d2"]);
+G2L["1f2"]["Active"] = true;
+G2L["1f2"]["BorderSizePixel"] = 0;
+G2L["1f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f2"]["Selectable"] = true;
+G2L["1f2"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f2"]["Name"] = [[_HOLDER1]];
+G2L["1f2"]["LayoutOrder"] = 3;
+G2L["1f2"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.PurchaseName
+G2L["1f3"] = Instance.new("TextBox", G2L["1f2"]);
+G2L["1f3"]["Name"] = [[PurchaseName]];
+G2L["1f3"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f3"]["BorderSizePixel"] = 0;
+G2L["1f3"]["TextWrapped"] = true;
+G2L["1f3"]["TextSize"] = 14;
+G2L["1f3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f3"]["TextScaled"] = true;
+G2L["1f3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f3"]["ClearTextOnFocus"] = false;
+G2L["1f3"]["PlaceholderText"] = [[Item/Pack Name]];
+G2L["1f3"]["Size"] = UDim2.new(0.62, 0, 1, 0);
+G2L["1f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f3"]["Text"] = [[]];
+G2L["1f3"]["LayoutOrder"] = 3;
+G2L["1f3"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.PurchaseName.UICorner
+G2L["1f4"] = Instance.new("UICorner", G2L["1f3"]);
+G2L["1f4"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.PurchaseName.UIStroke
+G2L["1f5"] = Instance.new("UIStroke", G2L["1f3"]);
+G2L["1f5"]["Thickness"] = 1.5;
+G2L["1f5"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.LoadInfo
+G2L["1f6"] = Instance.new("TextButton", G2L["1f2"]);
+G2L["1f6"]["TextWrapped"] = true;
+G2L["1f6"]["BorderSizePixel"] = 0;
+G2L["1f6"]["TextSize"] = 14;
+G2L["1f6"]["TextScaled"] = true;
+G2L["1f6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f6"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1f6"]["BackgroundTransparency"] = 0.5;
+G2L["1f6"]["Size"] = UDim2.new(0.35, 0, 1, 0);
+G2L["1f6"]["LayoutOrder"] = 1;
+G2L["1f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f6"]["Text"] = [[Load Info]];
+G2L["1f6"]["Name"] = [[LoadInfo]];
+G2L["1f6"]["Position"] = UDim2.new(1, 0, 0, 0);
+-- Attributes
+G2L["1f6"]:SetAttribute([[Item]], [[]]);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.LoadInfo.UICorner
+G2L["1f7"] = Instance.new("UICorner", G2L["1f6"]);
+G2L["1f7"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils._HOLDER1.LoadInfo.UIStroke
+G2L["1f8"] = Instance.new("UIStroke", G2L["1f6"]);
+G2L["1f8"]["Thickness"] = 1.5;
+G2L["1f8"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.FirePurchase
+G2L["1f9"] = Instance.new("TextButton", G2L["1d2"]);
+G2L["1f9"]["TextWrapped"] = true;
+G2L["1f9"]["BorderSizePixel"] = 0;
+G2L["1f9"]["TextSize"] = 14;
+G2L["1f9"]["TextScaled"] = true;
+G2L["1f9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f9"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f9"]["BackgroundTransparency"] = 0.5;
+G2L["1f9"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1f9"]["LayoutOrder"] = 3;
+G2L["1f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f9"]["Text"] = [[Fire Purchase Remote]];
+G2L["1f9"]["Name"] = [[FirePurchase]];
+-- Attributes
+G2L["1f9"]:SetAttribute([[Item]], [[]]);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.FirePurchase.UICorner
+G2L["1fa"] = Instance.new("UICorner", G2L["1f9"]);
+G2L["1fa"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.FirePurchase.UIStroke
+G2L["1fb"] = Instance.new("UIStroke", G2L["1f9"]);
+G2L["1fb"]["Thickness"] = 1.5;
+G2L["1fb"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel
+G2L["1fc"] = Instance.new("TextLabel", G2L["1d2"]);
+G2L["1fc"]["TextWrapped"] = true;
+G2L["1fc"]["BorderSizePixel"] = 0;
+G2L["1fc"]["TextSize"] = 14;
+G2L["1fc"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["1fc"]["TextScaled"] = true;
+G2L["1fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1fc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fc"]["BackgroundTransparency"] = 1;
+G2L["1fc"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1fc"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1fc"]["Text"] = [[Universal:]];
+G2L["1fc"]["LayoutOrder"] = 4;
+G2L["1fc"]["Position"] = UDim2.new(1, 0, 0, 0);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.TextLabel.UIStroke
+G2L["1fd"] = Instance.new("UIStroke", G2L["1fc"]);
+G2L["1fd"]["Thickness"] = 1.5;
+G2L["1fd"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.InfYield
-G2L["1f5"] = Instance.new("TextButton", G2L["1c9"]);
-G2L["1f5"]["TextWrapped"] = true;
-G2L["1f5"]["BorderSizePixel"] = 0;
-G2L["1f5"]["TextSize"] = 14;
-G2L["1f5"]["TextScaled"] = true;
-G2L["1f5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1f5"]["BackgroundTransparency"] = 0.5;
-G2L["1f5"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1f5"]["LayoutOrder"] = 5;
-G2L["1f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f5"]["Text"] = [[Infinite Yield]];
-G2L["1f5"]["Name"] = [[InfYield]];
+G2L["1fe"] = Instance.new("TextButton", G2L["1d2"]);
+G2L["1fe"]["TextWrapped"] = true;
+G2L["1fe"]["BorderSizePixel"] = 0;
+G2L["1fe"]["TextSize"] = 14;
+G2L["1fe"]["TextScaled"] = true;
+G2L["1fe"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fe"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1fe"]["BackgroundTransparency"] = 0.5;
+G2L["1fe"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["1fe"]["LayoutOrder"] = 5;
+G2L["1fe"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1fe"]["Text"] = [[Infinite Yield]];
+G2L["1fe"]["Name"] = [[InfYield]];
 -- Attributes
-G2L["1f5"]:SetAttribute([[Item]], [[]]);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.InfYield.UICorner
-G2L["1f6"] = Instance.new("UICorner", G2L["1f5"]);
-G2L["1f6"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.InfYield.UIStroke
-G2L["1f7"] = Instance.new("UIStroke", G2L["1f5"]);
-G2L["1f7"]["Thickness"] = 1.5;
-G2L["1f7"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["1fe"]:SetAttribute([[Item]], [[]]);
 
 
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.InfYield.LocalScript
-G2L["1f8"] = Instance.new("LocalScript", G2L["1f5"]);
+G2L["1ff"] = Instance.new("LocalScript", G2L["1fe"]);
 
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings
-G2L["1f9"] = Instance.new("ScrollingFrame", G2L["34"]);
-G2L["1f9"]["Visible"] = false;
-G2L["1f9"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["1f9"]["BorderSizePixel"] = 0;
-G2L["1f9"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["1f9"]["Name"] = [[Settings]];
-G2L["1f9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f9"]["Selectable"] = false;
-G2L["1f9"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["1f9"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["1f9"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1f9"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f9"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["1f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f9"]["ScrollBarThickness"] = 0;
-G2L["1f9"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.UIListLayout
-G2L["1fa"] = Instance.new("UIListLayout", G2L["1f9"]);
-G2L["1fa"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["1fa"]["Padding"] = UDim.new(0, 3);
-G2L["1fa"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["1fa"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.TextLabel
-G2L["1fb"] = Instance.new("TextLabel", G2L["1f9"]);
-G2L["1fb"]["TextWrapped"] = true;
-G2L["1fb"]["BorderSizePixel"] = 0;
-G2L["1fb"]["TextSize"] = 14;
-G2L["1fb"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["1fb"]["TextScaled"] = true;
-G2L["1fb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1fb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1fb"]["BackgroundTransparency"] = 1;
-G2L["1fb"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1fb"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1fb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1fb"]["Text"] = [[GUI Size:]];
-G2L["1fb"]["Position"] = UDim2.new(1, 0, 0, 0);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.TextLabel.UIStroke
-G2L["1fc"] = Instance.new("UIStroke", G2L["1fb"]);
-G2L["1fc"]["Thickness"] = 1.5;
-G2L["1fc"]["Color"] = Color3.fromRGB(255, 135, 206);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes
-G2L["1fd"] = Instance.new("Frame", G2L["1f9"]);
-G2L["1fd"]["Active"] = true;
-G2L["1fd"]["BorderSizePixel"] = 0;
-G2L["1fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1fd"]["Selectable"] = true;
-G2L["1fd"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["1fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1fd"]["Name"] = [[Sizes]];
-G2L["1fd"]["LayoutOrder"] = 1;
-G2L["1fd"]["BackgroundTransparency"] = 1;
--- Attributes
-G2L["1fd"]:SetAttribute([[Item]], [[]]);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.LocalScript
-G2L["1fe"] = Instance.new("LocalScript", G2L["1fd"]);
-
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Small
-G2L["1ff"] = Instance.new("TextButton", G2L["1fd"]);
-G2L["1ff"]["TextWrapped"] = true;
-G2L["1ff"]["BorderSizePixel"] = 0;
-G2L["1ff"]["TextSize"] = 14;
-G2L["1ff"]["TextScaled"] = true;
-G2L["1ff"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ff"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1ff"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1ff"]["BackgroundTransparency"] = 0.5;
-G2L["1ff"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1ff"]["LayoutOrder"] = 1;
-G2L["1ff"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ff"]["Text"] = [[Small]];
-G2L["1ff"]["Name"] = [[Small]];
--- Attributes
-G2L["1ff"]:SetAttribute([[Item]], [[]]);
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Small.UICorner
-G2L["200"] = Instance.new("UICorner", G2L["1ff"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.InfYield.UICorner
+G2L["200"] = Instance.new("UICorner", G2L["1fe"]);
 G2L["200"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Small.UIStroke
-G2L["201"] = Instance.new("UIStroke", G2L["1ff"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.InfYield.UIStroke
+G2L["201"] = Instance.new("UIStroke", G2L["1fe"]);
 G2L["201"]["Thickness"] = 1.5;
 G2L["201"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.UIListLayout
-G2L["202"] = Instance.new("UIListLayout", G2L["1fd"]);
-G2L["202"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["202"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["202"]["Padding"] = UDim.new(0.02, 0);
-G2L["202"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["202"]["FillDirection"] = Enum.FillDirection.Horizontal;
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings
+G2L["202"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["202"]["Visible"] = false;
+G2L["202"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["202"]["BorderSizePixel"] = 0;
+G2L["202"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["202"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["202"]["Name"] = [[Settings]];
+G2L["202"]["ScrollBarImageTransparency"] = 0.5;
+G2L["202"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["202"]["Selectable"] = false;
+G2L["202"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["202"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["202"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["202"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["202"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["202"]["ScrollBarThickness"] = 3;
+G2L["202"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Default
-G2L["203"] = Instance.new("TextButton", G2L["1fd"]);
-G2L["203"]["TextWrapped"] = true;
-G2L["203"]["BorderSizePixel"] = 0;
-G2L["203"]["TextSize"] = 14;
-G2L["203"]["TextScaled"] = true;
-G2L["203"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["203"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["203"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["203"]["BackgroundTransparency"] = 0.5;
-G2L["203"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["203"]["LayoutOrder"] = 1;
-G2L["203"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["203"]["Text"] = [[Default]];
-G2L["203"]["Name"] = [[Default]];
--- Attributes
-G2L["203"]:SetAttribute([[Item]], [[]]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.UIListLayout
+G2L["203"] = Instance.new("UIListLayout", G2L["202"]);
+G2L["203"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["203"]["Padding"] = UDim.new(0, 3);
+G2L["203"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["203"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Default.UICorner
-G2L["204"] = Instance.new("UICorner", G2L["203"]);
-G2L["204"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.TextLabel
+G2L["204"] = Instance.new("TextLabel", G2L["202"]);
+G2L["204"]["TextWrapped"] = true;
+G2L["204"]["BorderSizePixel"] = 0;
+G2L["204"]["TextSize"] = 14;
+G2L["204"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["204"]["TextScaled"] = true;
+G2L["204"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["204"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["204"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["204"]["BackgroundTransparency"] = 1;
+G2L["204"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["204"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["204"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["204"]["Text"] = [[GUI Size:]];
+G2L["204"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Default.UIStroke
-G2L["205"] = Instance.new("UIStroke", G2L["203"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.TextLabel.UIStroke
+G2L["205"] = Instance.new("UIStroke", G2L["204"]);
 G2L["205"]["Thickness"] = 1.5;
 G2L["205"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Large
-G2L["206"] = Instance.new("TextButton", G2L["1fd"]);
-G2L["206"]["TextWrapped"] = true;
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes
+G2L["206"] = Instance.new("Frame", G2L["202"]);
+G2L["206"]["Active"] = true;
 G2L["206"]["BorderSizePixel"] = 0;
-G2L["206"]["TextSize"] = 14;
-G2L["206"]["TextScaled"] = true;
-G2L["206"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["206"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["206"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["206"]["BackgroundTransparency"] = 0.5;
-G2L["206"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["206"]["LayoutOrder"] = 1;
+G2L["206"]["Selectable"] = true;
+G2L["206"]["Size"] = UDim2.new(1, 0, 0.12, 0);
 G2L["206"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["206"]["Text"] = [[Large]];
-G2L["206"]["Name"] = [[Large]];
+G2L["206"]["Name"] = [[Sizes]];
+G2L["206"]["LayoutOrder"] = 1;
+G2L["206"]["BackgroundTransparency"] = 1;
 -- Attributes
 G2L["206"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Large.UICorner
-G2L["207"] = Instance.new("UICorner", G2L["206"]);
-G2L["207"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.LocalScript
+G2L["207"] = Instance.new("LocalScript", G2L["206"]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Large.UIStroke
-G2L["208"] = Instance.new("UIStroke", G2L["206"]);
-G2L["208"]["Thickness"] = 1.5;
-G2L["208"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Small
+G2L["208"] = Instance.new("TextButton", G2L["206"]);
+G2L["208"]["TextWrapped"] = true;
+G2L["208"]["BorderSizePixel"] = 0;
+G2L["208"]["TextSize"] = 14;
+G2L["208"]["TextScaled"] = true;
+G2L["208"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["208"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["208"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["208"]["BackgroundTransparency"] = 0.5;
+G2L["208"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["208"]["LayoutOrder"] = 1;
+G2L["208"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["208"]["Text"] = [[Small]];
+G2L["208"]["Name"] = [[Small]];
+-- Attributes
+G2L["208"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.TextLabel
-G2L["209"] = Instance.new("TextLabel", G2L["1f9"]);
-G2L["209"]["TextWrapped"] = true;
-G2L["209"]["BorderSizePixel"] = 0;
-G2L["209"]["TextSize"] = 14;
-G2L["209"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["209"]["TextScaled"] = true;
-G2L["209"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["209"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["209"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["209"]["BackgroundTransparency"] = 1;
-G2L["209"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["209"]["Size"] = UDim2.new(1, 0, 0.12, 0);
-G2L["209"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["209"]["Text"] = [[Themes:]];
-G2L["209"]["LayoutOrder"] = 2;
-G2L["209"]["Position"] = UDim2.new(1, 0, 0, 0);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Small.UICorner
+G2L["209"] = Instance.new("UICorner", G2L["208"]);
+G2L["209"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.TextLabel.UIStroke
-G2L["20a"] = Instance.new("UIStroke", G2L["209"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Small.UIStroke
+G2L["20a"] = Instance.new("UIStroke", G2L["208"]);
 G2L["20a"]["Thickness"] = 1.5;
 G2L["20a"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes
-G2L["20b"] = Instance.new("ScrollingFrame", G2L["1f9"]);
-G2L["20b"]["Active"] = true;
-G2L["20b"]["ScrollingDirection"] = Enum.ScrollingDirection.X;
-G2L["20b"]["BorderSizePixel"] = 0;
-G2L["20b"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["20b"]["Name"] = [[Themes]];
-G2L["20b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20b"]["AutomaticCanvasSize"] = Enum.AutomaticSize.X;
-G2L["20b"]["Size"] = UDim2.new(1, 0, 0.145, 0);
-G2L["20b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20b"]["ScrollBarThickness"] = 3;
-G2L["20b"]["LayoutOrder"] = 3;
-G2L["20b"]["BackgroundTransparency"] = 1;
--- Attributes
-G2L["20b"]:SetAttribute([[Item]], [[]]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.UIListLayout
+G2L["20b"] = Instance.new("UIListLayout", G2L["206"]);
+G2L["20b"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["20b"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["20b"]["Padding"] = UDim.new(0.02, 0);
+G2L["20b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["20b"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Pink
-G2L["20c"] = Instance.new("TextButton", G2L["20b"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Default
+G2L["20c"] = Instance.new("TextButton", G2L["206"]);
 G2L["20c"]["TextWrapped"] = true;
 G2L["20c"]["BorderSizePixel"] = 0;
 G2L["20c"]["TextSize"] = 14;
@@ -5061,92 +5056,106 @@ G2L["20c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["20c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["20c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["20c"]["BackgroundTransparency"] = 0.5;
-G2L["20c"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
+G2L["20c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["20c"]["LayoutOrder"] = 1;
 G2L["20c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20c"]["Text"] = [[Pink]];
-G2L["20c"]["Name"] = [[Pink]];
+G2L["20c"]["Text"] = [[Default]];
+G2L["20c"]["Name"] = [[Default]];
 -- Attributes
-G2L["20c"]:SetAttribute([[IGNORE]], [[]]);
+G2L["20c"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Pink.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Default.UICorner
 G2L["20d"] = Instance.new("UICorner", G2L["20c"]);
 G2L["20d"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Pink.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Default.UIStroke
 G2L["20e"] = Instance.new("UIStroke", G2L["20c"]);
 G2L["20e"]["Thickness"] = 1.5;
 G2L["20e"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.UIListLayout
-G2L["20f"] = Instance.new("UIListLayout", G2L["20b"]);
-G2L["20f"]["Padding"] = UDim.new(0.02, 0);
-G2L["20f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["20f"]["FillDirection"] = Enum.FillDirection.Horizontal;
-
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Purple
-G2L["210"] = Instance.new("TextButton", G2L["20b"]);
-G2L["210"]["TextWrapped"] = true;
-G2L["210"]["BorderSizePixel"] = 0;
-G2L["210"]["TextSize"] = 14;
-G2L["210"]["TextScaled"] = true;
-G2L["210"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["210"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["210"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["210"]["BackgroundTransparency"] = 0.5;
-G2L["210"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
-G2L["210"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["210"]["Text"] = [[Purple]];
-G2L["210"]["Name"] = [[Purple]];
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Large
+G2L["20f"] = Instance.new("TextButton", G2L["206"]);
+G2L["20f"]["TextWrapped"] = true;
+G2L["20f"]["BorderSizePixel"] = 0;
+G2L["20f"]["TextSize"] = 14;
+G2L["20f"]["TextScaled"] = true;
+G2L["20f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20f"]["BackgroundTransparency"] = 0.5;
+G2L["20f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["20f"]["LayoutOrder"] = 1;
+G2L["20f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20f"]["Text"] = [[Large]];
+G2L["20f"]["Name"] = [[Large]];
 -- Attributes
-G2L["210"]:SetAttribute([[IGNORE]], [[]]);
+G2L["20f"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Purple.UICorner
-G2L["211"] = Instance.new("UICorner", G2L["210"]);
-G2L["211"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Large.UICorner
+G2L["210"] = Instance.new("UICorner", G2L["20f"]);
+G2L["210"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Purple.UIStroke
-G2L["212"] = Instance.new("UIStroke", G2L["210"]);
-G2L["212"]["Thickness"] = 1.5;
-G2L["212"]["Color"] = Color3.fromRGB(138, 95, 216);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.Large.UIStroke
+G2L["211"] = Instance.new("UIStroke", G2L["20f"]);
+G2L["211"]["Thickness"] = 1.5;
+G2L["211"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Blue
-G2L["213"] = Instance.new("TextButton", G2L["20b"]);
-G2L["213"]["TextWrapped"] = true;
-G2L["213"]["BorderSizePixel"] = 0;
-G2L["213"]["TextSize"] = 14;
-G2L["213"]["TextScaled"] = true;
-G2L["213"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["213"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["213"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["213"]["BackgroundTransparency"] = 0.5;
-G2L["213"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
-G2L["213"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["213"]["Text"] = [[Blue]];
-G2L["213"]["Name"] = [[Blue]];
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.TextLabel
+G2L["212"] = Instance.new("TextLabel", G2L["202"]);
+G2L["212"]["TextWrapped"] = true;
+G2L["212"]["BorderSizePixel"] = 0;
+G2L["212"]["TextSize"] = 14;
+G2L["212"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["212"]["TextScaled"] = true;
+G2L["212"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["212"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["212"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["212"]["BackgroundTransparency"] = 1;
+G2L["212"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["212"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["212"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["212"]["Text"] = [[Themes:]];
+G2L["212"]["LayoutOrder"] = 2;
+G2L["212"]["Position"] = UDim2.new(1, 0, 0, 0);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.TextLabel.UIStroke
+G2L["213"] = Instance.new("UIStroke", G2L["212"]);
+G2L["213"]["Thickness"] = 1.5;
+G2L["213"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes
+G2L["214"] = Instance.new("ScrollingFrame", G2L["202"]);
+G2L["214"]["Active"] = true;
+G2L["214"]["ScrollingDirection"] = Enum.ScrollingDirection.X;
+G2L["214"]["BorderSizePixel"] = 0;
+G2L["214"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["214"]["Name"] = [[Themes]];
+G2L["214"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["214"]["AutomaticCanvasSize"] = Enum.AutomaticSize.X;
+G2L["214"]["Size"] = UDim2.new(1, 0, 0.145, 0);
+G2L["214"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["214"]["ScrollBarThickness"] = 3;
+G2L["214"]["LayoutOrder"] = 3;
+G2L["214"]["BackgroundTransparency"] = 1;
 -- Attributes
-G2L["213"]:SetAttribute([[IGNORE]], [[]]);
+G2L["214"]:SetAttribute([[Item]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Blue.UICorner
-G2L["214"] = Instance.new("UICorner", G2L["213"]);
-G2L["214"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.LocalScript
+G2L["215"] = Instance.new("LocalScript", G2L["214"]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Blue.UIStroke
-G2L["215"] = Instance.new("UIStroke", G2L["213"]);
-G2L["215"]["Thickness"] = 1.5;
-G2L["215"]["Color"] = Color3.fromRGB(95, 170, 233);
 
-
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Green
-G2L["216"] = Instance.new("TextButton", G2L["20b"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Pink
+G2L["216"] = Instance.new("TextButton", G2L["214"]);
 G2L["216"]["TextWrapped"] = true;
 G2L["216"]["BorderSizePixel"] = 0;
 G2L["216"]["TextSize"] = 14;
@@ -5156,152 +5165,151 @@ G2L["216"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["216"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["216"]["BackgroundTransparency"] = 0.5;
 G2L["216"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
-G2L["216"]["LayoutOrder"] = 1;
 G2L["216"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["216"]["Text"] = [[Green]];
-G2L["216"]["Name"] = [[Green]];
+G2L["216"]["Text"] = [[Pink]];
+G2L["216"]["Name"] = [[Pink]];
 -- Attributes
 G2L["216"]:SetAttribute([[IGNORE]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Green.UICorner
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Pink.UICorner
 G2L["217"] = Instance.new("UICorner", G2L["216"]);
 G2L["217"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Green.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Pink.UIStroke
 G2L["218"] = Instance.new("UIStroke", G2L["216"]);
 G2L["218"]["Thickness"] = 1.5;
-G2L["218"]["Color"] = Color3.fromRGB(110, 160, 26);
+G2L["218"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Black
-G2L["219"] = Instance.new("TextButton", G2L["20b"]);
-G2L["219"]["TextWrapped"] = true;
-G2L["219"]["BorderSizePixel"] = 0;
-G2L["219"]["TextSize"] = 14;
-G2L["219"]["TextScaled"] = true;
-G2L["219"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["219"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["219"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["219"]["BackgroundTransparency"] = 0.5;
-G2L["219"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
-G2L["219"]["LayoutOrder"] = 1;
-G2L["219"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["219"]["Text"] = [[Black]];
-G2L["219"]["Name"] = [[Black]];
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.UIListLayout
+G2L["219"] = Instance.new("UIListLayout", G2L["214"]);
+G2L["219"]["Padding"] = UDim.new(0.02, 0);
+G2L["219"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["219"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Purple
+G2L["21a"] = Instance.new("TextButton", G2L["214"]);
+G2L["21a"]["TextWrapped"] = true;
+G2L["21a"]["BorderSizePixel"] = 0;
+G2L["21a"]["TextSize"] = 14;
+G2L["21a"]["TextScaled"] = true;
+G2L["21a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21a"]["BackgroundTransparency"] = 0.5;
+G2L["21a"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
+G2L["21a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21a"]["Text"] = [[Purple]];
+G2L["21a"]["Name"] = [[Purple]];
 -- Attributes
-G2L["219"]:SetAttribute([[IGNORE]], [[]]);
+G2L["21a"]:SetAttribute([[IGNORE]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Black.UICorner
-G2L["21a"] = Instance.new("UICorner", G2L["219"]);
-G2L["21a"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Purple.UICorner
+G2L["21b"] = Instance.new("UICorner", G2L["21a"]);
+G2L["21b"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Black.UIStroke
-G2L["21b"] = Instance.new("UIStroke", G2L["219"]);
-G2L["21b"]["Thickness"] = 1.5;
-G2L["21b"]["Color"] = Color3.fromRGB(255, 255, 255);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Purple.UIStroke
+G2L["21c"] = Instance.new("UIStroke", G2L["21a"]);
+G2L["21c"]["Thickness"] = 1.5;
+G2L["21c"]["Color"] = Color3.fromRGB(138, 95, 216);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.White
-G2L["21c"] = Instance.new("TextButton", G2L["20b"]);
-G2L["21c"]["TextWrapped"] = true;
-G2L["21c"]["BorderSizePixel"] = 0;
-G2L["21c"]["TextSize"] = 14;
-G2L["21c"]["TextScaled"] = true;
-G2L["21c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["21c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["21c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["21c"]["BackgroundTransparency"] = 0.5;
-G2L["21c"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
-G2L["21c"]["LayoutOrder"] = 1;
-G2L["21c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21c"]["Text"] = [[White]];
-G2L["21c"]["Name"] = [[White]];
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Blue
+G2L["21d"] = Instance.new("TextButton", G2L["214"]);
+G2L["21d"]["TextWrapped"] = true;
+G2L["21d"]["BorderSizePixel"] = 0;
+G2L["21d"]["TextSize"] = 14;
+G2L["21d"]["TextScaled"] = true;
+G2L["21d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21d"]["BackgroundTransparency"] = 0.5;
+G2L["21d"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
+G2L["21d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21d"]["Text"] = [[Blue]];
+G2L["21d"]["Name"] = [[Blue]];
 -- Attributes
-G2L["21c"]:SetAttribute([[IGNORE]], [[]]);
+G2L["21d"]:SetAttribute([[IGNORE]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.White.UICorner
-G2L["21d"] = Instance.new("UICorner", G2L["21c"]);
-G2L["21d"]["CornerRadius"] = UDim.new(0, 5);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Blue.UICorner
+G2L["21e"] = Instance.new("UICorner", G2L["21d"]);
+G2L["21e"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.White.UIStroke
-G2L["21e"] = Instance.new("UIStroke", G2L["21c"]);
-G2L["21e"]["Thickness"] = 1.5;
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Blue.UIStroke
+G2L["21f"] = Instance.new("UIStroke", G2L["21d"]);
+G2L["21f"]["Thickness"] = 1.5;
+G2L["21f"]["Color"] = Color3.fromRGB(95, 170, 233);
 
 
--- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.LocalScript
-G2L["21f"] = Instance.new("LocalScript", G2L["20b"]);
-
-
-
--- StarterGui.DTIGUI.Main.Container.Credits
-G2L["220"] = Instance.new("TextLabel", G2L["8"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Green
+G2L["220"] = Instance.new("TextButton", G2L["214"]);
 G2L["220"]["TextWrapped"] = true;
 G2L["220"]["BorderSizePixel"] = 0;
 G2L["220"]["TextSize"] = 14;
-G2L["220"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["220"]["TextScaled"] = true;
+G2L["220"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["220"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["220"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["220"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["220"]["BackgroundTransparency"] = 1;
-G2L["220"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["220"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["220"]["BackgroundTransparency"] = 0.5;
+G2L["220"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
+G2L["220"]["LayoutOrder"] = 1;
 G2L["220"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["220"]["Text"] = [[xoxo, R <3]];
-G2L["220"]["Name"] = [[Credits]];
-G2L["220"]["Position"] = UDim2.new(1, 0, 1.05, 0);
+G2L["220"]["Text"] = [[Green]];
+G2L["220"]["Name"] = [[Green]];
+-- Attributes
+G2L["220"]:SetAttribute([[IGNORE]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.Container.Credits.UIPadding
-G2L["221"] = Instance.new("UIPadding", G2L["220"]);
-G2L["221"]["PaddingTop"] = UDim.new(0, 3);
-G2L["221"]["PaddingRight"] = UDim.new(0, 5);
-G2L["221"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Green.UICorner
+G2L["221"] = Instance.new("UICorner", G2L["220"]);
+G2L["221"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.Container.Credits.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Green.UIStroke
 G2L["222"] = Instance.new("UIStroke", G2L["220"]);
 G2L["222"]["Thickness"] = 1.5;
-G2L["222"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["222"]["Color"] = Color3.fromRGB(110, 160, 26);
 
 
--- StarterGui.DTIGUI.Main.TextLabel
-G2L["223"] = Instance.new("TextLabel", G2L["4"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Black
+G2L["223"] = Instance.new("TextButton", G2L["214"]);
 G2L["223"]["TextWrapped"] = true;
 G2L["223"]["BorderSizePixel"] = 0;
 G2L["223"]["TextSize"] = 14;
-G2L["223"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["223"]["TextScaled"] = true;
+G2L["223"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["223"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["223"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["223"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["223"]["BackgroundTransparency"] = 1;
-G2L["223"]["Size"] = UDim2.new(0.75, 0, 0, 30);
+G2L["223"]["BackgroundTransparency"] = 0.5;
+G2L["223"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
+G2L["223"]["LayoutOrder"] = 1;
 G2L["223"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["223"]["Text"] = [[Starlight DTI Gui]];
+G2L["223"]["Text"] = [[Black]];
+G2L["223"]["Name"] = [[Black]];
+-- Attributes
+G2L["223"]:SetAttribute([[IGNORE]], [[]]);
 
 
--- StarterGui.DTIGUI.Main.TextLabel.UIPadding
-G2L["224"] = Instance.new("UIPadding", G2L["223"]);
-G2L["224"]["PaddingTop"] = UDim.new(0, 3);
-G2L["224"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["224"]["PaddingBottom"] = UDim.new(0, 3);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Black.UICorner
+G2L["224"] = Instance.new("UICorner", G2L["223"]);
+G2L["224"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.DTIGUI.Main.TextLabel.UIStroke
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.Black.UIStroke
 G2L["225"] = Instance.new("UIStroke", G2L["223"]);
 G2L["225"]["Thickness"] = 1.5;
-G2L["225"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["225"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.DTIGUI.Main.Close
-G2L["226"] = Instance.new("TextButton", G2L["4"]);
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.White
+G2L["226"] = Instance.new("TextButton", G2L["214"]);
 G2L["226"]["TextWrapped"] = true;
 G2L["226"]["BorderSizePixel"] = 0;
 G2L["226"]["TextSize"] = 14;
@@ -5309,77 +5317,167 @@ G2L["226"]["TextScaled"] = true;
 G2L["226"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["226"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["226"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["226"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["226"]["BackgroundTransparency"] = 1;
-G2L["226"]["Size"] = UDim2.new(0.1, 0, 0, 30);
+G2L["226"]["BackgroundTransparency"] = 0.5;
+G2L["226"]["Size"] = UDim2.new(0.3, 0, 0.8, 0);
+G2L["226"]["LayoutOrder"] = 1;
 G2L["226"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["226"]["Text"] = [[X]];
-G2L["226"]["Name"] = [[Close]];
-G2L["226"]["Position"] = UDim2.new(1, 0, 0, 0);
+G2L["226"]["Text"] = [[White]];
+G2L["226"]["Name"] = [[White]];
+-- Attributes
+G2L["226"]:SetAttribute([[IGNORE]], [[]]);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.White.UICorner
+G2L["227"] = Instance.new("UICorner", G2L["226"]);
+G2L["227"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.White.UIStroke
+G2L["228"] = Instance.new("UIStroke", G2L["226"]);
+G2L["228"]["Thickness"] = 1.5;
+
+
+-- StarterGui.DTIGUI.Main.Container.Credits
+G2L["229"] = Instance.new("TextLabel", G2L["8"]);
+G2L["229"]["TextWrapped"] = true;
+G2L["229"]["BorderSizePixel"] = 0;
+G2L["229"]["TextSize"] = 14;
+G2L["229"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["229"]["TextScaled"] = true;
+G2L["229"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["229"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["229"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["229"]["BackgroundTransparency"] = 1;
+G2L["229"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["229"]["Size"] = UDim2.new(1, 0, 0.12, 0);
+G2L["229"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["229"]["Text"] = [[xoxo, R <3]];
+G2L["229"]["Name"] = [[Credits]];
+G2L["229"]["Position"] = UDim2.new(1, 0, 1.05, 0);
+
+
+-- StarterGui.DTIGUI.Main.Container.Credits.UIPadding
+G2L["22a"] = Instance.new("UIPadding", G2L["229"]);
+G2L["22a"]["PaddingTop"] = UDim.new(0, 3);
+G2L["22a"]["PaddingRight"] = UDim.new(0, 5);
+G2L["22a"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.DTIGUI.Main.Container.Credits.UIStroke
+G2L["22b"] = Instance.new("UIStroke", G2L["229"]);
+G2L["22b"]["Thickness"] = 1.5;
+G2L["22b"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.TextLabel
+G2L["22c"] = Instance.new("TextLabel", G2L["4"]);
+G2L["22c"]["TextWrapped"] = true;
+G2L["22c"]["BorderSizePixel"] = 0;
+G2L["22c"]["TextSize"] = 14;
+G2L["22c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["22c"]["TextScaled"] = true;
+G2L["22c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22c"]["BackgroundTransparency"] = 1;
+G2L["22c"]["Size"] = UDim2.new(0.75, 0, 0, 30);
+G2L["22c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22c"]["Text"] = [[Starlight DTI Gui]];
+
+
+-- StarterGui.DTIGUI.Main.TextLabel.UIPadding
+G2L["22d"] = Instance.new("UIPadding", G2L["22c"]);
+G2L["22d"]["PaddingTop"] = UDim.new(0, 3);
+G2L["22d"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["22d"]["PaddingBottom"] = UDim.new(0, 3);
+
+
+-- StarterGui.DTIGUI.Main.TextLabel.UIStroke
+G2L["22e"] = Instance.new("UIStroke", G2L["22c"]);
+G2L["22e"]["Thickness"] = 1.5;
+G2L["22e"]["Color"] = Color3.fromRGB(255, 135, 206);
+
+
+-- StarterGui.DTIGUI.Main.Close
+G2L["22f"] = Instance.new("TextButton", G2L["4"]);
+G2L["22f"]["TextWrapped"] = true;
+G2L["22f"]["BorderSizePixel"] = 0;
+G2L["22f"]["TextSize"] = 14;
+G2L["22f"]["TextScaled"] = true;
+G2L["22f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22f"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["22f"]["BackgroundTransparency"] = 1;
+G2L["22f"]["Size"] = UDim2.new(0.1, 0, 0, 30);
+G2L["22f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22f"]["Text"] = [[X]];
+G2L["22f"]["Name"] = [[Close]];
+G2L["22f"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Close.CloseHandler
-G2L["227"] = Instance.new("LocalScript", G2L["226"]);
-G2L["227"]["Name"] = [[CloseHandler]];
+G2L["230"] = Instance.new("LocalScript", G2L["22f"]);
+G2L["230"]["Name"] = [[CloseHandler]];
 
 
 -- StarterGui.DTIGUI.Main.Close.UIPadding
-G2L["228"] = Instance.new("UIPadding", G2L["226"]);
-G2L["228"]["PaddingTop"] = UDim.new(0, 3);
-G2L["228"]["PaddingRight"] = UDim.new(0, 5);
-G2L["228"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["231"] = Instance.new("UIPadding", G2L["22f"]);
+G2L["231"]["PaddingTop"] = UDim.new(0, 3);
+G2L["231"]["PaddingRight"] = UDim.new(0, 5);
+G2L["231"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Close.UIStroke
-G2L["229"] = Instance.new("UIStroke", G2L["226"]);
-G2L["229"]["Thickness"] = 1.5;
-G2L["229"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["232"] = Instance.new("UIStroke", G2L["22f"]);
+G2L["232"]["Thickness"] = 1.5;
+G2L["232"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.Min
-G2L["22a"] = Instance.new("TextButton", G2L["4"]);
-G2L["22a"]["TextWrapped"] = true;
-G2L["22a"]["BorderSizePixel"] = 0;
-G2L["22a"]["TextSize"] = 14;
-G2L["22a"]["TextScaled"] = true;
-G2L["22a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["22a"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["22a"]["BackgroundTransparency"] = 1;
-G2L["22a"]["Size"] = UDim2.new(0.1, 0, 0, 30);
-G2L["22a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22a"]["Text"] = [[—]];
-G2L["22a"]["Name"] = [[Min]];
-G2L["22a"]["Position"] = UDim2.new(0.9, 0, 0, 0);
+G2L["233"] = Instance.new("TextButton", G2L["4"]);
+G2L["233"]["TextWrapped"] = true;
+G2L["233"]["BorderSizePixel"] = 0;
+G2L["233"]["TextSize"] = 14;
+G2L["233"]["TextScaled"] = true;
+G2L["233"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["233"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["233"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["233"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["233"]["BackgroundTransparency"] = 1;
+G2L["233"]["Size"] = UDim2.new(0.1, 0, 0, 30);
+G2L["233"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["233"]["Text"] = [[—]];
+G2L["233"]["Name"] = [[Min]];
+G2L["233"]["Position"] = UDim2.new(0.9, 0, 0, 0);
 
 
 -- StarterGui.DTIGUI.Main.Min.MinHandler
-G2L["22b"] = Instance.new("LocalScript", G2L["22a"]);
-G2L["22b"]["Name"] = [[MinHandler]];
+G2L["234"] = Instance.new("LocalScript", G2L["233"]);
+G2L["234"]["Name"] = [[MinHandler]];
 
 
 -- StarterGui.DTIGUI.Main.Min.UIPadding
-G2L["22c"] = Instance.new("UIPadding", G2L["22a"]);
-G2L["22c"]["PaddingTop"] = UDim.new(0, 3);
-G2L["22c"]["PaddingRight"] = UDim.new(0, 5);
-G2L["22c"]["PaddingBottom"] = UDim.new(0, 3);
+G2L["235"] = Instance.new("UIPadding", G2L["233"]);
+G2L["235"]["PaddingTop"] = UDim.new(0, 3);
+G2L["235"]["PaddingRight"] = UDim.new(0, 5);
+G2L["235"]["PaddingBottom"] = UDim.new(0, 3);
 
 
 -- StarterGui.DTIGUI.Main.Min.UIStroke
-G2L["22d"] = Instance.new("UIStroke", G2L["22a"]);
-G2L["22d"]["Thickness"] = 1.5;
-G2L["22d"]["Color"] = Color3.fromRGB(255, 135, 206);
+G2L["236"] = Instance.new("UIStroke", G2L["233"]);
+G2L["236"]["Thickness"] = 1.5;
+G2L["236"]["Color"] = Color3.fromRGB(255, 135, 206);
 
 
 -- StarterGui.DTIGUI.Main.UIDragDetector
-G2L["22e"] = Instance.new("UIDragDetector", G2L["4"]);
-G2L["22e"]["SelectionModeDragSpeed"] = UDim2.new(0, 0, 0, 0);
-G2L["22e"]["ResponseStyle"] = Enum.UIDragDetectorResponseStyle.Scale;
+G2L["237"] = Instance.new("UIDragDetector", G2L["4"]);
+G2L["237"]["SelectionModeDragSpeed"] = UDim2.new(0, 0, 0, 0);
+G2L["237"]["ResponseStyle"] = Enum.UIDragDetectorResponseStyle.Scale;
 
 
 -- StarterGui.DTIGUI.Main.UIScale
-G2L["22f"] = Instance.new("UIScale", G2L["4"]);
+G2L["238"] = Instance.new("UIScale", G2L["4"]);
 
 
 
@@ -5437,11 +5535,18 @@ task.spawn(C_3);
 -- StarterGui.DTIGUI.Main.Intro
 local function C_5()
 local script = G2L["5"];
-	local notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
-	notifCont:Notify("Welcome to Starlight DTI GUI! Please read the Main tab for some info.")
+	local notifCont
+	local success = pcall(function()
+		notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
+	end)
+	if notifCont then
+		notifCont:Notify("Welcome to Starlight DTI GUI! Please read the Main tab for some info.")
+	end
 	if setclipboard then
 		setclipboard("https://discord.gg/FaN3kG55Qb")
-		notifCont:Notify("Discord invite copied to clipboard.")
+		if notifCont then
+			notifCont:Notify("Discord invite copied to clipboard.")
+		end
 	end
 	
 	local main = script.Parent
@@ -5507,8 +5612,8 @@ local script = G2L["37"];
 end;
 task.spawn(C_37);
 -- StarterGui.DTIGUI.Main.Container.Categories.Faces.FacesHandler
-local function C_45()
-local script = G2L["45"];
+local function C_42()
+local script = G2L["42"];
 	local faceIndexes = {
 		-- mm series 1:
 		["Y2KPopstar"] = 156,
@@ -5571,10 +5676,10 @@ local script = G2L["45"];
 		end
 	end
 end;
-task.spawn(C_45);
+task.spawn(C_42);
 -- StarterGui.DTIGUI.Main.Container.Categories.Anims.AnimsHandler
-local function C_b5()
-local script = G2L["b5"];
+local function C_b2()
+local script = G2L["b2"];
 	local packs = {
 		{
 			Name = "Default Walk Pack",
@@ -5979,10 +6084,10 @@ local script = G2L["b5"];
 		end
 	end
 end;
-task.spawn(C_b5);
+task.spawn(C_b2);
 -- StarterGui.DTIGUI.Main.Container.Categories.MakePreset.SavingHandler
-local function C_c1()
-local script = G2L["c1"];
+local function C_be()
+local script = G2L["be"];
 	local remotePref = "game.ReplicatedStorage:WaitForChild('RemoteEvents'):WaitForChild('CustomMakeup')"
 	local colorPref = "game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ApplyMakeupColor')"
 	
@@ -6507,6 +6612,7 @@ local script = G2L["c1"];
 	local skinRemote = "game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ChangeSkintone')"
 	local matRemote = "game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('MaterialAccessory')"
 	local adjustRemote = "game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('AdjustAccessory')"
+	local vitilgoRemote = "game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('VitiligoSkin')"
 	
 	local function getOutfit(username)
 		local lines = {}
@@ -6541,6 +6647,64 @@ local script = G2L["c1"];
 				equipRemote
 					..":FireServer(\""..item.Name.."\")"
 			)
+			local toggleInfo = getItemToggles(char, item.Name)
+			if toggleInfo then
+				local main = toggleInfo.Main
+				local subs = toggleInfo.Subs
+	
+				local parts = {}
+	
+				for key, value in pairs(subs) do
+					table.insert(parts, string.format('[%q] = %q', key, value))
+				end
+	
+				local subsString = '{' .. table.concat(parts, ', ') .. '}'
+	
+				table.insert(lines,
+					toggleRemote
+						..":FireServer(\""..item.Name.."\""
+						..", "..main
+						..", "..subsString..")"
+				)
+			end
+			local adjustments = getItemAdjustments(char, item.Name)
+			if adjustments then
+				local positionInfo = adjustments.Position
+				local rotationInfo = adjustments.Rotation
+				local scale = adjustments.Scale
+	
+				for axis, value in pairs(positionInfo) do
+					if value == 0 then continue end
+					table.insert(lines,
+						adjustRemote
+							..":FireServer(\'"..item.Name.."\'"
+							..", 'Position'"
+							..", '"..axis.."'"
+							..", "..value..")"
+					)
+				end
+	
+				for axis, value in pairs(rotationInfo) do
+					if value == 0 then continue end
+					table.insert(lines,
+						adjustRemote
+							..":FireServer(\'"..item.Name.."\'"
+							..", 'Rotation'"
+							..", '"..axis.."'"
+							..", "..value..")"
+					)
+				end
+	
+				if scale ~= 1 then
+					table.insert(lines,
+						adjustRemote
+							..":FireServer(\'"..item.Name.."\'"
+							..", 'Scale'"
+							..", _"
+							..", "..scale..")"
+					)
+				end
+			end
 			local itemInfo = getItemInfo(char, item.Name)
 			if itemInfo then
 				for i, partData in pairs(itemInfo) do
@@ -6566,64 +6730,6 @@ local script = G2L["c1"];
 							..", '"..partData.Material.."')"
 						)
 					end
-				end
-			end
-			local toggleInfo = getItemToggles(char, item.Name)
-			if toggleInfo then
-				local main = toggleInfo.Main
-				local subs = toggleInfo.Subs
-				
-				local parts = {}
-	
-				for key, value in pairs(subs) do
-					table.insert(parts, string.format('[%q] = %q', key, value))
-				end
-	
-				local subsString = '{' .. table.concat(parts, ', ') .. '}'
-				
-				table.insert(lines,
-					toggleRemote
-					..":FireServer(\""..item.Name.."\""
-					..", "..main
-					..", "..subsString..")"
-				)
-			end
-			local adjustments = getItemAdjustments(char, item.Name)
-			if adjustments then
-				local positionInfo = adjustments.Position
-				local rotationInfo = adjustments.Rotation
-				local scale = adjustments.Scale
-				
-				for axis, value in pairs(positionInfo) do
-					if value == 0 then continue end
-					table.insert(lines,
-						adjustRemote
-						..":FireServer(\'"..item.Name.."\'"
-						..", 'Position'"
-						..", '"..axis.."'"
-						..", "..value..")"
-					)
-				end
-				
-				for axis, value in pairs(rotationInfo) do
-					if value == 0 then continue end
-					table.insert(lines,
-						adjustRemote
-							..":FireServer(\'"..item.Name.."\'"
-							..", 'Rotation'"
-							..", '"..axis.."'"
-							..", "..value..")"
-					)
-				end
-				
-				if scale ~= 1 then
-					table.insert(lines,
-						adjustRemote
-							..":FireServer(\'"..item.Name.."\'"
-							..", 'Scale'"
-							..", _"
-							..", "..scale..")"
-					)
 				end
 			end
 		end
@@ -6665,8 +6771,15 @@ local script = G2L["c1"];
 		local skinColor = char:WaitForChild("Head").Color
 		table.insert(lines,
 			skinRemote
-			..":FireServer(Color3.new("..skinColor.R..", "..skinColor.G..", "..skinColor.B.."))\n"
+			..":FireServer(Color3.new("..skinColor.R..", "..skinColor.G..", "..skinColor.B.."))"
 		)
+		local vitiligo = char:GetAttribute("Vitiligo") or "Off"
+		if vitiligo then
+			table.insert(lines,
+				vitilgoRemote
+				..":FireServer('"..tostring(vitiligo).."')"
+			)
+		end
 		
 		return table.concat(lines, "\n")
 	end
@@ -6674,12 +6787,16 @@ local script = G2L["c1"];
 	local clearMakeup = "game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ClassicMakeup'):FireServer("..getClearFace()..", 'Light')\n"
 	local clearOutfit = "for i, v in game.Players.LocalPlayer.Character:WaitForChild('EquippedAccessories'):GetChildren() do "..unEquipRemote..":FireServer(v.Name) end\n"
 	
-	local notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
+	local notifCont
+	local success = pcall(function()
+		notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
+	end)
 	
 	script.Parent:WaitForChild("CustomMakeup").MouseButton1Up:Connect(function()
 		if setclipboard then
 			setclipboard(clearMakeup..getCMPreset())
 		else
+			if not notifCont then return end
 			notifCont:Notify("Your executor does not support this feature.")
 		end
 	end)
@@ -6688,6 +6805,7 @@ local script = G2L["c1"];
 		if setclipboard then
 			setclipboard(clearOutfit..getOutfit()..clearMakeup..getMakeup())
 		else
+			if not notifCont then return end
 			notifCont:Notify("Your executor does not support this feature.")
 		end
 	end)
@@ -6699,6 +6817,7 @@ local script = G2L["c1"];
 			if setclipboard then
 				setclipboard(clearMakeup..getCMPreset(username))
 			else
+				if not notifCont then return end
 				notifCont:Notify("Your executor does not support this feature.")
 			end
 		end
@@ -6711,6 +6830,7 @@ local script = G2L["c1"];
 			if loadstring then
 				loadstring(clearMakeup..getCMPreset(username))()
 			else
+				if not notifCont then return end
 				notifCont:Notify("Your executor does not support this feature.")
 			end
 		end
@@ -6723,6 +6843,7 @@ local script = G2L["c1"];
 			if setclipboard then
 				setclipboard(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))
 			else
+				if not notifCont then return end
 				notifCont:Notify("Your executor does not support this feature.")
 			end
 		end
@@ -6735,20 +6856,20 @@ local script = G2L["c1"];
 			if loadstring then
 				loadstring(clearOutfit..getOutfit(username)..clearMakeup..getMakeup(username))()
 			else
+				if not notifCont then return end
 				notifCont:Notify("Your executor does not support this feature.")
 			end
 		end
 	end)
 end;
-task.spawn(C_c1);
+task.spawn(C_be);
 -- StarterGui.DTIGUI.Main.Container.Categories.FitPresets.EquipHandler
-local function C_df()
-local script = G2L["df"];
+local function C_dc()
+local script = G2L["dc"];
 	local fitPresets = {
 		["CvntyY2K"] = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/cvnty-y2k-OUTFIT",
 		["MessyLana"] =  "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/messy-lana-OUTFIT",
 		["BubblegumCandycane"] = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/bubblegum-candycane-OUTFIT",
-		["FrenchLuxeGal"] = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/french-luxe-gal",
 		["TallBitch"] = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/tall-bitch-fit.lua",
 		["NakedLana"] = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/naked-lana-outfit.lua",
 		["GyaruUniform"] = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/gyaru-uniform-fit",
@@ -6766,7 +6887,7 @@ local script = G2L["df"];
 		KATSEYEManonGnarly = "https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/manon-gnarly.lua",
 		KATSEYEManonTouch = "https://pastebin.com/raw/3fZ2GiaQ",
 		CutePinkFrilly = "https://pastebin.com/raw/zVLmz6de",
-		PinkSpacebuns = "https://pastebin.com/raw/GxtZEhuN",
+		PinkSpacebuns = "https://pastebin.com/raw/bcGt3JGN",
 		GothicRomance = "https://pastebin.com/raw/Xu5SaPHk",
 		CuteGothic = "https://pastebin.com/raw/ivpkF7tA"
 	}
@@ -6782,15 +6903,15 @@ local script = G2L["df"];
 		end
 	end
 end;
-task.spawn(C_df);
+task.spawn(C_dc);
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.EquipItems
-local function C_12a()
-local script = G2L["12a"];
+local function C_124()
+local script = G2L["124"];
 	local items = {
 		["2YearDoll"] = {"DTI 2 Year Doll"},
 		["2YearDress"] = {"DTI 2 Year Dress"},
 		["4BilItems"] = {"Lolita Corset", "Lolita Skirt"},
-		["FrenchLuxSet"] = {"French Luxury Bag", "French Luxury Beret", "French Luxury Corset", "French Luxury Jacket", "French Luxury Heels"},
+		["SweetBerry"] = {"Sweet Berry Dress", "Sweet Berry Heels", "Sweet Berry Bag", "Sweet Berry Chocolate Box", "Sweet Berry Sundae"},
 		["CupidsCloud"] = {"Cloud"},
 		["ElphabaItems"] = {"WICKED PT Elphaba Dress", "WICKED PT Elphaba Sleeves", "WICKED PT Elphaba Hat"},
 		["GlindaItems"] = {"WICKED PT Glinda Dress", "WICKED PT Glinda Backpiece", "WICKED PT Glinda Crown"},
@@ -6815,17 +6936,29 @@ local script = G2L["12a"];
 		end
 	end
 end;
-task.spawn(C_12a);
+task.spawn(C_124);
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.Gamepasses
-local function C_12b()
-local script = G2L["12b"];
+local function C_125()
+local script = G2L["125"];
 	local passNames = {
 		["CUSTOMPASS"] = "Custom Makeup",
 		["RUNFASTPASS"] = "Run Faster",
 		["MATERIALSPASS"] = "Materials +"
 	}
-	local passes = require(game:GetService("ReplicatedStorage").Content.Marketplace.Gamepass.Registry)
-	local dataC = require(game:GetService("ReplicatedStorage").Client.Controllers.DataController)
+	local passes
+	local success = pcall(function()
+		passes = require(game:GetService("ReplicatedStorage").Content.Marketplace.Gamepass.Registry)
+	end)
+	local dataC
+	local success = pcall(function()
+		dataC = require(game:GetService("ReplicatedStorage").Client.Controllers.DataController)
+	end)
+	local notifCont
+	local success = pcall(function()
+		notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
+	end)
+	
+	if not passes and dataC and notifCont then return end
 	
 	for i, btn in script.Parent:GetChildren() do
 		if btn:IsA("TextButton") then
@@ -6836,17 +6969,79 @@ local script = G2L["12b"];
 					local replica = dataC:GetMyReplica()
 					table.insert(replica.Data.OwnedPasses, passInfo.GamepassId)
 					
-					require(game.ReplicatedStorage.Client.Controllers.NotificationController):Notify("Successfully Unlocked "..btn.Text)
+					notifCont:Notify("Successfully Unlocked "..btn.Text)
 				end)
 			end
 		end
 	end
 end;
-task.spawn(C_12b);
+task.spawn(C_125);
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.RedeemCodes.Unlock
-local function C_14f()
-local script = G2L["14f"];
-	local codes = require(game.ReplicatedStorage:WaitForChild("Content"):WaitForChild("Code"):WaitForChild("Definitions"))
+local function C_149()
+local script = G2L["149"];
+	local codes
+	local success = pcall(function()
+		codes = require(game.ReplicatedStorage:WaitForChild("Content"):WaitForChild("Code"):WaitForChild("Definitions"))
+	end)
+	local backupTable = {
+		"LANA",
+		"LANABOW",
+		"TEKKYOOZ",
+		"LEAHASHE",
+		"LABOOTS",
+		"SUBM15CY",
+		"IBELLASLAY",
+		"ASHLEYBUNNI",
+		"REWARD4CLASS1C",
+		"M3RM4ID",
+		"CHOOPIE10K",
+		"LANATUTU",
+		"ITSJUSTNICHOLAS",
+		"FASHION",
+		"THEGAMES",
+		"M0T0PRINCESSWAV",
+		"BELALASLAY",
+		"KREEK",
+		"KITTYUUHH",
+		"S3M_0W3N_Y4Y",
+		"D1ORST4R",
+		"UMOYAE",
+		"MEGANPLAYSBOOTS",
+		"4BILLION",
+		"WINTERUPDATE",
+		"1CON1CF4TMA",
+		"NY2025",
+		"YEAROFTHESNAKE",
+		"LNY2025",
+		"HAPPYNEWYEAR",
+		"ELLA",
+		"SWEETHEART",
+		"ANGELT4NKED",
+		"3NCHANTEDD1ZZY",
+		"PIXIIUWU",
+		"VANILLAMACE",
+		"RDC2025",
+		"ELPHABA",
+		"GLINDA",
+		"2YEARS",
+		"2GETHER",
+		"CH00P1E_B4CK_AGA1N",
+		"2026BADDIES",
+		"CA11MEHHALEY",
+		"CUPIDSCLOUD",
+		"BHM26",
+		"LNY",
+		"LIONDANCER",
+		"BADDIE4LIFE",
+		"FACECARD",
+		"KATSEYE"
+	}
+	if not success or not codes then
+		codes = backupTable
+		script.Parent.Text = "Unlock all Codes (Unofficial Method)"
+		return
+	end
+	
 	local event = game.ReplicatedStorage:WaitForChild("RemoteFunctions"):WaitForChild("ClaimCode")
 	
 	local function redeemCode(code)
@@ -6855,53 +7050,143 @@ local script = G2L["14f"];
 	
 	script.Parent.MouseButton1Up:Connect(function()
 		for i, codeInfo in pairs(codes) do
-			redeemCode(codeInfo.Name)
+			local code
+			if typeof(codeInfo) == "table" then
+				code = codeInfo.Name
+			else
+				code = codeInfo
+			end
+			if not code then continue end
+			event:InvokeServer(code)
 		end
 	end)
 end;
-task.spawn(C_14f);
+task.spawn(C_149);
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.UnlockPoses.Unlock
-local function C_153()
-local script = G2L["153"];
+local function C_14d()
+local script = G2L["14d"];
 	local poses = game.ReplicatedStorage:WaitForChild("Content"):WaitForChild("Poses"):WaitForChild("Poses")
 	local event = game.ReplicatedStorage:WaitForChild("RemoteEvents"):WaitForChild("FavoritePose")
-	local notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
+	local notifCont
+	local success = pcall(function()
+		notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
+	end)
+	if not notifCont then
+		script.Parent.Text = "Unlock all Poses (Unsupported)"
+		return
+	end
 	
 	local function favouritePack(packName)
 		local pack = poses:FindFirstChild(packName)
 		if pack then
-			pack = require(pack)
+			local success = pcall(function()
+				pack = require(pack)
+			end)
+			if not pack then return false end
 			for i, poseInfo in pairs(pack) do
 				event:FireServer(poseInfo.Name, "Save")
 			end
 		end
+		return true
 	end
 	
 	script.Parent.MouseButton1Up:Connect(function()
 		for i, packModule in poses:GetChildren() do
-			favouritePack(packModule.Name)
+			local success = favouritePack(packModule.Name)
+			if success == false then
+				return
+			end
 		end
 		local jobId = game.JobId
 		local placeId = game.PlaceId
-		notifCont:Notify("Rejoining.. Check your Pose Favourites when rejoined!")
+		if notifCont then
+			notifCont:Notify("Rejoining.. Check your Pose Favourites when rejoined!")
+		end
 		task.wait(2.5)
 		game:GetService("TeleportService"):TeleportToPlaceInstance(placeId, jobId, game.Players.LocalPlayer)
 	end)
 end;
-task.spawn(C_153);
+task.spawn(C_14d);
 -- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.VIPDoor.Remove
-local function C_157()
-local script = G2L["157"];
+local function C_151()
+local script = G2L["151"];
 	local door = workspace:WaitForChild("VIP Door")
 	
 	script.Parent.MouseButton1Up:Connect(function()
 		door:Destroy()
 	end)
 end;
-task.spawn(C_157);
+task.spawn(C_151);
+-- StarterGui.DTIGUI.Main.Container.Categories.FreeStuff.GETALL.LocalScript
+local function C_16d()
+local script = G2L["16d"];
+	local registry
+	local success = pcall(function()
+		registry = require(game.ReplicatedStorage.Content.Item.Registry)
+	end)
+	local item
+	local backup = {
+		"BubbleGamFashionDoll",
+		"Exclusive-S1-MuP-Tropical-Summer",
+		"Exclusive-S2-DEV-MSD-Stylish-Streetware",
+		"W25-Makeup-Cutesy",
+		"Exclusive-S1-MuP-Lina",
+		"Exclusive-S1-MuP-Chic-Academia",
+		"W25-Makeup-Candycane",
+		"Exclusive-S2-DEV-MSD-Style-Showndown-Lana",
+		"DEV-DPS-Chic-Boutique",
+		"H25-Makeup-Snake",
+		"H25-Makeup-Corpse",
+		"H25-Makeup-Cyclops",
+		"H25-Makeup-6-Eyes",
+		"Exclusive-DEV-MSD-Halloween-3PK",
+		"Exclusive-S2-DEV-MSD-Style-Showdown-Lana",
+		"Exclusive-S2-DEV-MSD-Mystic-Mermaid",
+		"Exclusive-S2-DEV-MSD-Magical-Girl",
+		"Exclusive-S2-DEV-MSD-Casual-Softie",
+		"Exclusive-S2-DEV-MSD-Chic-Cowgirl",
+		"Exclusive-S1-MuP-Lana",
+		"Exclusive-S1-MuP-Dreamy-Sparkle",
+		"Scarlett Fierce",
+		"Exclusive-S1-MuP-Gala-Girl",
+		"Exclusive-5Star-FD-Stardust-Softie",
+		"Exclusive-DEV-FDX-Lana",
+		"Exclusive-S2-DEV-MSD-Bubblegum-Gal",
+		"Exclusive-S2-DEV-MSD-Serena",
+		"Exclusive-S2-DEV-MSD-Gothic-Romance",
+		"Exclusive-S1-MuP-Lovely-Valentine",
+		"H25-Makeup-Spider",
+		"Exclusive-S1-MuP-Y2K-Popstar",
+		"Exclusive-S1-MuP-Sweet-Romance",
+		"Exclusive-S1-MuP-Stardust-Softie",
+		"Exclusive-S2-DEV-MSD-Denim-Y2K",
+	}
+	if success then
+		item = registry:GetAll()
+	else
+		item = backup
+	end
+	
+	for _, info in pairs(item) do
+		if typeof(info) == "table" then
+			if info.Type == "MakeupPack" then
+				if info.Metadata.ToyCode == true then
+					game.ReplicatedStorage.RemoteFunctions.BuyItem:InvokeServer(info.Name)
+				else
+					if info.Metadata.Price == 0 then
+						game.ReplicatedStorage.RemoteFunctions.BuyItem:InvokeServer(info.Name)
+					end
+				end
+			end
+		else
+			game.ReplicatedStorage.RemoteFunctions.BuyItem:InvokeServer(info)
+		end
+	end
+end;
+task.spawn(C_16d);
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.PlaceTeleports
-local function C_173()
-local script = G2L["173"];
+local function C_171()
+local script = G2L["171"];
 	local places = {
 		["Regular"] = 15101393044,
 		["Freeplay"] = 17481176031,
@@ -6926,10 +7211,10 @@ local script = G2L["173"];
 		end
 	end
 end;
-task.spawn(C_173);
+task.spawn(C_171);
 -- StarterGui.DTIGUI.Main.Container.Categories.Teleport.CFTeleports
-local function C_174()
-local script = G2L["174"];
+local function C_172()
+local script = G2L["172"];
 	local cframes = {
 		["Lobby"] = CFrame.new(-518, 17, 1641),
 		["DressingRoom"] = CFrame.new(-160, 35, 89),
@@ -6947,114 +7232,10 @@ local script = G2L["174"];
 		end
 	end
 end;
-task.spawn(C_174);
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.AddVFX.Handler
-local function C_19a()
-local script = G2L["19a"];
-	local event = "game.ReplicatedStorage.RemoteEvents.AddVFX:FireServer(\"%s\")"
-	local box = script.Parent.Parent.VFXName
-	
-	script.Parent.MouseButton1Up:Connect(function()
-		if box.Text ~= "" then
-			local toRun = string.format(event, box.Text)
-			print(toRun)
-			loadstring(toRun)()
-			require(game.ReplicatedStorage.Client.Controllers.NotificationController):Notify("Ran VFX Event for "..box.Text..".")
-		else
-			require(game.ReplicatedStorage.Client.Controllers.NotificationController):Notify("No VFX Name provided.")
-		end
-	end)
-end;
-task.spawn(C_19a);
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.HeadOnly.Handler
-local function C_1a4()
-local script = G2L["1a4"];
-	local thing = game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/headonly.lua")
-	
-	script.Parent.MouseButton1Up:Connect(function()
-		loadstring(thing)()
-	end)
-end;
-task.spawn(C_1a4);
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.BlockRunway.Handler
-local function C_1ab()
-local script = G2L["1ab"];
-	local thing = game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/blockrunway.lua")
-	
-	script.Parent.MouseButton1Up:Connect(function()
-		loadstring(thing)()
-	end)
-end;
-task.spawn(C_1ab);
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.DeleteVFX.Handler
-local function C_1af()
-local script = G2L["1af"];
-	script.Parent.MouseButton1Up:Connect(function()
-		game.ReplicatedStorage.RemoteEvents.RemoveVFX:FireServer()
-	end)
-end;
-task.spawn(C_1af);
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.Naked.Handler
-local function C_1b3()
-local script = G2L["1b3"];
-	script.Parent.MouseButton1Up:Connect(function()
-		game.ReplicatedStorage.RemoteEvents.EquipItem:FireServer("Halloween Witch Set")
-		game.ReplicatedStorage.RemoteEvents.EquipItem:FireServer("Winter: Belt Skirt DIONCELLA")
-		
-		game.ReplicatedStorage.RemoteEvents.DressUpToggle:FireServer("Halloween Witch Set", 0)
-		game.ReplicatedStorage.RemoteEvents.DressUpToggle:FireServer("Winter: Belt Skirt DIONCELLA", 0)
-	end)
-end;
-task.spawn(C_1b3);
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.Reset.Handler
-local function C_1ba()
-local script = G2L["1ba"];
-	script.Parent.MouseButton1Up:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.Health = 0
-	end)
-end;
-task.spawn(C_1ba);
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.Invisible.Handler
-local function C_1be()
-local script = G2L["1be"];
-	local thing = game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/invisible.lua")
-	
-	script.Parent.MouseButton1Up:Connect(function()
-		loadstring(thing)()
-	end)
-end;
-task.spawn(C_1be);
--- StarterGui.DTIGUI.Main.Container.Categories.Troll.TPName.LocalScript
-local function C_1c2()
-local script = G2L["1c2"];
-	local box = script.Parent
-	
-	box.FocusLost:Connect(function(enter)
-		if not enter then return end
-		local username = box.Text
-		if not username or username == "" then return end
-		local plr
-		local char
-		for i, v in game.Players:GetPlayers() do
-			if string.lower(v.Name) == username or string.lower(v.DisplayName) == username then
-				plr = v
-			elseif string.lower(v.Name):find(username) or string.lower(v.DisplayName):find(username) then
-				plr = v
-			end
-		end
-		if plr then
-			char = plr.Character or plr.CharacterAdded:Wait()
-		else
-			return
-		end
-		local root = char.HumanoidRootPart
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = root.CFrame
-	end)
-end;
-task.spawn(C_1c2);
+task.spawn(C_172);
 -- StarterGui.DTIGUI.Main.Container.Categories.Troll.SkinLoop
-local function C_1c8()
-local script = G2L["1c8"];
+local function C_193()
+local script = G2L["193"];
 	local remote = game.ReplicatedStorage.RemoteEvents.ChangeSkintone
 	local btn = script.Parent.RainbowSkin
 	local toggled = false
@@ -7090,10 +7271,170 @@ local script = G2L["1c8"];
 		task.wait(0.075)
 	end
 end;
-task.spawn(C_1c8);
+task.spawn(C_193);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.AddVFX.Handler
+local function C_199()
+local script = G2L["199"];
+	local event = "game.ReplicatedStorage.RemoteEvents.AddVFX:FireServer(\"%s\")"
+	local box = script.Parent.Parent.VFXName
+	local notifCont
+	local success = pcall(function()
+		notifCont = require(game:GetService("ReplicatedStorage").Client.Controllers.NotificationController)
+	end)
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		if box.Text ~= "" then
+			local toRun = string.format(event, box.Text)
+			print(toRun)
+			loadstring(toRun)()
+			if notifCont then
+				notifCont:Notify("Ran VFX Event for "..box.Text..".")
+			end
+		else
+			if notifCont then
+				notifCont:Notify("No VFX Name provided.")
+			end
+		end
+	end)
+end;
+task.spawn(C_199);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.HeadOnly.Handler
+local function C_1a3()
+local script = G2L["1a3"];
+	local thing = game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/headonly.lua")
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		loadstring(thing)()
+	end)
+end;
+task.spawn(C_1a3);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.BlockRunway.Handler
+local function C_1aa()
+local script = G2L["1aa"];
+	local thing = game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/blockrunway.lua")
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		loadstring(thing)()
+	end)
+end;
+task.spawn(C_1aa);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DeleteVFX.Handler
+local function C_1ae()
+local script = G2L["1ae"];
+	script.Parent.MouseButton1Up:Connect(function()
+		game.ReplicatedStorage.RemoteEvents.RemoveVFX:FireServer()
+	end)
+end;
+task.spawn(C_1ae);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.Naked.Handler
+local function C_1b2()
+local script = G2L["1b2"];
+	script.Parent.MouseButton1Up:Connect(function()
+		game.ReplicatedStorage.RemoteEvents.EquipItem:FireServer("Halloween Witch Set")
+		game.ReplicatedStorage.RemoteEvents.EquipItem:FireServer("Winter: Belt Skirt DIONCELLA")
+		
+		game.ReplicatedStorage.RemoteEvents.DressUpToggle:FireServer("Halloween Witch Set", 0)
+		game.ReplicatedStorage.RemoteEvents.DressUpToggle:FireServer("Winter: Belt Skirt DIONCELLA", 0)
+	end)
+end;
+task.spawn(C_1b2);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.Reset.Handler
+local function C_1b9()
+local script = G2L["1b9"];
+	script.Parent.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end)
+end;
+task.spawn(C_1b9);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.Invisible.Handler
+local function C_1bd()
+local script = G2L["1bd"];
+	local thing = game:HttpGet("https://raw.githubusercontent.com/starl1ghtscripter/starlight-dti-gui/refs/heads/main/invisible.lua")
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		loadstring(thing)()
+	end)
+end;
+task.spawn(C_1bd);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.TPName.LocalScript
+local function C_1c1()
+local script = G2L["1c1"];
+	local box = script.Parent
+	
+	box.FocusLost:Connect(function(enter)
+		if not enter then return end
+		local username = box.Text
+		if not username or username == "" then return end
+		local plr
+		local char
+		for i, v in game.Players:GetPlayers() do
+			if string.lower(v.Name) == username or string.lower(v.DisplayName) == username then
+				plr = v
+			elseif string.lower(v.Name):find(username) or string.lower(v.DisplayName):find(username) then
+				plr = v
+			end
+		end
+		if plr then
+			char = plr.Character or plr.CharacterAdded:Wait()
+		else
+			return
+		end
+		local root = char.HumanoidRootPart
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = root.CFrame
+	end)
+end;
+task.spawn(C_1c1);
+-- StarterGui.DTIGUI.Main.Container.Categories.Troll.DecalCustom.Equip.LocalScript
+local function C_1ce()
+local script = G2L["1ce"];
+	local image
+	local insertService = game:GetService("InsertService")
+	
+	local function doIt()
+		if image == nil then return end
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('EquipItem'):FireServer("Weird Thing Hat?")
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('DressUpToggle'):FireServer("Weird Thing Hat?", 0, {})
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('AdjustAccessory'):FireServer('Weird Thing Hat?', 'Position', 'Y', -0.24500842094421382)
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('AdjustAccessory'):FireServer('Weird Thing Hat?', 'Position', 'X', 0.2375895619392394)
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('AdjustAccessory'):FireServer('Weird Thing Hat?', 'Position', 'Z', 0.2502894818782808)
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('AdjustAccessory'):FireServer('Weird Thing Hat?', 'Rotation', 'Y', -32.518651485443115)
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('AdjustAccessory'):FireServer('Weird Thing Hat?', 'Rotation', 'X', -11.253626346588135)
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('AdjustAccessory'):FireServer('Weird Thing Hat?', 'Rotation', 'Z', 41.908936500549316)
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('AdjustAccessory'):FireServer('Weird Thing Hat?', 'Scale', _, 1.0463929176330566)
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Weird Thing Hat?", '1', Color3.new(0.501960813999176, 0.41960784792900085, 0.3529411852359772))
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ColorAccessory'):FireServer("Weird Thing Hat?", '1', 'rbxassetid://'..tostring(image))
+		game:GetService('ReplicatedStorage'):WaitForChild('RemoteEvents'):WaitForChild('ClassicMakeup'):FireServer(269, 'Light')
+		game.ReplicatedStorage.RemoteEvents.EquipItem:FireServer("Troll Head")
+		game.ReplicatedStorage.RemoteEvents.DressUpToggle:FireServer("Troll Head")
+	end
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		doIt()
+	end)
+	
+	script.Parent.Parent.Image.FocusLost:Connect(function()
+		if tonumber(script.Parent.Parent.Image.Text) then
+			local insert = insertService:LoadAsset(image)
+			local decal = insert:FindFirstChildOfClass("Decal")
+			if not decal then
+				script.Parent.Parent.Image.Text = "Invalid ID"
+				task.wait(0.5)
+				script.Parent.Parent.Image.Text = ""
+			else
+				local id = string.gsub(decal.Texture, "rbxassetid://", "")
+				image = tonumber(id)
+			end
+		else
+			script.Parent.Parent.Image.Text = "Invalid ID"
+			task.wait(0.5)
+			script.Parent.Parent.Image.Text = ""
+		end
+	end)
+end;
+task.spawn(C_1ce);
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.CashFarming
-local function C_1ca()
-local script = G2L["1ca"];
+local function C_1d3()
+local script = G2L["1d3"];
 	local cashFolder = workspace.CollectibleMoney
 	local default = false
 	
@@ -7148,10 +7489,10 @@ local script = G2L["1ca"];
 		task.wait(0.1)
 	end
 end;
-task.spawn(C_1ca);
+task.spawn(C_1d3);
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.Shopping
-local function C_1d6()
-local script = G2L["1d6"];
+local function C_1d4()
+local script = G2L["1d4"];
 	local gui = script.Parent.Parent.Parent.Parent.Parent
 	local holder1 = script.Parent._HOLDER1
 	local nameBox = holder1.PurchaseName
@@ -7159,9 +7500,13 @@ local script = G2L["1d6"];
 	local infoTemplate = script.Template
 	local firePurchaseBtn = script.Parent.FirePurchase
 	local remote = game.ReplicatedStorage.RemoteFunctions.BuyItem
-	local registry = require(game.ReplicatedStorage.Content.Item.Registry)
 	
 	local function getInfoForThing(name)
+		local registry
+		local success = pcall(function()
+			registry = require(game.ReplicatedStorage.Content.Item.Registry)
+		end)
+		if not success then return false end
 		local thingInfo = registry:Get(name)
 		if thingInfo then
 			local thingType = thingInfo.Type
@@ -7170,15 +7515,10 @@ local script = G2L["1d6"];
 				render = thingInfo.Render[2]
 			end
 			local price = thingInfo.Metadata.Price
-			return {thingType, render, price, thingInfo.Name}
-		end
-	end
-	
-	local function clearInfoUIs(exempt)
-		for _, child in pairs(gui:GetChildren()) do
-			if child:GetAttribute("InfoUI") and child ~= exempt then
-				child:Destroy()
-			end
+			local currency = thingInfo.Metadata.Currency or "Cash"
+			return {thingType, render, price, thingInfo.Name, currency}
+		else
+			return false
 		end
 	end
 	
@@ -7199,22 +7539,24 @@ local script = G2L["1d6"];
 				local thingType = info[1]
 				local render = info[2]
 				local price = info[3]
-				local clone = infoTemplate:Clone()
+				local currency = info[5]
+				local clone = infoTemplate
 				clone.Render.Image = render
 				clone.Type.Text = thingType
 				clone.ItemName.Text = info[4]
 				if price then
 					clone.Price.Text = "Price: $"..price
+					if currency then
+						clone.Price.Text = "Price: $"..price.." "..currency
+					end
 				else
 					clone.Price.Text = "No price"
 				end
 				clone.Name = info[4]
-				clone:SetAttribute("InfoUI", true)
-				clearInfoUIs(clone)
 				clone.Visible = true
 				clone.Parent = gui
 				clone.Close.MouseButton1Up:Connect(function()
-					clone:Destroy()
+					clone.Visible = false
 				end)
 			else
 				local prev = nameBox.Text
@@ -7225,18 +7567,18 @@ local script = G2L["1d6"];
 		end
 	end)
 end;
-task.spawn(C_1d6);
+task.spawn(C_1d4);
 -- StarterGui.DTIGUI.Main.Container.Categories.GameUtils.InfYield.LocalScript
-local function C_1f8()
-local script = G2L["1f8"];
+local function C_1ff()
+local script = G2L["1ff"];
 	script.Parent.MouseButton1Up:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end;
-task.spawn(C_1f8);
+task.spawn(C_1ff);
 -- StarterGui.DTIGUI.Main.Container.Categories.Settings.Sizes.LocalScript
-local function C_1fe()
-local script = G2L["1fe"];
+local function C_207()
+local script = G2L["207"];
 	local main = script.Parent.Parent.Parent.Parent.Parent
 	local sizes = {
 		Default = 1,
@@ -7259,10 +7601,10 @@ local script = G2L["1fe"];
 		end
 	end
 end;
-task.spawn(C_1fe);
+task.spawn(C_207);
 -- StarterGui.DTIGUI.Main.Container.Categories.Settings.Themes.LocalScript
-local function C_21f()
-local script = G2L["21f"];
+local function C_215()
+local script = G2L["215"];
 	local holder = script.Parent
 	local screenGui = holder.Parent.Parent.Parent.Parent.Parent
 	local themes = {
@@ -7368,9 +7710,10 @@ local script = G2L["21f"];
 				end
 			end
 	
-			if obj:IsA("TextBox") then
+			if obj:IsA("TextBox") and not ignore then
 				obj.BackgroundColor3 = theme.BoxBackground
 				obj.TextColor3 = theme.BoxText
+				obj.PlaceholderColor3 = theme.BoxText
 				obj.TextStrokeColor3 = theme.BoxTextStroke
 				local stroke = obj:FindFirstChildOfClass("UIStroke")
 				if stroke then
@@ -7393,10 +7736,10 @@ local script = G2L["21f"];
 		end
 	end
 end;
-task.spawn(C_21f);
+task.spawn(C_215);
 -- StarterGui.DTIGUI.Main.Close.CloseHandler
-local function C_227()
-local script = G2L["227"];
+local function C_230()
+local script = G2L["230"];
 	local main = script.Parent.Parent
 	
 	script.Parent.MouseButton1Up:Connect(function()
@@ -7409,10 +7752,10 @@ local script = G2L["227"];
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end;
-task.spawn(C_227);
+task.spawn(C_230);
 -- StarterGui.DTIGUI.Main.Min.MinHandler
-local function C_22b()
-local script = G2L["22b"];
+local function C_234()
+local script = G2L["234"];
 	local tbl = {
 		Open = UDim2.new(1, 0, 0, 200),
 		Close = UDim2.new(1, 0, 0, 0)
@@ -7442,6 +7785,6 @@ local script = G2L["22b"];
 		end
 	end)
 end;
-task.spawn(C_22b);
+task.spawn(C_234);
 
 return G2L["1"], require;

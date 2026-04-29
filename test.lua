@@ -7414,6 +7414,7 @@ local script = G2L["1ce"];
 	
 	script.Parent.Parent.Image.FocusLost:Connect(function()
 		if tonumber(script.Parent.Parent.Image.Text) then
+			local try = "rbxassetid://"..tonumber(script.Parent.Parent.Image.Text)
 			local insert = insertService:LoadAsset(image)
 			local decal = insert:FindFirstChildOfClass("Decal")
 			if not decal then

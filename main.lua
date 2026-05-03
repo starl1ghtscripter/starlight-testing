@@ -5623,7 +5623,7 @@ local script = G2L["244"]
    local fileData = readfile(filePath)
    local success, result = pcall(function()
     return httpService:JSONDecode(fileData)
-   end
+   end)
    if success then
     settings = result
     print("config loaded")

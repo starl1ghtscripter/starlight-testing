@@ -5578,6 +5578,72 @@ G2L["243"] = Instance.new("UIPadding", G2L["240"]);
 G2L["243"]["PaddingRight"] = UDim.new(0, 7);
 G2L["243"]["PaddingLeft"] = UDim.new(0, 7);
 
+-- StarterGui.DTIGUI.SettingsLoad
+G2L["244"] = Instance.new("LocalScript", G2L["1"])
+G2L["244"]["Name"] = [[SettingsLoad]]
+
+-- StarterGui.DTIGUI.SettingsLoad.Size
+G2L["245"] = Instance.new("StringValue", G2L["245"])
+G2L["245"]["Name"] = "Size"
+
+-- StarterGui.DTIGUI.SettingsLoad.Theme
+G2L["246"] = Instance.new("StringValue", G2L["245"])
+G2L["246"]["Name"] = "Theme"
+
+-- StarterGui.DTIGUI.SettingsLoad
+local function C_SL()
+local script = G2L["244"]
+ local httpService = game:GetService("HttpService")
+ local folderName = "StarlightDTIconfig"
+ local fileName = "settings.json"
+ local filePath = folderName.."/"..fileName
+ 
+ if not isFolder(folderName) then
+  makefolder(folderName)
+ end
+
+ local settings = {
+  Size = "Default",
+  Theme = "Pink"
+ }
+ 
+ local function saveConfig()
+  local success, result = pcall(function()
+   return httpService:JSONEncode(settings)
+  end)
+  if success then
+   writefile(filePath, result)
+  else
+   warn("failed to encode settings:", result)
+  end
+ end
+ 
+ local function loadConfig()
+  if isfile(filePath) then
+   local fileData = readfile(filePath)
+   local success, result = pcall(function()
+    return httpService:JSONDecode(fileData)
+   end
+   if success then
+    settings = result
+    print("config loaded")
+   end
+  else
+   saveConfig()
+  end
+ end
+ 
+ for name, setting in pairs(settings) do
+  local value = script:WaitForChild(name)
+  if value and value:IsA("StringValue") then
+   value.Value = settings[name]
+   value:GetPropertyChangedSignal("Value"):Connect(function()
+    settings[name] = value.Value
+   end)
+  end
+ end
+end;
+task.spawn(C_SL);
 
 -- StarterGui.DTIGUI.Sounds
 local function C_2()
@@ -5694,10 +5760,16 @@ local script = G2L["8"];
 	
 	task.wait(0.5)
 	
-	local tween = game.TweenService:Create(uiScale, TweenInfo.new(0.75, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Scale = 1})
+ local target = _G.DEFINTROSIZE
+ if not target then
+  repeat wait() until _G.DEFINTROSIZE ~= nil
+  target = _G.DEFINTROSIZE
+ end
+	local tween = game.TweenService:Create(uiScale, TweenInfo.new(0.75, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Scale = target})
 	tween:Play()
 	tween.Completed:Wait()
 	uiScale:Destroy()
+ _G.DEFINTROSIZE = nil
 	
 	task.wait(1)
 	
@@ -7703,16 +7775,25 @@ task.spawn(C_203);
 local function C_20b()
 local script = G2L["20b"];
 	local main = script.Parent.Parent.Parent.Parent.Parent
+ local screenGui = main.Parent
 	local sizes = {
 		Default = 1,
 		Small = 0.75,
 		Large = 1.25
 	}
+ local sizeVal = screenGui:WaitForChild("SettingsLoad"):WaitForChild("Size")
+	local default
+ if sizeVal.Value == "" then
+  repeat wait() until sizeVal.Value ~= ""
+ end
+ default = sizeVal.Value
+ _G.DEFINTROSIZE = sizes[default]
 	
 	local function setSize(size)
 		local uiScale = main:FindFirstChildOfClass("UIScale") or Instance.new("UIScale", main)
 		if sizes[size] then
 			uiScale.Scale = sizes[size]
+   sizeVal.Value = size
 		end
 	end
 	
@@ -7792,8 +7873,13 @@ local script = G2L["219"];
 			MainStroke = Color3.fromRGB(0, 0, 0)
 		},
 	}
-	local default = "Pink"
-	
+ local themeVal = screenGui:WaitForChild("SettingsLoad"):WaitForChild("Theme")
+	local default
+ if themeVal.Value == "" then
+  repeat wait() until themeVal.Value ~= ""
+ end
+ default = themeVal.Value or "Pink"
+ 
 	local function applyTheme(themeName)
 		local theme = themes[themeName]
 		if not theme then
@@ -7849,6 +7935,8 @@ local script = G2L["219"];
 			if obj:IsA("UIStroke") and obj.Parent == screenGui.Main then
 				obj.Color = theme.MainStroke
 			end
+   
+   themeVal.Value = themeName
 		end
 	end
 	

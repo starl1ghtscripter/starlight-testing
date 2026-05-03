@@ -5575,11 +5575,11 @@ G2L["244"]["Name"] = [[SettingsLoad]]
 
 -- StarterGui.DTIGUI.SettingsLoad.Size
 G2L["245"] = Instance.new("StringValue", G2L["244"])
-G2L["245"]["Name"] = "Size"
+G2L["245"]["Name"] = [[Size]]
 
 -- StarterGui.DTIGUI.SettingsLoad.Theme
 G2L["246"] = Instance.new("StringValue", G2L["244"])
-G2L["246"]["Name"] = "Theme"
+G2L["246"]["Name"] = [[Theme]]
 
 -- StarterGui.DTIGUI.SettingsLoad
 local function C_SL()

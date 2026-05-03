@@ -5583,11 +5583,11 @@ G2L["244"] = Instance.new("LocalScript", G2L["1"])
 G2L["244"]["Name"] = [[SettingsLoad]]
 
 -- StarterGui.DTIGUI.SettingsLoad.Size
-G2L["245"] = Instance.new("StringValue", G2L["245"])
+G2L["245"] = Instance.new("StringValue", G2L["244"])
 G2L["245"]["Name"] = "Size"
 
 -- StarterGui.DTIGUI.SettingsLoad.Theme
-G2L["246"] = Instance.new("StringValue", G2L["245"])
+G2L["246"] = Instance.new("StringValue", G2L["244"])
 G2L["246"]["Name"] = "Theme"
 
 -- StarterGui.DTIGUI.SettingsLoad
@@ -5598,7 +5598,7 @@ local script = G2L["244"]
  local fileName = "settings.json"
  local filePath = folderName.."/"..fileName
  
- if not isFolder(folderName) then
+ if not isfolder(folderName) then
   makefolder(folderName)
  end
 
@@ -5641,7 +5641,7 @@ local script = G2L["244"]
     settings[name] = value.Value
    end)
   end
- end
+ ends
 end;
 task.spawn(C_SL);
 
